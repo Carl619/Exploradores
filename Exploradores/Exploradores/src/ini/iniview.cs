@@ -25,7 +25,7 @@ namespace Programa
 
 		public static void iniVentanaDialogoView()
 		{
-			Interaccion.VentanaDialogo.Instancia.fuenteTitulo = Gestores.Mundo.Instancia.fuentes["genericSpriteFont"];
+            Interaccion.VentanaDialogo.Instancia.fuenteTitulo = Gestores.Mundo.Instancia.fuentes["genericSpriteFont"];
 			Interaccion.VentanaDialogo.Instancia.fuenteCuerpo = Gestores.Mundo.Instancia.fuentes["genericSpriteFont"];
 			Interaccion.VentanaDialogo.Instancia.fuenteOpcion = Gestores.Mundo.Instancia.fuentes["genericSpriteFont"];
 		}
