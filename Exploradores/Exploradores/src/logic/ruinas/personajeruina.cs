@@ -8,7 +8,6 @@ using Gestores;
 
 
 
-
 namespace Ruinas
 {
 	public partial class PersonajeRuina : Gestores.IObjetoIdentificable
@@ -363,33 +362,26 @@ namespace Ruinas
 
 		protected RuinaNodo apartarse(int tiempoMundo)
 		{
-			int vectorinicialY = posicionAnterior.Y - posicion.Y;
-			int vectorinicialX = posicionAnterior.X - posicion.X;
 
-			int vectorperpendicularY = -vectorinicialX;
-			int vectorperpendicularX = -vectorinicialY;
+            Vector2 vectorInicial = new Vector2(posicionAnterior.X - posicion.X, posicionAnterior.Y - posicion.Y);
+            vectorInicial.Normalize();
 
-			double raiz = Math.Sqrt((Math.Pow((double)vectorinicialY, 2)) + (Math.Pow((double)vectorinicialX, 2)));
+            Vector2 vectorPerpendicular = new Vector2(-vectorInicial.Y, vectorInicial.X);
+            vectorPerpendicular.Normalize();
 
-			vectorperpendicularY = vectorperpendicularY / Convert.ToInt32(raiz) * 50;
-			vectorperpendicularX = vectorperpendicularX / Convert.ToInt32(raiz) * 50;
-			vectorinicialY = vectorinicialY / Convert.ToInt32(raiz) * 50;
-			vectorinicialX = vectorinicialX / Convert.ToInt32(raiz) * 50;
+            Vector2 vectorPerpendicularAlternativo = new Vector2(vectorInicial.Y, -vectorInicial.X);
+            vectorPerpendicularAlternativo.Normalize();
 
-			int posicionperpendicularderechaX = posicion.X + vectorperpendicularX;
-			int posicionperpendicularderechaY = posicion.Y + vectorinicialY ;
-			int posicionperpendicularizquierdaX = posicion.X + vectorinicialX;
-			int posicionperpendicularizquierdaY = posicion.Y + vectorperpendicularY;
+            if (!colisionBackUp(posicion.X + Convert.ToInt32((vectorPerpendicular * 5).X), posicion.Y + Convert.ToInt32((vectorPerpendicular * 5).Y)))
+            {
+                return new RuinaNodo(new Tuple<int, int>(posicion.X + Convert.ToInt32((vectorPerpendicular * 5).X), posicion.Y+ Convert.ToInt32((vectorPerpendicular * 5).Y)));
+            }
 
-			if (!colisionBackUp(posicionperpendicularizquierdaX, posicionperpendicularizquierdaY))
-				{
-					return new RuinaNodo(new Tuple<int, int>(posicionperpendicularizquierdaX, posicionperpendicularizquierdaY));
-				}
+            if (!colisionBackUp(posicion.X + Convert.ToInt32((vectorPerpendicularAlternativo * 5).X), posicion.Y + Convert.ToInt32((vectorPerpendicularAlternativo * 5).Y)))
+            {
+                return new RuinaNodo(new Tuple<int, int>(posicion.X + Convert.ToInt32((vectorPerpendicularAlternativo * 5).X), posicion.Y + Convert.ToInt32((vectorPerpendicularAlternativo * 5).Y)));
+            }
 
-			if (!colisionBackUp(posicionperpendicularderechaX, posicionperpendicularderechaY))
-				{
-					return new RuinaNodo(new Tuple<int, int>(posicionperpendicularderechaX, posicionperpendicularderechaY));
-				}
 
 			return null;
 		}
