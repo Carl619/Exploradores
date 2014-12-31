@@ -1,0 +1,34 @@
+
+
+{
+	id							: 1
+	nombre						: Rivendell
+	ciudad flyweight			: city1
+	lugar flyweight				: city1
+	lista flyweight				: list1
+	imagenCiudad				: images/sprites/city/ciudad640x480
+	coordenada x				: 200
+	coordenada y				: 70
+
+
+	id							: 2
+	nombre						: Isengard
+	ciudad flyweight			: city1
+	lugar flyweight				: city1
+	lista flyweight				: list1
+	imagenCiudad				: images/sprites/city/ciudad640x480
+	coordenada x				: 200
+	coordenada y				: 240
+
+
+	id							: 3
+	nombre						: Minas Tirith
+	ciudad flyweight			: city1
+	lugar flyweight				: city1
+	lista flyweight				: list1
+	imagenCiudad				: images/sprites/city/ciudad640x480
+	coordenada x				: 400
+	coordenada y				: 300
+}
+
+

@@ -1,0 +1,39 @@
+
+
+{
+	id						: npc1
+	iconoProfesion			: images/icons/buildings/coins16
+	nombreProfesion			: Vendedor
+	edificioEncuentro		: Mercado
+
+
+	id						: npc2
+	iconoProfesion			: images/icons/buildings/beer16
+	nombreProfesion			: Ciudadano
+	edificioEncuentro		: Taberna
+
+
+	id						: npc3
+	iconoProfesion			: images/icons/buildings/beer16
+	nombreProfesion			: Mercenario
+	edificioEncuentro		: Taberna
+
+
+	id						: npc4
+	iconoProfesion			: images/icons/buildings/hat16
+	nombreProfesion			: Profesor
+	edificioEncuentro		: Universidad
+
+
+	id						: npc5
+	iconoProfesion			: images/icons/buildings/head16
+	nombreProfesion			: Ciudadano
+	edificioEncuentro		: Calle
+
+
+	id						: npc6
+	iconoProfesion			: images/icons/buildings/head16
+	nombreProfesion			: Guardia
+	edificioEncuentro		: Calle
+}
+

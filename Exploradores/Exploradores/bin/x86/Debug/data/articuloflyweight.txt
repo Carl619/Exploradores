@@ -1,0 +1,7 @@
+
+
+{
+	id				: item1
+	icono			: images/icons/items/genericitem16
+}
+

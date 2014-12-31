@@ -1,0 +1,36 @@
+
+{
+	id							: idVentas
+	flyweight					: list1
+	espacio						: 1000000
+	articulos					: 0
+	
+	id							: idCompras
+	flyweight					: list1
+	espacio						: 1000000
+	articulos					: 0
+	
+	
+	id							: 1
+	flyweight					: list1
+	espacio						: 1000
+	articulos					: 5
+		idDinero | 512
+		1 | 2
+		2 | 3
+		3 | 5
+		4 | 1
+	
+	
+	id							: 2
+	flyweight					: list1
+	espacio						: 1000000
+	articulos					: 4
+		2 | 28
+		3 | 31
+		5 | 12
+		idLlave1 | 1
+}
+	
+	
+	

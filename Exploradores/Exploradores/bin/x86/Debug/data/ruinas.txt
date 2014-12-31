@@ -1,0 +1,20 @@
+
+
+{
+	id							: 4
+	nombre						: Erebor
+	ruina flyweight				: ruin1
+	lugar flyweight				: ruin1
+	coordenada x				: 420
+	coordenada y				: 50
+	
+	
+	id							: 5
+	nombre						: Orodruin
+	ruina flyweight				: ruin1
+	lugar flyweight				: ruin1
+	coordenada x				: 500
+	coordenada y				: 290
+}
+
+

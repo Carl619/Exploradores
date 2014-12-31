@@ -1,0 +1,12 @@
+
+{
+	id							: 4
+	flyweight					: activador
+	habitacion					: 1
+	activado					: false
+	tiempoActivacion			: 10
+	coordenada x				: 300
+	coordenada y				: 120
+}
+
+

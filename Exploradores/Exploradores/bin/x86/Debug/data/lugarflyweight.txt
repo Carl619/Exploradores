@@ -1,0 +1,20 @@
+
+
+{
+	id							: city1
+	iconoPasivo					: images/sprites/map/ciudad_a
+	iconoActivo					: images/sprites/map/ciudad_b
+	iconoSeleccionado			: images/sprites/map/ciudad_c
+	iconoActivoSeleccionado		: images/sprites/map/ciudad_d
+	nombreTipoLugar				: Ciudad
+
+
+	id							: ruin1
+	iconoPasivo					: images/sprites/map/ruina_a
+	iconoActivo					: images/sprites/map/ruina_b
+	iconoSeleccionado			: images/sprites/map/ruina_c
+	iconoActivoSeleccionado		: images/sprites/map/ruina_d
+	nombreTipoLugar				: Ruina
+}
+
+

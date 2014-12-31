@@ -1,0 +1,59 @@
+
+
+{
+	id							: 2
+	nombre						: Mickey
+	flyweight					: npc1
+	ciudad						: 1
+	menuDialogo					: comercio
+	inventario					: 2
+	habilidades					: 1
+		idComerciante | 3
+
+
+	id							: 3
+	nombre						: Goofy
+	flyweight					: npc2
+	ciudad						: 1
+	menuDialogo					: 3
+
+
+	id							: 4
+	nombre						: Chuck Norris
+	flyweight					: npc3
+	ciudad						: 1
+	menuDialogo					: reclutamiento1
+	atributos					: 2
+		idVida | 80
+		idFuerza | 20
+	habilidades					: 5
+		idMercenario | 4
+		idComerciante | 12
+		idCazador | 6
+		idMedico | 2
+		idEnfermedad | 1
+
+
+	id							: 5
+	nombre						: Alex
+	flyweight					: npc4
+	ciudad						: 1
+	menuDialogo					: 5
+	inventario					: 1
+
+
+	id							: 6
+	nombre						: Pluto
+	flyweight					: npc5
+	ciudad						: 1
+	menuDialogo					: 6
+
+
+	id							: 7
+	nombre						: Donald
+	flyweight					: npc6
+	ciudad						: 1
+	menuDialogo					: 7
+}
+
+

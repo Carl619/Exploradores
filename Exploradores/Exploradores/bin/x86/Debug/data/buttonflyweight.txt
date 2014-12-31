@@ -1,0 +1,21 @@
+
+
+{
+	id					: button1
+	id border			: border2
+	textFont			: genericSpriteFont
+	textColorPassive	: @ menuColor
+	textColorActive		: Black
+	contentSpacingX		: 4
+	contentSpacingY		: 1
+
+	id					: button2
+	id border			: border3
+	textFont			: genericSpriteFont
+	textColorPassive	: @ menuColor
+	textColorActive		: Black
+	contentSpacingX		: 4
+	contentSpacingY		: 1
+}
+
+

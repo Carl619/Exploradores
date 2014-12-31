@@ -1,0 +1,10 @@
+
+
+{
+	id						: room1
+	flyweight				: room1
+	contentSpacingX			: 0
+	contentSpacingY			: 0
+	backgroundTransparency	: 0.0
+}
+

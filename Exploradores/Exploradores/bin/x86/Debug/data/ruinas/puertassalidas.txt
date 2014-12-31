@@ -1,0 +1,14 @@
+
+{
+	id							: puertaSalida
+	flyweight					: puertaHorizontal
+	ruina						: 4
+	habitacionPrincipal			: 1
+	habitacionSecundaria		: 2
+	paredAsociada				: Arriba
+	porcentajeLugar				: 0.5
+	activado					: false
+	tiempoActivacion			: 40
+}
+
+

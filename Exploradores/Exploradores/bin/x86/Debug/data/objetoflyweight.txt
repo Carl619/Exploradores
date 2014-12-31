@@ -1,0 +1,31 @@
+
+
+{
+	id							: object1
+	iconoPasivo					: trampa
+	iconoActivo					: trampa
+	iconoSeleccionado			: trampa
+	iconoActivoSeleccionado		: trampa
+	
+	
+	id							: puertaHorizontal
+	iconoPasivo					: puerta1/puerta1_a
+	iconoActivo					: puerta1/puerta1_b
+	iconoSeleccionado			: puerta1/puerta1_c
+	iconoActivoSeleccionado		: puerta1/puerta1_d
+	
+	
+	id							: puertaVertical
+	iconoPasivo					: puerta2/puerta2_a
+	iconoActivo					: puerta2/puerta2_b
+	iconoSeleccionado			: puerta2/puerta2_c
+	iconoActivoSeleccionado		: puerta2/puerta2_d
+	
+	
+	id							: activador
+	iconoPasivo					: activador/activador_a
+	iconoActivo					: activador/activador_b
+	iconoSeleccionado			: activador/activador_c
+	iconoActivoSeleccionado		: activador/activador_d
+}
+

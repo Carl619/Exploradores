@@ -1,0 +1,31 @@
+
+
+{
+	id						: border1
+	flyweight				: style1
+	contentSpacingX			: 4
+	contentSpacingY			: 4
+	backgroundTransparency	: 0.14
+
+
+	id						: border2
+	flyweight				: style2
+	contentSpacingX			: 0
+	contentSpacingY			: 0
+	backgroundTransparency	: 0.04
+
+
+	id						: border3
+	flyweight				: style3
+	contentSpacingX			: 0
+	contentSpacingY			: 0
+	backgroundTransparency	: 0.04
+
+
+	id						: border4
+	flyweight				: style4
+	contentSpacingX			: 0
+	contentSpacingY			: 0
+	backgroundTransparency	: 0.04
+}
+

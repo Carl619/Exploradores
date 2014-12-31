@@ -1,0 +1,51 @@
+
+
+{
+	id							: idDinero
+	nombre						: Dinero
+	flyweight					: item1
+	peso						: 1
+	valor						: 1
+	
+	
+	id							: 1
+	nombre						: Escudo
+	flyweight					: item1
+	peso						: 35
+	valor						: 49
+
+
+	id							: 2
+	nombre						: Comida
+	flyweight					: item1
+	peso						: 10
+	valor						: 24
+
+
+	id							: 3
+	nombre						: Bebida
+	flyweight					: item1
+	peso						: 14
+	valor						: 1
+
+
+	id							: 4
+	nombre						: Espada
+	flyweight					: item1
+	peso						: 12
+	valor						: 65
+
+
+	id							: 5
+	nombre						: Diamantes
+	flyweight					: item1
+	peso						: 1
+	valor						: 27
+
+
+	id							: idLlave1
+	nombre						: Llave plata
+	flyweight					: item1
+	peso						: 1
+	valor						: 93
+}

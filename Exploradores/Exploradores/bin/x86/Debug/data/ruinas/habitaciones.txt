@@ -1,0 +1,40 @@
+
+{
+	id							: 1
+	ruina						: 4
+	grosorPared					: 11
+	coordenada x				: 100
+	coordenada y				: 20
+	ancho						: 400
+	alto						: 300
+	
+	
+	id							: 2
+	ruina						: 4
+	grosorPared					: 11
+	coordenada x				: 100
+	coordenada y				: 331
+	ancho						: 400
+	alto						: 100
+	
+	
+	id							: 3
+	ruina						: 4
+	grosorPared					: 11
+	coordenada x				: 511
+	coordenada y				: 70
+	ancho						: 150
+	alto						: 200
+	
+	
+	id							: 4
+	ruina						: 4
+	grosorPared					: 11
+	coordenada x				: 511
+	coordenada y				: 281
+	ancho						: 150
+	alto						: 100
+}
+	
+	
+	

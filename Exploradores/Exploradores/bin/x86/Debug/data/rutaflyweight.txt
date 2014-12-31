@@ -1,0 +1,7 @@
+
+
+{
+	id							: road1
+	sprite						: images/sprites/map/ruta1
+}
+

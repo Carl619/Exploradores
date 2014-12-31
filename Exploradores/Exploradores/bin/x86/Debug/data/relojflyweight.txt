@@ -1,0 +1,13 @@
+
+
+{
+	id							: reloj1
+	numero imagenes				: 17
+	carpeta						: reloj1
+	
+	
+	id							: reloj2
+	numero imagenes				: 10
+	carpeta						: reloj2
+}
+

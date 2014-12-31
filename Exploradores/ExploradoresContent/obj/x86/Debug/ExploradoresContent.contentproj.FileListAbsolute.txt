@@ -1,0 +1,2 @@
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\ExploradoresContent\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\ExploradoresContent\obj\x86\Debug\ExploradoresContent.contentprojResolveAssemblyReference.cache

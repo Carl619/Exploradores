@@ -1,0 +1,44 @@
+
+
+{
+	id							: 1
+	flyweight				: road1
+	lugar A						: 1
+	lugar B						: 2
+	distancia					: 35
+	peligro						: 12
+
+
+	id							: 2
+	flyweight				: road1
+	lugar A						: 1
+	lugar B						: 3
+	distancia					: 51
+	peligro						: 9
+
+
+	id							: 3
+	flyweight				: road1
+	lugar A						: 1
+	lugar B						: 4
+	distancia					: 14
+	peligro						: 27
+
+
+	id							: 4
+	flyweight				: road1
+	lugar A						: 2
+	lugar B						: 3
+	distancia					: 62
+	peligro						: 13
+
+
+	id							: 5
+	flyweight				: road1
+	lugar A						: 3
+	lugar B						: 5
+	distancia					: 8
+	peligro						: 73
+}
+
+

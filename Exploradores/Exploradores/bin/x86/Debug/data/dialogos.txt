@@ -1,0 +1,47 @@
+
+
+{
+	id							: comercio
+	titulo						: 
+	texto						: Estas hablando con un vendedor.
+	entradas					: 1
+		8 | Comprar y vender | Error: esto no se debe mostrar | comercio | true
+
+	id							: reclutamiento1
+	titulo						: 
+	texto						: Estas hablando con un mercenario.
+	entradas					: 1
+		9 | Reclutar (Precio: [$precio]) | Error: esto no se debe mostrar | reclutamiento | true
+
+
+	id							: 3
+	titulo						: Titulo menu 3
+	texto						: Texto menu 3
+	entradas					: 0
+
+
+	id							: 4
+	titulo						: Titulo menu 4
+	texto						: Texto menu 4
+	entradas					: 0
+
+
+	id							: 5
+	titulo						: Titulo menu 5
+	texto						: Texto menu 5
+	entradas					: 0
+
+
+	id							: 6
+	titulo						: Titulo menu 6
+	texto						: Texto menu 6
+	entradas					: 0
+
+
+	id							: 7
+	titulo						: Titulo menu 7
+	texto						: Texto menu 7
+	entradas					: 0
+}
+
+

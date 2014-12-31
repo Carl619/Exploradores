@@ -1,0 +1,7 @@
+
+
+{
+	id							: city1
+	spriteFont					: genericSpriteFont
+}
+

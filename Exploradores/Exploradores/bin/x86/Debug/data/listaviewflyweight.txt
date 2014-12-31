@@ -1,0 +1,13 @@
+
+
+{
+	id							: list1
+	flechaDerechaActivada 1		: images/icons/arrows/arrowright_a_32x22
+	flechaDerechaActivada 2		: images/icons/arrows/arrowright_b_32x22
+	flechaIzquierdaActivada 1	: images/icons/arrows/arrowleft_a_32x22
+	flechaIzquierdaActivada 2	: images/icons/arrows/arrowleft_b_32x22
+	flechaDerechaDesactivada	: images/icons/arrows/arrowright_e_32x22
+	flechaIzquierdaDesactivada	: images/icons/arrows/arrowleft_e_32x22
+	spriteFont					: genericSpriteFont
+}
+

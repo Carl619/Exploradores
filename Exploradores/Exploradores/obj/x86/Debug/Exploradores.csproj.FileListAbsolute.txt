@@ -1,0 +1,420 @@
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\fonts\generic.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\room1\0\0.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\room1\0\1.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\room1\0\2.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\room1\0\3.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\room1\0\4.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\room1\0\5.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\room1\0\6.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\room1\0\7.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\room1\0\8.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style1\0\0.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style1\0\1.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style1\0\2.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style1\0\3.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style1\0\4.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style1\0\5.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style1\0\6.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style1\0\7.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style1\0\8.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style2\0\0.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style2\0\1.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style2\0\2.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style2\0\3.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style2\0\4.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style2\0\5.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style2\0\6.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style2\0\7.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style2\0\8.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style2\1\0.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style2\1\1.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style2\1\2.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style2\1\3.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style2\1\4.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style2\1\5.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style2\1\6.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style2\1\7.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style2\1\8.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\arrows\arrowleft_a_32x22.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\arrows\arrowleft_b_32x22.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\arrows\arrowleft_e_32x22.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\arrows\arrowright_a_32x22.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\arrows\arrowright_b_32x22.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\arrows\arrowright_e_32x22.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\error\error16.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\error\error256.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\error\error32.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\error\error64.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\error\prohibido256.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\items\genericitem16.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\objects\activador\activador_a.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\objects\activador\activador_b.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\objects\activador\activador_c.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\objects\activador\activador_d.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\objects\puerta1\puerta1_a.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\objects\puerta1\puerta1_b.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\objects\puerta1\puerta1_c.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\objects\puerta1\puerta1_d.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\objects\puerta2\puerta2_a.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\objects\puerta2\puerta2_b.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\objects\puerta2\puerta2_c.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\objects\puerta2\puerta2_d.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\objects\trampa.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\objects\reloj1\0.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\objects\reloj1\1.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\objects\reloj1\10.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\objects\reloj1\11.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\objects\reloj1\12.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\objects\reloj1\13.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\objects\reloj1\14.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\objects\reloj1\15.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\objects\reloj1\16.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\objects\reloj1\2.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\objects\reloj1\3.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\objects\reloj1\4.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\objects\reloj1\5.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\objects\reloj1\6.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\objects\reloj1\7.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\objects\reloj1\8.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\objects\reloj1\9.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\objects\reloj2\0.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\objects\reloj2\1.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\objects\reloj2\2.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\objects\reloj2\3.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\objects\reloj2\4.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\objects\reloj2\5.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\objects\reloj2\6.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\objects\reloj2\7.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\objects\reloj2\8.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\objects\reloj2\9.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\buildings\beer16.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\buildings\coins16.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\buildings\hat16.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\buildings\head16.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\sprites\map\mapa640x512.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\sprites\map\ruta1.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\sprites\city\ciudad640x480.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Exploradores.exe
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Exploradores.pdb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\obj\x86\Debug\Exploradores.exe
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\obj\x86\Debug\Exploradores.pdb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\other\cerrar.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\other\ok.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\buttons\inventario.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\buttons\info.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\buttons\misiones.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\buttons\mapa.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\buttons\personajes.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style3\0\0.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style3\0\1.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style3\0\2.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style3\0\3.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style3\0\4.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style3\0\5.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style3\0\6.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style3\0\7.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style3\0\8.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style3\1\0.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style3\1\1.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style3\1\2.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style3\1\3.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style3\1\4.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style3\1\5.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style3\1\6.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style3\1\7.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style3\1\8.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style3\2\0.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style3\2\1.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style3\2\2.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style3\2\3.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style3\2\4.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style3\2\5.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style3\2\6.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style3\2\7.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style3\2\8.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style3\3\0.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style3\3\1.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style3\3\2.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style3\3\3.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style3\3\4.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style3\3\5.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style3\3\6.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style3\3\7.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style3\3\8.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\buttons\ciudad.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\buttons\ruina.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\buttons\viajar.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\sprites\map\ciudad_a.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\sprites\map\ciudad_b.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\sprites\map\ciudad_c.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\sprites\map\ciudad_d.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\sprites\map\flag.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\buttons\banco.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\buttons\iglesia.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\sprites\map\ruina_a.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\sprites\map\ruina_b.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\sprites\map\ruina_c.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\sprites\map\ruina_d.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style2\2\0.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style2\2\1.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style2\2\2.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style2\2\3.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style2\2\4.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style2\2\5.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style2\2\6.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style2\2\7.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style2\2\8.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\other\okdeshabilitado.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\sprites\ruin\personajes\0\movimiento0.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\sprites\ruin\personajes\0\movimiento1.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\sprites\ruin\personajes\0\movimiento2.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\sprites\ruin\personajes\0\movimiento3.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\sprites\ruin\personajes\0\parado.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\sprites\ruin\personajes\1\movimiento0.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\sprites\ruin\personajes\1\movimiento1.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\sprites\ruin\personajes\1\movimiento2.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\sprites\ruin\personajes\1\movimiento3.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\sprites\ruin\personajes\1\parado.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\music\ciudad.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\music\mapa.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\music\ruina.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\music\ciudad.wma
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\music\mapa.wma
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\music\ruina.wma
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style4\0\0.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style4\0\1.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style4\0\2.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style4\0\3.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style4\0\4.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style4\0\5.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style4\0\6.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style4\0\7.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style4\0\8.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style4\1\0.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style4\1\1.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style4\1\2.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style4\1\3.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style4\1\4.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style4\1\5.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style4\1\6.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style4\1\7.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style4\1\8.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\personajes\comerciante.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\personajes\mercenario.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\personajes\vida.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\personajes\cazador.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\personajes\enfermedad.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\personajes\fuerza.xnb
+E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\personajes\medico.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\fonts\generic.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\room1\0\0.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\room1\0\1.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\room1\0\2.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\room1\0\3.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\room1\0\4.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\room1\0\5.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\room1\0\6.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\room1\0\7.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\room1\0\8.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style1\0\0.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style1\0\1.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style1\0\2.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style1\0\3.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style1\0\4.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style1\0\5.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style1\0\6.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style1\0\7.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style1\0\8.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style2\0\0.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style2\0\1.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style2\0\2.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style2\0\3.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style2\0\4.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style2\0\5.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style2\0\6.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style2\0\7.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style2\0\8.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style2\1\0.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style2\1\1.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style2\1\2.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style2\1\3.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style2\1\4.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style2\1\5.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style2\1\6.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style2\1\7.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style2\1\8.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\arrows\arrowleft_a_32x22.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\arrows\arrowleft_b_32x22.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\arrows\arrowleft_e_32x22.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\arrows\arrowright_a_32x22.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\arrows\arrowright_b_32x22.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\arrows\arrowright_e_32x22.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\error\error16.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\error\error256.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\error\error32.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\error\error64.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\error\prohibido256.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\items\genericitem16.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\objects\activador\activador_a.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\objects\activador\activador_b.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\objects\activador\activador_c.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\objects\activador\activador_d.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\objects\puerta1\puerta1_a.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\objects\puerta1\puerta1_b.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\objects\puerta1\puerta1_c.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\objects\puerta1\puerta1_d.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\objects\puerta2\puerta2_a.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\objects\puerta2\puerta2_b.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\objects\puerta2\puerta2_c.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\objects\puerta2\puerta2_d.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\objects\trampa.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\objects\reloj1\0.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\objects\reloj1\1.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\objects\reloj1\10.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\objects\reloj1\11.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\objects\reloj1\12.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\objects\reloj1\13.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\objects\reloj1\14.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\objects\reloj1\15.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\objects\reloj1\16.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\objects\reloj1\2.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\objects\reloj1\3.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\objects\reloj1\4.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\objects\reloj1\5.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\objects\reloj1\6.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\objects\reloj1\7.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\objects\reloj1\8.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\objects\reloj1\9.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\objects\reloj2\0.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\objects\reloj2\1.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\objects\reloj2\2.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\objects\reloj2\3.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\objects\reloj2\4.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\objects\reloj2\5.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\objects\reloj2\6.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\objects\reloj2\7.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\objects\reloj2\8.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\objects\reloj2\9.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\buildings\beer16.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\buildings\coins16.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\buildings\hat16.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\buildings\head16.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\sprites\map\flag.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\sprites\map\mapa640x512.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\sprites\map\ruina_a.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\sprites\map\ruina_b.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\sprites\map\ruina_c.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\sprites\map\ruina_d.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\sprites\map\ruta1.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\sprites\city\ciudad640x480.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\other\cerrar.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\other\ok.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\buttons\inventario.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\buttons\info.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\buttons\misiones.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\buttons\mapa.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\buttons\personajes.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style3\0\0.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style3\0\1.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style3\0\2.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style3\0\3.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style3\0\4.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style3\0\5.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style3\0\6.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style3\0\7.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style3\0\8.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style3\1\0.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style3\1\1.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style3\1\2.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style3\1\3.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style3\1\4.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style3\1\5.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style3\1\6.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style3\1\7.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style3\1\8.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style3\2\0.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style3\2\1.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style3\2\2.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style3\2\3.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style3\2\4.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style3\2\5.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style3\2\6.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style3\2\7.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style3\2\8.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style3\3\0.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style3\3\1.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style3\3\2.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style3\3\3.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style3\3\4.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style3\3\5.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style3\3\6.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style3\3\7.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style3\3\8.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\buttons\ciudad.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\buttons\ruina.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\buttons\viajar.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\sprites\map\ciudad_a.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\sprites\map\ciudad_b.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\sprites\map\ciudad_c.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\sprites\map\ciudad_d.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\buttons\banco.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\buttons\iglesia.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style2\2\0.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style2\2\1.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style2\2\2.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style2\2\3.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style2\2\4.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style2\2\5.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style2\2\6.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style2\2\7.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style2\2\8.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\other\okdeshabilitado.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\sprites\ruin\personajes\0\movimiento0.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\sprites\ruin\personajes\0\movimiento1.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\sprites\ruin\personajes\0\movimiento2.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\sprites\ruin\personajes\0\movimiento3.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\sprites\ruin\personajes\0\parado.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\sprites\ruin\personajes\1\movimiento0.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\sprites\ruin\personajes\1\movimiento1.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\sprites\ruin\personajes\1\movimiento2.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\sprites\ruin\personajes\1\movimiento3.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\sprites\ruin\personajes\1\parado.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style4\0\0.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style4\0\1.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style4\0\2.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style4\0\3.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style4\0\4.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style4\0\5.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style4\0\6.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style4\0\7.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style4\0\8.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style4\1\0.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style4\1\1.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style4\1\2.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style4\1\3.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style4\1\4.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style4\1\5.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style4\1\6.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style4\1\7.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style4\1\8.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\personajes\comerciante.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\personajes\mercenario.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\personajes\vida.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\personajes\cazador.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\personajes\enfermedad.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\personajes\fuerza.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\personajes\medico.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\music\ciudad.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\music\mapa.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\music\ruina.xnb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\music\ciudad.wma
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\music\mapa.wma
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\music\ruina.wma
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Exploradores.exe
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Exploradores.pdb
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\obj\x86\Debug\Exploradores.csprojResolveAssemblyReference.cache
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\obj\x86\Debug\Exploradores.exe
+C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\Exploradores\obj\x86\Debug\Exploradores.pdb
