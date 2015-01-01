@@ -9,6 +9,7 @@
 	velocidadAnimacion			: 200
 	carpeta						: 0
 	numero imagenes				: 4
+	prioridad				: 1
 }
 
 

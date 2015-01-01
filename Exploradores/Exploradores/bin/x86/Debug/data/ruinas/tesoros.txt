@@ -1,0 +1,14 @@
+
+{
+	id							: tesoro
+	flyweight					: activador
+	habitacion					: 1
+	activado					: false
+	coordenada x				: 50
+	coordenada y				: 190
+	cantidad						: 1
+	articulo				: tesorin
+}
+	
+	
+	
