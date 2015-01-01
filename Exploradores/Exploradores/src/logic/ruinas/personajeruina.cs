@@ -136,7 +136,7 @@ namespace Ruinas
 			habitacion.personajes.Add(personaje);
 			personaje.ruina = ruina;
 
-			personaje.prioridad = Convert.ToInt32(campos["prioridad");
+			personaje.prioridad = Convert.ToInt32(campos["prioridad"]);
 
 			return personaje;
 		}
