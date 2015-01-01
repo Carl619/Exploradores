@@ -33,12 +33,38 @@ namespace Ruinas
 				Gestores.Partidas.Instancia.gestorRuinas.ruinaActual.vista.requestUpdateContent();
 		}
 
+		public static void cerrarInventario(ILS.Drawable drawable, ILS.MouseEvent eventInfo, Object configObj)
+		{
+			if (Gestores.Partidas.Instancia.gestorPantallas.estadoHUD ==
+				Gestores.Pantallas.EstadoHUD.Inventario)
+			{
+				Gestores.Partidas.Instancia.gestorPantallas.estadoHUD =
+					Gestores.Pantallas.EstadoHUD.Vacio;
+
+				Gestores.Partidas.Instancia.gestorRuinas.ruinaActual.vista.abrirInventario(false);
+				Gestores.Partidas.Instancia.gestorRuinas.ruinaActual.vista.requestUpdateContent();
+			}
+		}
+
 		public static void activarPuertaSalida(Reloj reloj)
 		{
 			PuertaSalida puerta = (PuertaSalida)reloj.personaje.objetoInteraccionable;
 
 			PersonajeRuina personaje = reloj.personaje;
 
+			foreach (PersonajeRuina personajeRuina in Gestores.Partidas.Instancia.gestorRuinas.personajesRuinas.Values) {
+				if (personajeRuina.ruina == Gestores.Partidas.Instancia.gestorRuinas.ruinaActual)
+				{
+					if (personajeRuina.habitacion == personaje.habitacion && personajeRuina != personaje)
+					{
+						if (Math.Abs(Math.Sqrt(Math.Pow(personaje.posicion.X, 2) + Math.Pow(personaje.posicion.Y, 2))
+							- Math.Sqrt(Math.Pow(personaje.posicion.X, 2) + Math.Pow(personaje.posicion.Y, 2))) > 100)
+						{
+							return;
+						}
+					}
+				}
+			}
 			Gestores.Partidas.Instancia.cambiarMusica("mapa");
 			Programa.VistaGeneral.Instancia.cambiarVista(Gestores.Pantallas.EstadoPartida.Mapa);
 		}

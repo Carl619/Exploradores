@@ -207,6 +207,7 @@
     <Compile Include="src\view\contenedormenu.cs" />
     <Compile Include="src\view\interaccion\panelcomercio.cs" />
     <Compile Include="src\view\inventario\panelinventario.cs" />
+    <Compile Include="src\view\inventario\panelinventarioruina.cs" />
     <Compile Include="src\view\mapa\panelviaje.cs" />
     <Compile Include="src\view\panelhudventanas.cs" />
     <Compile Include="src\view\menujuego.cs" />
