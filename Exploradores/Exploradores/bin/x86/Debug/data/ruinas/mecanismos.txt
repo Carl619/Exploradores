@@ -15,5 +15,3 @@
 		0 | alternar | 4
 		1 | alternar | 4
 }
-
-

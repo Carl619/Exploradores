@@ -126,6 +126,30 @@ namespace Ruinas
 
 				espacio = new Rectangle((int)posX, (int)posY, (int)sizeX, (int)sizeY);
 			}
+
+			if (paredAsociada == Pared.Derecha || paredAsociada == Pared.Izquierda)
+			{
+				posY = habitacionPrincipal.espacio.Height + 2 * habitacionPrincipal.grosorPared;
+				posY *= porcentajeLugar;
+				posY -= (sizeY / 2);
+
+				if (paredAsociada == Pared.Derecha)
+				{
+					posX = habitacionPrincipal.espacio.Width + 1.5f * habitacionPrincipal.grosorPared;
+					posX -= (sizeX / 2);
+				}
+				else
+				{	
+					posX = habitacionPrincipal.grosorPared;
+					posX /= 2;
+					posX -= (sizeX / 2);
+				}
+
+				posX += habitacionPrincipal.espacio.X;
+				posY += habitacionPrincipal.espacio.Y;
+
+				espacio = new Rectangle((int)posX, (int)posY, (int)sizeX, (int)sizeY);
+			}
 		}
 
 		
