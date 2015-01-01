@@ -363,34 +363,22 @@ namespace Ruinas
 
 		protected RuinaNodo apartarse(int tiempoMundo)
 		{
-			double vectorinicialY = posicionAnterior.Y - posicion.Y;
-			double vectorinicialX = posicionAnterior.X - posicion.X;
+			Vector2 vectorInicial = new Vector2(posicionAnterior.X - posicion.X, posicionAnterior.Y - posicion.Y);
+			vectorInicial.Normalize();
 
-			double vectorperpendicularY = -vectorinicialX;
-			double vectorperpendicularX = -vectorinicialY;
-
-			double raiz = Math.Sqrt((Math.Pow((double)vectorinicialY, 2)) + (Math.Pow((double)vectorinicialX, 2)));
-
-			vectorperpendicularY = vectorperpendicularY / raiz * 50;
-			vectorperpendicularX = vectorperpendicularX / raiz * 50;
-			vectorinicialY = vectorinicialY / raiz * 50;
-			vectorinicialX = vectorinicialX / raiz * 50;
-
-			int posicionperpendicularderechaX = posicion.X + Convert.ToInt32(vectorperpendicularX);
-			int posicionperpendicularderechaY = posicion.Y + Convert.ToInt32(vectorinicialY);
-			int posicionperpendicularizquierdaX = posicion.X + Convert.ToInt32(vectorinicialX);
-			int posicionperpendicularizquierdaY = posicion.Y + Convert.ToInt32(vectorperpendicularY);
-
-			if (!colisionBackUp(posicionperpendicularderechaX, posicionperpendicularderechaY))
-				{
-					return new RuinaNodo(new Tuple<int, int>(posicionperpendicularderechaX, posicionperpendicularderechaY));
-				}
-
-			if (!colisionBackUp(posicionperpendicularizquierdaX, posicionperpendicularizquierdaY))
+			Vector2 vectorPerpendicular = new Vector2(-vectorInicial.Y, vectorInicial.X);
+			vectorPerpendicular.Normalize();
+			if (!colisionBackUp(posicion.X + Convert.ToInt32((vectorPerpendicular * 5).X), posicion.Y + Convert.ToInt32((vectorPerpendicular * 5).Y)))
 			{
-				return new RuinaNodo(new Tuple<int, int>(posicionperpendicularizquierdaX, posicionperpendicularizquierdaY));
+				return new RuinaNodo(new Tuple<int, int>(posicion.X + Convert.ToInt32((vectorPerpendicular * 5).X), posicion.Y + Convert.ToInt32((vectorPerpendicular * 5).Y)));
 			}
 
+			Vector2 vectorPerpendicularAlternativo = new Vector2(vectorInicial.Y, -vectorInicial.X);
+			vectorPerpendicularAlternativo.Normalize();
+			if (!colisionBackUp(posicion.X + Convert.ToInt32((vectorPerpendicularAlternativo * 5).X), posicion.Y + Convert.ToInt32((vectorPerpendicularAlternativo * 5).Y)))
+			{
+				return new RuinaNodo(new Tuple<int, int>(posicion.X + Convert.ToInt32((vectorPerpendicularAlternativo * 5).X), posicion.Y + Convert.ToInt32((vectorPerpendicularAlternativo * 5).Y)));
+			}
 			return null;
 		}
 
