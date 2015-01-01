@@ -95,6 +95,12 @@ namespace Ruinas
 			colisionFinal = false;
 			accionReloj = null;
 			vista = null;
+			prioridad = 0;
+			tiempoEspera = 0;
+			destino = null;
+			destinoBackUp = null;
+			caminoBackUp = null;
+			movimientoBackUp = null;
 		}
 
 
@@ -130,7 +136,7 @@ namespace Ruinas
 			habitacion.personajes.Add(personaje);
 			personaje.ruina = ruina;
 
-			personaje.prioridad = 1;
+			personaje.prioridad = Convert.ToInt32(campos["prioridad"]);
 
 			return personaje;
 		}
@@ -368,16 +374,16 @@ namespace Ruinas
 
 			Vector2 vectorPerpendicular = new Vector2(-vectorInicial.Y, vectorInicial.X);
 			vectorPerpendicular.Normalize();
-			if (!colisionBackUp(posicion.X + Convert.ToInt32((vectorPerpendicular * 5).X), posicion.Y + Convert.ToInt32((vectorPerpendicular * 5).Y)))
+			if (!colisionBackUp(posicion.X + Convert.ToInt32((vectorPerpendicular * 50).X), posicion.Y + Convert.ToInt32((vectorPerpendicular * 50).Y)))
 			{
-				return new RuinaNodo(new Tuple<int, int>(posicion.X + Convert.ToInt32((vectorPerpendicular * 5).X), posicion.Y + Convert.ToInt32((vectorPerpendicular * 5).Y)));
+				return new RuinaNodo(new Tuple<int, int>(posicion.X + Convert.ToInt32((vectorPerpendicular * 50).X), posicion.Y + Convert.ToInt32((vectorPerpendicular * 50).Y)));
 			}
 
 			Vector2 vectorPerpendicularAlternativo = new Vector2(vectorInicial.Y, -vectorInicial.X);
 			vectorPerpendicularAlternativo.Normalize();
-			if (!colisionBackUp(posicion.X + Convert.ToInt32((vectorPerpendicularAlternativo * 5).X), posicion.Y + Convert.ToInt32((vectorPerpendicularAlternativo * 5).Y)))
+			if (!colisionBackUp(posicion.X + Convert.ToInt32((vectorPerpendicularAlternativo * 50).X), posicion.Y + Convert.ToInt32((vectorPerpendicularAlternativo * 50).Y)))
 			{
-				return new RuinaNodo(new Tuple<int, int>(posicion.X + Convert.ToInt32((vectorPerpendicularAlternativo * 5).X), posicion.Y + Convert.ToInt32((vectorPerpendicularAlternativo * 5).Y)));
+				return new RuinaNodo(new Tuple<int, int>(posicion.X + Convert.ToInt32((vectorPerpendicularAlternativo * 50).X), posicion.Y + Convert.ToInt32((vectorPerpendicularAlternativo * 50).Y)));
 			}
 			return null;
 		}
