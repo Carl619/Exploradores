@@ -5,6 +5,7 @@ using Ruinas;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Gestores;
+using Programa;
 
 
 
@@ -55,8 +56,10 @@ namespace Personajes
 			PersonajeRuina personajeRuina;
 			RuinaJugable ruina = Gestores.Partidas.Instancia.gestorRuinas.ruinasJugables["4"];
 
-			Habitacion habitacion =
-				Gestores.Partidas.Instancia.gestorRuinas.habitaciones["1"];
+			Habitacion habitacion = Gestores.Partidas.Instancia.gestorRuinas.habitaciones[
+				Gestores.Partidas.Instancia.gestorRuinas.personajesRuinas[Jugador.Instancia.protagonista.id].habitacion.id];
+				
+				
 
 			personajeRuina = new PersonajeRuina(acom, habitacion);
 			personajeRuina.posicion = new Rectangle(260,
