@@ -19,19 +19,18 @@ namespace Ruinas
 			Activador interruptor = (Activador)reloj.personaje.objetoInteraccionable;
 			interruptor.alternar();
 			interruptor.vista.requestUpdateContent();
+
 		}
 
 		public static void activarTesoro(Reloj reloj)
 		{
-			Tesoro tesoro = (Tesoro)reloj.personaje.objetoInteraccionable;
+				Tesoro tesoro = (Tesoro)reloj.personaje.objetoInteraccionable;
 
 				Gestores.Partidas.Instancia.gestorPantallas.estadoHUD =
 					Gestores.Pantallas.EstadoHUD.Inventario;
-				Programa.PanelHUD panelHUD = Programa.VistaGeneral.Instancia.contenedorJuego.panelCentral.panelHUD;
-				panelHUD.panelVentanas.cambiarAlternativa(Gestores.Pantallas.EstadoHUD.Inventario);
-				panelHUD.panelVentanas.requestUpdateContent();
-				panelHUD.actualizarBloqueoVentana();
 
+				Gestores.Partidas.Instancia.gestorRuinas.ruinaActual.vista.abrirInventario(true);
+				Gestores.Partidas.Instancia.gestorRuinas.ruinaActual.vista.requestUpdateContent();
 		}
 
 		public static void activarPuertaSalida(Reloj reloj)

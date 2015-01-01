@@ -35,6 +35,9 @@ namespace Ruinas
 			camino = null;
 			panelInventario = null;
 
+			alternativeNames.Add("vacio", 0);
+			alternativeNames.Add("inventario", 1);
+
 			updateContent();
 		}
 
@@ -59,12 +62,13 @@ namespace Ruinas
 			setCurrentLayer(2);
 			interfazRelojes = new InterfazRelojesView(ruina);
 			addComponent(interfazRelojes);
-			setCurrentLayer(0);
-
-			panelInventario = new Objetos.PanelInventario();
-			addComponent(panelInventario);
+			
 
 			setCurrentLayer(3);
+			panelInventario = new Objetos.PanelInventario();
+			addComponent(panelInventario);
+			setCurrentLayer(0);
+			
 			actualizarHabitaciones();
 			actualizarPuertas();
 			interfazRelojes.updateContent();
@@ -109,6 +113,18 @@ namespace Ruinas
 				ObjetoView objetoView;
 				objetoView = puerta.crearVista(ruina);
 				interfazPuertas.addComponent(objetoView);
+			}
+		}
+
+		public void abrirInventario(bool showInventario)
+		{
+			if (showInventario)
+			{
+				setCurrentAlternative(alternativeNames["inventario"]);
+			}
+			else
+			{
+				setCurrentAlternative(alternativeNames["vacio"]);
 			}
 		}
 	}
