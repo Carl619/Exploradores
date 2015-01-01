@@ -3,19 +3,21 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using Microsoft.Xna.Framework;
+using Objetos;
 
 namespace Ruinas
 {
 	public class Tesoro : Objeto
 	{
-		public int valor { get; set; }
-
+		public int cantidad { get; set; }
+		public Articulo articulo { get; set; }
 
 		// cosntructor
         public Tesoro(String newid, ObjetoFlyweight newObjetoFlyweight)
 			: base(newid, newObjetoFlyweight)
 		{
-			valor = 0;
+			cantidad = 0;
+			articulo = null;
 		}
 
 		public static Tesoro cargarObjeto(Dictionary<String, String> campos, Dictionary<String, List<String>> listas)
@@ -32,10 +34,17 @@ namespace Ruinas
 										flyweight.iconoPasivo.Width,
 										flyweight.iconoPasivo.Height);
 
-			tesoro.valor = Convert.ToInt32(campos["valor"]);
+			tesoro.cantidad= Convert.ToInt32(campos["cantidad"]);
+			tesoro.articulo = Gestores.Partidas.Instancia.articulos[campos["articulo"]];
 			habitacion.objetos.Add(tesoro);
 
 			return tesoro;
+		}
+
+		public override ObjetoView crearVista(RuinaJugable ruina)
+		{
+			vista = new TesoroView(this, ruina);
+			return vista;
 		}
 	}
 }

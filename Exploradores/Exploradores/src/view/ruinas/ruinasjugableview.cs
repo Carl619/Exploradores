@@ -17,6 +17,7 @@ namespace Ruinas
 		public InterfazGrafica interfazHabitaciones { get; protected set; }
 		public InterfazGrafica interfazPuertas { get; protected set; }
 		public InterfazRelojesView interfazRelojes { get; protected set; }
+		public Objetos.PanelInventario panelInventario { get; protected set; }
 		public List<Dijkstra.IRama> camino { get; set; }
 
 
@@ -32,6 +33,7 @@ namespace Ruinas
 			interfazPuertas = null;
 			interfazRelojes = null;
 			camino = null;
+			panelInventario = null;
 
 			updateContent();
 		}
@@ -59,6 +61,10 @@ namespace Ruinas
 			addComponent(interfazRelojes);
 			setCurrentLayer(0);
 
+			panelInventario = new Objetos.PanelInventario();
+			addComponent(panelInventario);
+
+			setCurrentLayer(3);
 			actualizarHabitaciones();
 			actualizarPuertas();
 			interfazRelojes.updateContent();

@@ -48,4 +48,10 @@
 	flyweight					: item1
 	peso						: 1
 	valor						: 93
+
+	id							: tesorin
+	nombre						: jarron
+	flyweight					: item1
+	peso						: 1
+	valor						: 27
 }

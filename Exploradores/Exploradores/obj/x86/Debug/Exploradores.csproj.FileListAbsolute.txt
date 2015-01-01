@@ -624,7 +624,7 @@ F:\Github\Exploradores\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Cont
 F:\Github\Exploradores\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\music\ruina.wma
 F:\Github\Exploradores\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Exploradores.exe
 F:\Github\Exploradores\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Exploradores.pdb
+F:\Github\Exploradores\Exploradores\Exploradores\Exploradores\obj\x86\Debug\Exploradores.csprojResolveAssemblyReference.cache
 F:\Github\Exploradores\Exploradores\Exploradores\Exploradores\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
 F:\Github\Exploradores\Exploradores\Exploradores\Exploradores\obj\x86\Debug\Exploradores.exe
 F:\Github\Exploradores\Exploradores\Exploradores\Exploradores\obj\x86\Debug\Exploradores.pdb
-F:\Github\Exploradores\Exploradores\Exploradores\Exploradores\obj\x86\Debug\Exploradores.csprojResolveAssemblyReference.cache

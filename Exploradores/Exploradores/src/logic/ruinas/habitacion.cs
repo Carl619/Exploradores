@@ -5,6 +5,7 @@ using System.Text;
 using Objetos;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
+using Gestores;
 
 
 
@@ -92,6 +93,16 @@ namespace Ruinas
 					nodos.Add(nodosObjetos[i]);
 			}
 
+			foreach (PersonajeRuina personaje in Partidas.Instancia.gestorRuinas.personajesRuinas.Values)
+			{
+				if (personaje.habitacion == this && personaje.estado==Ruinas.PersonajeRuina.Estado.Parado)
+				{
+					nodosObjetos = personaje.nodos();
+					for (int i = 0; i < nodosObjetos.Count; i++)
+						nodos.Add(nodosObjetos[i]);
+				}
+			}
+
 			nodos.AddRange(getNodosPuertas());
 			return nodos;
 		}
@@ -114,6 +125,18 @@ namespace Ruinas
 						if(objeto == objetoDestino)
 							continue;
 						if (nodo2.colisiona(nodo1.coordenadas.Item1, nodo1.coordenadas.Item2, objeto))
+						{
+							colision = true;
+							break;
+						}
+					}
+
+					foreach (PersonajeRuina personaje in Partidas.Instancia.gestorRuinas.personajesRuinas.Values)
+					{
+						if(personaje.habitacion==this
+							&& personaje.estado==Ruinas.PersonajeRuina.Estado.Parado
+							&& !Partidas.Instancia.gestorRuinas.ruinaActual.personajesSeleccionados.Contains(personaje))
+						if (nodo2.colisiona(nodo1.coordenadas.Item1, nodo1.coordenadas.Item2, personaje))
 						{
 							colision = true;
 							break;

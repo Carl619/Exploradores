@@ -87,6 +87,7 @@ namespace Ruinas
 			
 			List<RuinaNodo> nodosTotales = new List<RuinaNodo>();
 			List<RuinaRama> ramasTotales = new List<RuinaRama>();
+			List<RuinaNodo> nodosFinales = new List<RuinaNodo>();
 			
 			foreach(Habitacion h in ruina.habitaciones)
 			{
@@ -94,13 +95,13 @@ namespace Ruinas
 				Tuple<HabitacionView, RuinaNodo> destino;
 				if (destinos.TryGetValue(h.id, out destino) == true)
 				{
-					nodoFinal = destino.Item2;
-					nodoFinal.coordenadas = new Tuple<int, int>(destino.Item2.coordenadas.Item1, destino.Item2.coordenadas.Item2);
-					nodosHabitacion.Add(nodoFinal);
-					nodoFinal = new RuinaNodo(destino.Item2.coordenadas);
-					nodoFinal.habitacion = destino.Item2.habitacion;
-					nodoFinal.coordenadas = new Tuple<int, int>(destino.Item2.coordenadas.Item1, destino.Item2.coordenadas.Item2-32);
-					nodosHabitacion.Add(nodoFinal);
+					for (int j = 0; j < personajesSeleccionados.Count; j++)
+					{
+						nodoFinal = new RuinaNodo(destino.Item2.coordenadas);
+						nodoFinal.coordenadas = new Tuple<int, int>(destino.Item2.coordenadas.Item1, destino.Item2.coordenadas.Item2 - j*32);
+						nodosHabitacion.Add(nodoFinal);
+						nodosFinales.Add(nodoFinal);
+					}
 				}
 				else
 					destino = null;
@@ -150,13 +151,9 @@ namespace Ruinas
 					numeroDestinos++;
 					RuinaNodo nodofinal=tupla.Value.Item2;
 					List<Dijkstra.IRama> camino;
-					if(i==0 && numeroDestinos==1)
 					camino =
-					   origen.buscarCaminoMinimo(nodofinal, 0, nodosTotales.Count, ref dist);
-					else
-						camino =
-					   origen.buscarCaminoMinimo(nodoFinal, 0, nodosTotales.Count, ref dist);
-					personajesSeleccionados[i].destino = new RuinaNodo(nodofinal.coordenadas);
+					   origen.buscarCaminoMinimo(nodosFinales[i], 0, nodosTotales.Count, ref dist);
+					personajesSeleccionados[i].destino = new RuinaNodo(nodosFinales[i].coordenadas);
 					personajesSeleccionados[i].destino.habitacion = tupla.Value.Item1.habitacion;
 					personajesSeleccionados[i].destinoBackUp = null;
 					if(camino != null)

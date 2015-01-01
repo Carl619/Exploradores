@@ -22,6 +22,7 @@ namespace Gestores
 		public Dictionary<String, Ruinas.Objeto> objetos { get; protected set; }
 		public Gestor<Ruinas.Habitacion> habitaciones { get; protected set; }
 		public Gestor<Ruinas.Trampa> trampas { get; protected set; }
+		public Gestor<Ruinas.Tesoro> tesoros { get; protected set; }
 		public Gestor<Ruinas.Puerta> puertas { get; protected set; }
 		public Gestor<Ruinas.PuertaSalida> puertaSalidas { get; protected set; }
 		public Gestor<Ruinas.Activador> activadores { get; protected set; }
@@ -40,6 +41,7 @@ namespace Gestores
 			objetos = new Dictionary<string,Ruinas.Objeto>();
 			habitaciones = new Gestor<Ruinas.Habitacion>();
 			trampas = new Gestor<Ruinas.Trampa>();
+			tesoros = new Gestor<Ruinas.Tesoro>();
 			puertas = new Gestor<Ruinas.Puerta>();
 			activadores = new Gestor<Ruinas.Activador>();
 			mecanismos = new Gestor<Ruinas.Mecanismo>();
@@ -53,6 +55,7 @@ namespace Gestores
 			cargarContenidoRuinasJugables();
 			cargarContenidoHabitaciones(@"data/ruinas/habitaciones.txt");
 			cargarContenidoTrampas(@"data/ruinas/trampas.txt");
+			cargarContenidoTesoros(@"data/ruinas/tesoros.txt");
 			cargarContenidoPuertas(@"data/ruinas/puertas.txt");
 			cargarContenidoPuertasSalidas(@"data/ruinas/puertassalidas.txt");
 			cargarContenidoActivadores(@"data/ruinas/activadores.txt");
@@ -116,6 +119,16 @@ namespace Gestores
 				trampas.loadAll(reader, Ruinas.Trampa.cargarObjeto);
 			}
 			foreach(KeyValuePair<String, Ruinas.Trampa> objeto in trampas)
+				objetos.Add(objeto.Key, objeto.Value);
+		}
+
+		protected void cargarContenidoTesoros(String fileName)
+		{
+			using (System.IO.StreamReader reader = new System.IO.StreamReader(fileName))
+			{
+				tesoros.loadAll(reader, Ruinas.Tesoro.cargarObjeto);
+			}
+			foreach (KeyValuePair<String, Ruinas.Tesoro> objeto in tesoros)
 				objetos.Add(objeto.Key, objeto.Value);
 		}
 

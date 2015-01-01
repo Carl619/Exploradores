@@ -143,7 +143,6 @@ namespace Programa
 				}
 				else if(estadoAnterior == Gestores.Pantallas.EstadoPartida.Ruina)
 				{
-					contenedorJuego.cambiarAlternativa(estadoPartida);
 					contenedorJuego.panelCentral.panelFondo.cambiarAlternativa(estadoPartida);
 					contenedorJuego.panelLateral.cambiarAlternativa(estadoPartida);
 					Gestores.Partidas.Instancia.gestorPantallas.estadoPartida = estadoPartida;
