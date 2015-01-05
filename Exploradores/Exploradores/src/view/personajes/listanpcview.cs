@@ -30,7 +30,7 @@ namespace Personajes
 			{
 				npcs = new List<NPC>();
 				foreach(NPC npc in newNpcs)
-					if(npc.flyweight.edificioEncuentro.Equals(edificioSeleccionado))
+					if(npc.npcFlyweight.edificioEncuentro.Equals(edificioSeleccionado))
 						npcs.Add(npc);
 			}
 

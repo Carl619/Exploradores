@@ -15,6 +15,8 @@ namespace Mapa
 		// variables
 		public Mapa mapa { get; protected set; }
 		public LugarVisitable lugarSeleccionado { get; protected set; }
+		public ILSXNA.Container contenedorScroll { get; protected set; }
+		public InterfazGraficaMapa interfazMapas { get; protected set; }
 		public InterfazGrafica interfazLugares { get; protected set; }
 		public InterfazGrafica interfazRutas { get; protected set; }
 
@@ -28,6 +30,8 @@ namespace Mapa
 			
 			mapa = newMapa;
 			lugarSeleccionado = null;
+			contenedorScroll = null;
+			interfazMapas = null;
 			interfazLugares = null;
 			interfazRutas = null;
 
@@ -42,26 +46,36 @@ namespace Mapa
 			requestedContentUpdate = false;
 
 			callbackConfigObj = this;
-			onMousePress = Controller.mouseDeselectLugar;
+			onLeftMousePress = Controller.mouseDeselectLugar;
 
-			getCurrentAlternative().addLayer();
-			getCurrentAlternative().addLayer();
+			contenedorScroll = new ILSXNA.Container();
+			contenedorScroll.sizeSettings.fixedInnerWidth = Programa.VistaGeneral.Instancia.window.currentWidth - 372;
+			contenedorScroll.sizeSettings.fixedInnerHeight = Programa.VistaGeneral.Instancia.window.currentHeight - 59;
+			addComponent(contenedorScroll);
 
+			ILSXNA.Container contenedorInterior = new ILSXNA.Container();
+			contenedorScroll.addComponent(contenedorInterior);
+
+			contenedorInterior.getCurrentAlternative().addLayer();
+			contenedorInterior.getCurrentAlternative().addLayer();
+
+			interfazMapas = new InterfazGraficaMapa();
+			interfazMapas.border = (ILSXNA.Border)Gestores.Mundo.Instancia.borders["map1"].clone();
 			interfazLugares = new InterfazGrafica();
 			interfazRutas = new InterfazGrafica();
 			
-			setCurrentLayer(2);
-			addComponent(interfazLugares);
-			setCurrentLayer(1);
-			addComponent(interfazRutas);
-			setCurrentLayer(0);
-			
-			ILSXNA.Sprite interior = new ILSXNA.Sprite();
-			interior.innerComponent = mapa.imagenMapa;
-			addComponent(interior);
+			contenedorInterior.setCurrentLayer(2);
+			contenedorInterior.addComponent(interfazLugares);
+			contenedorInterior.setCurrentLayer(1);
+			contenedorInterior.addComponent(interfazRutas);
+			contenedorInterior.setCurrentLayer(0);
+			contenedorInterior.addComponent(interfazMapas);
 
 			actualizarRutas();
 			actualizarLugares();
+			actualizarImagenesMapa();
+
+			Programa.VistaGeneral.Instancia.scrollableContainer = contenedorScroll;
 		}
 
 
@@ -71,10 +85,12 @@ namespace Mapa
 
 			foreach(Ruta ruta in mapa.rutas)
 			{
+				if(ruta.oculto == true)
+					continue;
 				interfazRutas.getCurrentAlternative().addLayer();
 				++interfazRutas.getCurrentAlternative().defaultLayer;
 				bool parteCamino = false;
-				List<Dijkstra.IRama> camino = Programa.Jugador.Instancia.protagonista.camino;
+				List<Dijkstra.IRama> camino = Programa.Jugador.Instancia.protagonista.viaje.camino;
 				if(camino != null)
 					if(camino.Contains(ruta) == true)
 						parteCamino = true;
@@ -101,34 +117,42 @@ namespace Mapa
 
 			foreach(LugarVisitable lugar in mapa.lugares)
 			{
+				if(lugar.oculto == true)
+				{
+					if(lugar.esVisibleDesconocido() == false)
+					continue;
+				}
 				interfazLugares.getCurrentAlternative().addLayer();
 				++interfazLugares.getCurrentAlternative().defaultLayer;
 
 				Texture2D icono;
 				LugarVisitableView lugarView;
+				LugarVisitableFlyweight flyweight = lugar.flyweightLugar;
+				if(lugar.oculto == true)
+					flyweight = Gestores.Mundo.Instancia.lugarFlyweights["desconocido"];
 				lugarView = lugar.crearVista();
 				lugarView.callbackConfigObj = this;
-				lugarView.onMousePress = Controller.mouseSelectLugar;
+				lugarView.onLeftMousePress = Controller.mouseSelectLugar;
 
-				icono = lugar.flyweightLugar.iconoPasivo;
+				icono = flyweight.iconoPasivo;
 				if(icono == null)
 					icono = LugarVisitableFlyweight.iconoAusente;
-				lugarView.innerComponent.Add(icono);
+				lugarView.addTextura(icono);
 
-				icono = lugar.flyweightLugar.iconoActivo;
+				icono = flyweight.iconoActivo;
 				if(icono == null)
 					icono = LugarVisitableFlyweight.iconoAusente;
-				lugarView.innerComponent.Add(icono);
+				lugarView.addTextura(icono);
 
-				icono = lugar.flyweightLugar.iconoSeleccionado;
+				icono = flyweight.iconoSeleccionado;
 				if(icono == null)
 					icono = LugarVisitableFlyweight.iconoAusente;
-				lugarView.innerComponent.Add(icono);
+				lugarView.addTextura(icono);
 
-				icono = lugar.flyweightLugar.iconoActivoSeleccionado;
+				icono = flyweight.iconoActivoSeleccionado;
 				if(icono == null)
 					icono = LugarVisitableFlyweight.iconoAusente;
-				lugarView.innerComponent.Add(icono);
+				lugarView.addTextura(icono);
 				
 				interfazLugares.getCurrentAlternative().getCurrentLayer().offsetX =
 					(int)lugar.coordenadas.Item1 - (int)(lugarView.getMinOutterUnconstrainedWidth() / 2);
@@ -147,6 +171,35 @@ namespace Mapa
 						marcador.innerComponent = LugarVisitableFlyweight.iconoAusente;
 					marcador.displayOffsetX = - ((int)(lugarView.getMinOutterUnconstrainedWidth()) / 4);
 					interfazLugares.addComponent(marcador);
+				}
+			}
+		}
+
+
+		public void actualizarImagenesMapa()
+		{
+			interfazMapas.clearComponents();
+
+			ILSXNA.Sprite interior;
+			int i = 0, count = mapa.imagenesMapa.Count;
+			foreach(Texture2D textura in mapa.imagenesMapa)
+			{
+				ILSXNA.Container contenedor = new ILSXNA.Container(Gestores.Mundo.Instancia.borders["border2"]);
+				interfazMapas.addComponent(contenedor);
+
+				interior = new ILSXNA.Sprite();
+				interior.innerComponent = textura;
+				contenedor.addComponent(interior);
+				
+				interfazMapas.getCurrentAlternative().getCurrentLayer().offsetX =
+					(int)mapa.offsetsImagenesMapa[i].X;
+				interfazMapas.getCurrentAlternative().getCurrentLayer().offsetY =
+					(int)mapa.offsetsImagenesMapa[i].Y;
+				
+				if(++i != count)
+				{
+					interfazMapas.getCurrentAlternative().addLayer();
+					++interfazMapas.getCurrentAlternative().defaultLayer;
 				}
 			}
 		}

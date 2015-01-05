@@ -6,6 +6,7 @@
 	ciudad flyweight			: city1
 	lugar flyweight				: city1
 	lista flyweight				: list1
+	oculto						: false
 	imagenCiudad				: images/sprites/city/ciudad640x480
 	coordenada x				: 200
 	coordenada y				: 70
@@ -16,6 +17,7 @@
 	ciudad flyweight			: city1
 	lugar flyweight				: city1
 	lista flyweight				: list1
+	oculto						: false
 	imagenCiudad				: images/sprites/city/ciudad640x480
 	coordenada x				: 200
 	coordenada y				: 240
@@ -26,6 +28,7 @@
 	ciudad flyweight			: city1
 	lugar flyweight				: city1
 	lista flyweight				: list1
+	oculto						: false
 	imagenCiudad				: images/sprites/city/ciudad640x480
 	coordenada x				: 400
 	coordenada y				: 300

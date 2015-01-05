@@ -5,7 +5,6 @@ using System.Text;
 using Objetos;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Gestores;
 
 
 
@@ -22,6 +21,8 @@ namespace Ruinas
 		public Rectangle espacio { get; set; }
 		public RuinaJugable ruina { get; set; }
 		public List<Objeto> objetos { get; protected set; }
+		public List<Proyectil> proyectiles { get; protected set; }
+		public Dictionary<int, SpawnPersonaje> spawnPersonajes { get; protected set; }
 		public List<PersonajeRuina> personajes { get; protected set; }
 		public List<Puerta> puertas { get; protected set; }
 		public HabitacionView vista { get; protected set; }
@@ -37,6 +38,8 @@ namespace Ruinas
 			espacio = new Rectangle(0, 0, 1, 1);
 			ruina = null;
 			objetos = new List<Objeto>();
+			proyectiles = new List<Proyectil>();
+			spawnPersonajes = new Dictionary<int, SpawnPersonaje>();
 			personajes = new List<PersonajeRuina>();
 			puertas = new List<Puerta>();
 			vista = null;
@@ -59,6 +62,36 @@ namespace Ruinas
 												Convert.ToInt32(campos["alto"]));
 			
 			return habitacion;
+		}
+
+
+		public void actualizarTiempo(int tiempo)
+		{
+			foreach(Objeto objeto in objetos)
+				objeto.actualizarTiempo(tiempo);
+			foreach(Proyectil proyectil in proyectiles)
+				proyectil.actualizarTiempo(tiempo);
+			List<Proyectil> newProyectiles = new List<Proyectil>();
+			foreach(Proyectil proyectil in proyectiles)
+			{
+				if(proyectil.terminado == false)
+					newProyectiles.Add(proyectil);
+				else
+					vista.interfazObjetos.requestUpdateContent();
+			}
+			proyectiles = newProyectiles;
+		}
+
+
+		public void removePersonajesMuertos()
+		{
+			List<PersonajeRuina> nuevosPersonajes = new List<PersonajeRuina>();
+			foreach(PersonajeRuina personaje in personajes)
+			{
+				if(personaje.personaje.vivo == true)
+					nuevosPersonajes.Add(personaje);
+			}
+			personajes = nuevosPersonajes;
 		}
 
 
@@ -93,9 +126,10 @@ namespace Ruinas
 					nodos.Add(nodosObjetos[i]);
 			}
 
-			foreach (PersonajeRuina personaje in Partidas.Instancia.gestorRuinas.personajesRuinas.Values)
+			foreach (PersonajeRuina personaje in Gestores.Partidas.Instancia.gestorRuinas.ruinaActual.personajes)
 			{
-				if (personaje.habitacion == this && personaje.estado==Ruinas.PersonajeRuina.Estado.Parado)
+				if (personaje.habitacion == this &&
+					personaje.estado == Ruinas.PersonajeRuina.Estado.Parado)
 				{
 					nodosObjetos = personaje.nodos();
 					for (int i = 0; i < nodosObjetos.Count; i++)
@@ -122,6 +156,8 @@ namespace Ruinas
 					colision = false;
 					foreach (Objeto objeto in objetos)
 					{
+						if(objeto.esBloqueante() == false)
+							continue;
 						if(objeto == objetoDestino)
 							continue;
 						if (nodo2.colisiona(nodo1.coordenadas.Item1, nodo1.coordenadas.Item2, objeto))
@@ -131,11 +167,13 @@ namespace Ruinas
 						}
 					}
 
-					foreach (PersonajeRuina personaje in Partidas.Instancia.gestorRuinas.personajesRuinas.Values)
+					RuinaJugable ruina = Gestores.Partidas.Instancia.gestorRuinas.ruinaActual;
+					foreach (PersonajeRuina personaje in ruina.personajes)
 					{
-						if(personaje.habitacion==this
-							&& personaje.estado==Ruinas.PersonajeRuina.Estado.Parado
-							&& !Partidas.Instancia.gestorRuinas.ruinaActual.personajesSeleccionados.Contains(personaje))
+						PersonajeRuina personajeSeleccionado;
+						if(personaje.habitacion == this &&
+							personaje.estado == Ruinas.PersonajeRuina.Estado.Parado &&
+							!ruina.personajesSeleccionados.TryGetValue(personaje.id, out personajeSeleccionado))
 						if (nodo2.colisiona(nodo1.coordenadas.Item1, nodo1.coordenadas.Item2, personaje))
 						{
 							colision = true;

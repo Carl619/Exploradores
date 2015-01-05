@@ -73,26 +73,24 @@ namespace Gestores
 				throw new ArgumentNullException();
 			if(funcEsLista == null)
 				funcEsLista = noEsLista;
-			while (!file.EndOfStream)
+			
+			while(true)
 			{
-				while (true)
-				{
-					String line = file.ReadLine();
-					if (line == null)
-						return;
-					line = line.Trim();
-					if (line.Equals("{") == true)
-						break;
-				}
-
-				bool finObjetos = false;
-				while (finObjetos == false)
-				{
-					T myObj = readObject(file, funcCrear, funcEsLista, out finObjetos);
-					if (myObj == null)
-						continue;
-					Add(myObj.id, myObj);
-				}
+				String line = file.ReadLine();
+				if(line == null)
+					return;
+				line = line.Trim();
+				if(line.Equals("{") == true)
+					break;
+			}
+			
+			bool finObjetos = false;
+			while(finObjetos == false)
+			{
+				T myObj = readObject(file, funcCrear, funcEsLista, out finObjetos);
+				if(myObj == null)
+					continue;
+				Add(myObj.id, myObj);
 			}
 		}
 

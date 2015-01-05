@@ -17,7 +17,6 @@ namespace Ruinas
 		public InterfazGrafica interfazHabitaciones { get; protected set; }
 		public InterfazGrafica interfazPuertas { get; protected set; }
 		public InterfazRelojesView interfazRelojes { get; protected set; }
-		public Objetos.PanelInventarioRuina panelInventario { get; protected set; }
 		public List<Dijkstra.IRama> camino { get; set; }
 
 
@@ -33,10 +32,6 @@ namespace Ruinas
 			interfazPuertas = null;
 			interfazRelojes = null;
 			camino = null;
-			panelInventario = null;
-
-			alternativeNames.Add("vacio", 0);
-			alternativeNames.Add("inventario", 1);
 
 			updateContent();
 		}
@@ -48,12 +43,14 @@ namespace Ruinas
 			clearComponents();
 			requestedContentUpdate = false;
 			
+			ruina.removePersonajesMuertos();
+
 			interfazHabitaciones = new InterfazGrafica();
 			addComponent(interfazHabitaciones);
-
+			
 			getCurrentAlternative().addLayer();
 			getCurrentAlternative().addLayer();
-
+			
 			setCurrentLayer(1);
 			interfazPuertas = new InterfazGrafica();
 			addComponent(interfazPuertas);
@@ -62,13 +59,8 @@ namespace Ruinas
 			setCurrentLayer(2);
 			interfazRelojes = new InterfazRelojesView(ruina);
 			addComponent(interfazRelojes);
-			
-
-			setCurrentLayer(3);
-			panelInventario = new Objetos.PanelInventarioRuina();
-			addComponent(panelInventario);
 			setCurrentLayer(0);
-			
+
 			actualizarHabitaciones();
 			actualizarPuertas();
 			interfazRelojes.updateContent();
@@ -81,9 +73,6 @@ namespace Ruinas
 			
 			foreach (Habitacion habitacion in ruina.habitaciones)
 			{
-				interfazHabitaciones.getCurrentAlternative().addLayer();
-				++interfazHabitaciones.getCurrentAlternative().defaultLayer;
-
 				interfazHabitaciones.getCurrentAlternative().getCurrentLayer().offsetX =
 					(int)habitacion.espacio.X;
 				interfazHabitaciones.getCurrentAlternative().getCurrentLayer().offsetY =
@@ -92,6 +81,9 @@ namespace Ruinas
 				HabitacionView habitacionView;
 				habitacionView = habitacion.crearVista();
 				interfazHabitaciones.addComponent(habitacionView);
+
+				interfazHabitaciones.getCurrentAlternative().addLayer();
+				++interfazHabitaciones.getCurrentAlternative().defaultLayer;
 			}
 		}
 
@@ -113,18 +105,6 @@ namespace Ruinas
 				ObjetoView objetoView;
 				objetoView = puerta.crearVista(ruina);
 				interfazPuertas.addComponent(objetoView);
-			}
-		}
-
-		public void abrirInventario(bool showInventario)
-		{
-			if (showInventario)
-			{
-				setCurrentAlternative(alternativeNames["inventario"]);
-			}
-			else
-			{
-				setCurrentAlternative(alternativeNames["vacio"]);
 			}
 		}
 	}

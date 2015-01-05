@@ -15,17 +15,25 @@ namespace Personajes
 		public String nombre { get; set; }
 		public Dictionary<String, Habilidad> habilidades { get; protected set; }
 		public Dictionary<String, Atributo> atributos { get; protected set; }
-		public Objetos.Inventario inventario { get; set; }
+		public Ruinas.PersonajeRuinaFlyweight flyweightPersonajeRuina { get; set; }
+		public Gestores.Imagen avatarSeleccionado { get; set; }
+		public Gestores.Imagen avatar { get; set; }
+		public bool vivo { get; set; }
 
 
 		// constructor
-		public Personaje(String newID, String newNombre)
+		public Personaje(String newID, String newNombre, Ruinas.PersonajeRuinaFlyweight newFlyweightRuina)
 		{
+			if(newID == null || newNombre == null || newFlyweightRuina == null)
+				throw new ArgumentNullException();
 			id = String.Copy(newID);
 			nombre = String.Copy(newNombre);
 			habilidades = new Dictionary<String, Habilidad>();
 			atributos = new Dictionary<String, Atributo>();
-			inventario = null;
+			flyweightPersonajeRuina = newFlyweightRuina;
+			avatarSeleccionado = null;
+			avatar = null;
+			vivo = true;
 		}
 
 

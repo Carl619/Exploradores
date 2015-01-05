@@ -18,8 +18,11 @@ namespace Ruinas
 		// variables
 		public Habitacion habitacion { get; protected set; }
 		public ILSXNA.Container interfazHabitacion { get; protected set; }
+		public HabitacionObjetosView interfazObjetos { get; protected set; }
+		public HabitacionPersonajesView interfazPersonajes { get; protected set; }
 		public Rectangle boundingBox { get { return habitacion.espacio;  } }
 		public List<RuinaRama> ramas { get; set; }
+		public bool mostrarRamas { get; set; }
 
 
 		// constructor
@@ -31,8 +34,11 @@ namespace Ruinas
 			
 			habitacion = newHabitacion;
 			interfazHabitacion = null;
+			interfazObjetos = null;
+			interfazPersonajes = null;
 			ramas = null;
-			onMousePress = Controller.moverPersonaje;
+			mostrarRamas = false;
+			onRightMousePress = Controller.moverPersonaje;
 
 			updateContent();
 		}
@@ -44,38 +50,29 @@ namespace Ruinas
 			requestedContentUpdate = false;
 
 			interfazHabitacion = new ILSXNA.Container(Gestores.Mundo.Instancia.estilosHabitacion["room1"]);
+			interfazHabitacion.border.background.scrollableContainer = Programa.VistaGeneral.Instancia.scrollableContainer;
 			interfazHabitacion.sizeSettings.fixedInnerWidth = (uint)habitacion.espacio.Width;
 			interfazHabitacion.sizeSettings.fixedInnerHeight = (uint)habitacion.espacio.Height;
 			addComponent(interfazHabitacion);
 
-			foreach (Objeto objeto in habitacion.objetos)
-			{
-				getCurrentAlternative().addLayer();
-				++getCurrentAlternative().defaultLayer;
 
-				addComponent(objeto.crearVista(habitacion.ruina));
-
-				getCurrentAlternative().getCurrentLayer().offsetX =
-					(int)objeto.espacio.X;
-				getCurrentAlternative().getCurrentLayer().offsetY =
-					(int)objeto.espacio.Y;
-			}
-
-
-			foreach (PersonajeRuina personaje in habitacion.personajes)
-			{
-				getCurrentAlternative().addLayer();
-				++getCurrentAlternative().defaultLayer;
-
-				addComponent(personaje.crearVista());
-
-				getCurrentAlternative().getCurrentLayer().offsetX =
-					(int)personaje.posicion.X;
-				getCurrentAlternative().getCurrentLayer().offsetY =
-					(int)personaje.posicion.Y;
-			}
+			getCurrentAlternative().addLayer();
+			setCurrentLayer(1);
+			interfazObjetos = new HabitacionObjetosView(habitacion);
+			addComponent(interfazObjetos);
+			setCurrentLayer(0);
 			
-			if(ramas != null)
+			
+			getCurrentAlternative().addLayer();
+			setCurrentLayer(2);
+			interfazPersonajes = new HabitacionPersonajesView(habitacion);
+			addComponent(interfazPersonajes);
+			setCurrentLayer(0);
+
+			
+			getCurrentAlternative().addLayer();
+			setCurrentLayer(3);
+			if(ramas != null && mostrarRamas == true)
 			{
 				foreach(RuinaRama rama in ramas)
 				{
@@ -97,8 +94,13 @@ namespace Ruinas
 					addComponent(rutaView);
 				}
 			}
-			
 			setCurrentLayer(0);
+		}
+
+
+		public override void requestUpdateContent()
+		{
+			base.requestUpdateContent();
 		}
 	}
 }

@@ -22,11 +22,11 @@ namespace ILS
 		// public variables
 		public W innerWindow { get; set; }
 		public C container { get; set; }
-		public MouseEvent mouseEvent;
+		public MouseEvent leftMouseEvent;
+		public MouseEvent rightMouseEvent;
 		
 		public uint currentWidth;
 		public uint currentHeight;
-		public bool updated { get; private set; }
 
 		
 		// constructor
@@ -35,11 +35,12 @@ namespace ILS
 		{
 			innerWindow = default(W);
 			container = default(C);
-			mouseEvent = new MouseEvent();
+			leftMouseEvent = new MouseEvent();
+			rightMouseEvent = new MouseEvent();
+			rightMouseEvent.leftButton = false;
 
 			currentWidth = 0;
 			currentHeight = 0;
-			updated = false;
 		}
 		
 		
@@ -95,22 +96,27 @@ namespace ILS
 		public abstract void resize(uint width, uint height);
 		
 		
-		public virtual void mouseAction(int x, int y, MouseEvent.Type eventType, uint timer)
+		public virtual void mouseAction(int x, int y, MouseEvent.Type eventType, bool leftButton, uint timer)
 		{
+			MouseEvent mouseEvent;
+			if(leftButton == true)
+				mouseEvent = leftMouseEvent;
+			else
+				mouseEvent = rightMouseEvent;
 			mouseEvent.eventType = eventType;
 			mouseEvent.eventTime = timer;
 			
 			if(eventType == MouseEvent.Type.Press)
 			{
-				parseMousePressEvent(x, y, eventType, timer);
+				parseMousePressEvent(x, y, eventType, leftButton, timer);
 			}
 			else if(eventType == MouseEvent.Type.Release)
 			{
-				parseMouseReleaseEvent(x, y, eventType, timer);
+				parseMouseReleaseEvent(x, y, eventType, leftButton, timer);
 			}
 			else if(eventType == MouseEvent.Type.Move)
 			{
-				parseMouseMoveEvent(x, y, eventType, timer);
+				parseMouseMoveEvent(x, y, eventType, leftButton, timer);
 			}
 		}
 
@@ -133,11 +139,18 @@ namespace ILS
 		}
 
 
-		public virtual void parseMousePressEvent(int x, int y, MouseEvent.Type eventType, uint timer)
+		public virtual void parseMousePressEvent(int x, int y, MouseEvent.Type eventType, bool leftButton, uint timer)
 		{
 			if(eventType != MouseEvent.Type.Press)
 				return;
 			
+			MouseEvent mouseEvent;
+			if(leftButton == true)
+				mouseEvent = leftMouseEvent;
+			else
+				mouseEvent = rightMouseEvent;
+			
+
 			mouseEvent.actualPositionX = x;
 			mouseEvent.actualPositionY = y;
 			mouseEvent.pressedObject = null;
@@ -148,13 +161,14 @@ namespace ILS
 			mouseEvent.lastPressTime = mouseEvent.pressTime;
 			mouseEvent.pressTime = timer;
 			
+
 			// get pressable object
-			
 			List<Drawable> list = new List<Drawable>();
 			mouseAction(mouseEvent, list);
 			if(list.Any())
 				mouseEvent.pressedObject = list.Last();
 			
+
 			// get dragable object
 			list.Clear();
 			mouseEvent.eventType = MouseEvent.Type.Drag;
@@ -164,28 +178,60 @@ namespace ILS
 			
 			mouseEvent.eventType = MouseEvent.Type.Press;
 			
+
 			if(mouseEvent.dragableObject != null)
-				if(mouseEvent.dragableObject.onMouseGrab != null)
-					mouseEvent.dragableObject.onMouseGrab(mouseEvent.dragableObject,
-															mouseEvent,
-															mouseEvent.dragableObject.callbackConfigObj);
+			{
+				if(leftButton == true)
+				{
+					if(mouseEvent.dragableObject.onLeftMouseGrab != null)
+						mouseEvent.dragableObject.onLeftMouseGrab(mouseEvent.dragableObject,
+																mouseEvent,
+																mouseEvent.dragableObject.callbackConfigObj);
+				}
+				else
+				{
+					if(mouseEvent.dragableObject.onRightMouseGrab != null)
+						mouseEvent.dragableObject.onRightMouseGrab(mouseEvent.dragableObject,
+																mouseEvent,
+																mouseEvent.dragableObject.callbackConfigObj);
+				}
+			}
 			
+
 			if(mouseEvent.pressedObject != null)
 			{
-				if(mouseEvent.pressedObject.onMousePress != null)
+				if(leftButton == true)
 				{
-					mouseEvent.pressedObject.onMousePress(mouseEvent.pressedObject,
-															mouseEvent,
-															mouseEvent.pressedObject.callbackConfigObj);
+					if(mouseEvent.pressedObject.onLeftMousePress != null)
+					{
+						mouseEvent.pressedObject.onLeftMousePress(mouseEvent.pressedObject,
+																mouseEvent,
+																mouseEvent.pressedObject.callbackConfigObj);
+					}
+				}
+				else
+				{
+					if(mouseEvent.pressedObject.onRightMousePress != null)
+					{
+						mouseEvent.pressedObject.onRightMousePress(mouseEvent.pressedObject,
+																mouseEvent,
+																mouseEvent.pressedObject.callbackConfigObj);
+					}
 				}
 			}
 		}
 
 
-		public virtual void parseMouseReleaseEvent(int x, int y, MouseEvent.Type eventType, uint timer)
+		public virtual void parseMouseReleaseEvent(int x, int y, MouseEvent.Type eventType, bool leftButton, uint timer)
 		{
 			if(eventType != MouseEvent.Type.Release)
 				return;
+			
+			MouseEvent mouseEvent;
+			if(leftButton == true)
+				mouseEvent = leftMouseEvent;
+			else
+				mouseEvent = rightMouseEvent;
 			
 			mouseEvent.actualPositionX = x;
 			mouseEvent.actualPositionY = y;
@@ -201,34 +247,83 @@ namespace ILS
 					eventType = MouseEvent.Type.DoubleClick;
 			
 			
-			if(mouseEvent.dragableObject != null)
-				if(mouseEvent.dragableObject.onMouseDrop != null)
-					mouseEvent.dragableObject.onMouseDrop(mouseEvent.dragableObject,
-															mouseEvent,
-															mouseEvent.dragableObject.callbackConfigObj);
+			if(leftButton == true)
+			{
+				if(mouseEvent.dragableObject != null)
+					if(mouseEvent.dragableObject.onLeftMouseDrop != null)
+						mouseEvent.dragableObject.onLeftMouseDrop(mouseEvent.dragableObject,
+																mouseEvent,
+																mouseEvent.dragableObject.callbackConfigObj);
+			}
+			else
+			{
+				if(mouseEvent.dragableObject != null)
+					if(mouseEvent.dragableObject.onRightMouseDrop != null)
+						mouseEvent.dragableObject.onRightMouseDrop(mouseEvent.dragableObject,
+																mouseEvent,
+																mouseEvent.dragableObject.callbackConfigObj);
+			}
+
+
 			if(eventType == MouseEvent.Type.Release)
 			{
 				if(mouseEvent.pressedObject != null && mouseEvent.pressedObject != mouseEvent.dragableObject)
-					if(mouseEvent.pressedObject.onMouseRelease != null)
-						mouseEvent.pressedObject.onMouseRelease(mouseEvent.pressedObject,
-																mouseEvent,
-																mouseEvent.pressedObject.callbackConfigObj);
+				{
+					if(leftButton == true)
+					{
+						if(mouseEvent.pressedObject.onLeftMouseRelease != null)
+							mouseEvent.pressedObject.onLeftMouseRelease(mouseEvent.pressedObject,
+																	mouseEvent,
+																	mouseEvent.pressedObject.callbackConfigObj);
+					}
+					else
+					{
+						if(mouseEvent.pressedObject.onRightMouseRelease != null)
+							mouseEvent.pressedObject.onRightMouseRelease(mouseEvent.pressedObject,
+																	mouseEvent,
+																	mouseEvent.pressedObject.callbackConfigObj);
+					}
+				}
 				
 				if(mouseEvent.droppedUponObject != null && mouseEvent.droppedUponObject != mouseEvent.dragableObject &&
 					mouseEvent.droppedUponObject != mouseEvent.pressedObject)
-					if(mouseEvent.droppedUponObject.onMouseRelease != null)
-						mouseEvent.droppedUponObject.onMouseRelease(mouseEvent.droppedUponObject,
-																	mouseEvent,
-																	mouseEvent.droppedUponObject.callbackConfigObj);
+				{
+					if(leftButton == true)
+					{
+						if(mouseEvent.droppedUponObject.onLeftMouseRelease != null)
+							mouseEvent.droppedUponObject.onLeftMouseRelease(mouseEvent.droppedUponObject,
+																		mouseEvent,
+																		mouseEvent.droppedUponObject.callbackConfigObj);
+					}
+					else
+					{
+						if(mouseEvent.droppedUponObject.onRightMouseRelease != null)
+							mouseEvent.droppedUponObject.onRightMouseRelease(mouseEvent.droppedUponObject,
+																		mouseEvent,
+																		mouseEvent.droppedUponObject.callbackConfigObj);
+					}
+				}
 			}
 			else if(eventType == MouseEvent.Type.DoubleClick)
 			{
 				mouseEvent.eventType = MouseEvent.Type.DoubleClick;
 				if(mouseEvent.droppedUponObject != null)
-					if(mouseEvent.droppedUponObject.onMouseDoubleClick != null)
-						mouseEvent.droppedUponObject.onMouseDoubleClick(mouseEvent.droppedUponObject,
-																	mouseEvent,
-																	mouseEvent.droppedUponObject.callbackConfigObj);
+				{
+					if(leftButton == true)
+					{
+						if(mouseEvent.droppedUponObject.onLeftMouseDoubleClick != null)
+							mouseEvent.droppedUponObject.onLeftMouseDoubleClick(mouseEvent.droppedUponObject,
+																		mouseEvent,
+																		mouseEvent.droppedUponObject.callbackConfigObj);
+					}
+					else
+					{
+						if(mouseEvent.droppedUponObject.onRightMouseDoubleClick != null)
+							mouseEvent.droppedUponObject.onRightMouseDoubleClick(mouseEvent.droppedUponObject,
+																		mouseEvent,
+																		mouseEvent.droppedUponObject.callbackConfigObj);
+					}
+				}
 			}
 
 			mouseEvent.lastPressedObject = mouseEvent.pressedObject;
@@ -238,10 +333,16 @@ namespace ILS
 		}
 
 
-		public virtual void parseMouseMoveEvent(int x, int y, MouseEvent.Type eventType, uint timer)
+		public virtual void parseMouseMoveEvent(int x, int y, MouseEvent.Type eventType, bool leftButton, uint timer)
 		{
 			if(eventType != MouseEvent.Type.Move)
 				return;
+			
+			MouseEvent mouseEvent;
+			if(leftButton == true)
+				mouseEvent = leftMouseEvent;
+			else
+				mouseEvent = rightMouseEvent;
 			
 			if(mouseEvent.actualPositionX == x &&
 				mouseEvent.actualPositionY == y)
@@ -253,10 +354,20 @@ namespace ILS
 			if(mouseEvent.dragableObject != null) // drag action
 			{
 				mouseEvent.eventType = MouseEvent.Type.Drag;
-				if(mouseEvent.dragableObject.onMouseDrag != null)
-					mouseEvent.dragableObject.onMouseDrag(mouseEvent.dragableObject,
-															mouseEvent,
-															mouseEvent.dragableObject.callbackConfigObj);
+				if(leftButton == true)
+				{
+					if(mouseEvent.dragableObject.onLeftMouseDrag != null)
+						mouseEvent.dragableObject.onLeftMouseDrag(mouseEvent.dragableObject,
+																mouseEvent,
+																mouseEvent.dragableObject.callbackConfigObj);
+				}
+				else
+				{
+					if(mouseEvent.dragableObject.onRightMouseDrag != null)
+						mouseEvent.dragableObject.onRightMouseDrag(mouseEvent.dragableObject,
+																mouseEvent,
+																mouseEvent.dragableObject.callbackConfigObj);
+				}
 			}
 			else // mouseover and mouseout actions
 			{
@@ -286,7 +397,7 @@ namespace ILS
 				if(flag == true)
 				{
 					if(i.onMouseOut != null)
-						i.onMouseOut(i, mouseEvent, i.callbackConfigObj);
+						i.onMouseOut(i, leftMouseEvent, i.callbackConfigObj);
 				}
 				else
 					++counter;
@@ -303,7 +414,7 @@ namespace ILS
 			foreach(Drawable i in newList)
 			{
 				if(i.onMouseOver != null)
-					i.onMouseOver(i, mouseEvent, i.callbackConfigObj);
+					i.onMouseOver(i, leftMouseEvent, i.callbackConfigObj);
 			}
 		}
 	}

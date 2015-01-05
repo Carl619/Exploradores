@@ -50,9 +50,9 @@ namespace Ruinas
 
 		
 		// funciones
-		public void resetReloj(int tiempoMundo)
+		public void resetReloj(int tiempoAccionesMinimas)
 		{
-			tiempoInicial = tiempoMundo;
+			tiempoInicial = tiempoAccionesMinimas;
 			tiempoActual = 0.0f;
 			haTerminado = false;
 		}
@@ -66,23 +66,23 @@ namespace Ruinas
 		}
 
 
-		public void setTiempoTotal(int tiempoTotal)
+		public void setTiempoTotal(int tiempoAccionesMinimas)
 		{
-			if(tiempoTotal > 0)
-				velocidad = 1.0f / (float)tiempoTotal;
+			if(tiempoAccionesMinimas > 0)
+				velocidad = 1.0f / (float)tiempoAccionesMinimas;
 			else
 				velocidad = 1.0f;
 		}
 
 
-		public void actualizarTiempo(int tiempoMundo)
+		public void actualizarTiempo(int tiempoAccionesMinimas)
 		{
 			if(haTerminado == true)
 			{
 				tiempoActual = 0.99f;
 				return;
 			}
-			float newTiempo = velocidad * (float)(tiempoMundo - tiempoInicial);
+			float newTiempo = velocidad * (float)(tiempoAccionesMinimas - tiempoInicial);
 			while(newTiempo < 0.0f)
 				newTiempo += 1.0f;
 			if(newTiempo >= 1.0f)

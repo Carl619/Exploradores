@@ -22,6 +22,9 @@ namespace Interaccion
 				throw new ArgumentNullException();
 			menuOriginal = newMenu;
 			menu = getMenuNuevo(menuOriginal, cadenasRegex);
+
+			if(menu.evento != null)
+				menu.evento.ejecutar(menu.argumentosEvento);
 		}
 
 
@@ -60,14 +63,25 @@ namespace Interaccion
 			if(opcion < 0 || opcion >= ((MenuDialogo)menu).dialogo.Count)
 				return;
 			
-			List<String> ejecutarOpcion = new List<string>();
 			ElementoDialogo e = ((MenuDialogo)menu).dialogo[opcion];
-			ejecutarOpcion.Add(e.titulo);
+			if(e.visible == false)
+				return;
+			List<Evento.Argumento> argumentos = new List<Evento.Argumento>();
+			argumentos.Add(new Evento.Argumento(e.id));
+			argumentos.Add(new Evento.Argumento(menu.id));
+			argumentos.AddRange(e.argumentosEvento);
 
 			if(e.evento != null)
-				e.evento.ejecutar(ejecutarOpcion);
+				e.evento.ejecutar(argumentos);
 			if(e.bloquearNavegacion == false)
 				menu = e;
+			
+			Interaccion.Mision.Evento evento = Interaccion.Mision.Evento.ElementoDialogo;
+			Interaccion.Mision.InfoEvento info = new Interaccion.Mision.InfoEvento();
+			info.elementoDialogo = e;
+			Gestores.Partidas.Instancia.gestorMisiones.notify(evento, info);
+			if(menu.GetType() == typeof(MenuDialogo))
+				((MenuDialogo)menu).ordenarDialogoInvisible();
 		}
 	}
 }

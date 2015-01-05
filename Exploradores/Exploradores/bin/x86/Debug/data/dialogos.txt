@@ -5,13 +5,13 @@
 	titulo						: 
 	texto						: Estas hablando con un vendedor.
 	entradas					: 1
-		8 | Comprar y vender | Error: esto no se debe mostrar | comercio | true
+		9 | true | Comprar y vender | Error: esto no se debe mostrar | abrirComercio | true
 
 	id							: reclutamiento1
 	titulo						: 
 	texto						: Estas hablando con un mercenario.
 	entradas					: 1
-		9 | Reclutar (Precio: [$precio]) | Error: esto no se debe mostrar | reclutamiento | true
+		10 | true | Reclutar (Precio: [$precio]) | Error: esto no se debe mostrar | reclutar | true
 
 
 	id							: 3
@@ -42,6 +42,29 @@
 	titulo						: Titulo menu 7
 	texto						: Texto menu 7
 	entradas					: 0
+
+
+	id							: 8
+	titulo						: Conversacion con Grima (no muy interesante)
+	texto						: En la taberna de Isengard encuentras a Grima.
+	entradas					: 1
+		11 | true | Preguntar donde esta Saruman | "Saruman se ha ido a Minas Tirith hace un rato, a la gran biblioteca nacional ... de manga."
+
+	id							: 12
+	titulo						: Te encuentras en la biblioteca de Minas Tirith
+	texto						: Saruman esta ocupado leyendo Manga.
+	argumentosEvento			: 6
+		15
+		12
+		16
+		12
+		idDiamantes
+		1
+	entradas					: 4
+		13 | true | "Tio, he visto que me has dejado una llamada perdida." | "Lo siento, me he equivocado, queria llamar a otra persona."
+		14 | true | "Veo que estas leyendo manga." | "Si. Mira, si me quieres ayudar podrias ir a la tienda para comprarme estas cosas." Recojo una lista que esta encima de la mesa. | empezarMision | false | 2
+		15 | false | "Ya tengo tus compras." | "Gracias, tengo un pago preparado para ti." | relizarIntercambioUnico | false | ## idDiamantes, 1 | ## idMonedasOro, 3, idMonedasPlata, 8
+		16 | false | "Donde puedo encontrar diamantes?" | "Hay diamantes en el mercado de Rivendell."
 }
 
 

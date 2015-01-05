@@ -27,5 +27,19 @@
 	contentSpacingX			: 0
 	contentSpacingY			: 0
 	backgroundTransparency	: 0.04
+
+
+	id						: ruin1
+	flyweight				: ruin1
+	contentSpacingX			: 0
+	contentSpacingY			: 0
+	backgroundTransparency	: 0.04
+
+
+	id						: map1
+	flyweight				: map1
+	contentSpacingX			: 0
+	contentSpacingY			: 0
+	backgroundTransparency	: 0.04
 }
 

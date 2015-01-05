@@ -151,21 +151,39 @@ namespace Programa
 			Gestores.Partidas.Instancia.gestorPantallas.estadoInformacion =
 				Gestores.Pantallas.EstadoInformacion.Visible;
 			vistaInformacion.visible = true;
+			
+			SpriteFont fuente = Gestores.Mundo.Instancia.fuentes["genericSpriteFont"];
+			Mapa.MapaViewCentro mapaView =
+				Programa.VistaGeneral.Instancia.contenedorJuego.panelCentral.panelFondo.vistaMapa;
+			ILSXNA.Label texto;
 
-
-			foreach(String frase in info)
+			bool desconocido = true;
+			if(Gestores.Partidas.Instancia.gestorPantallas.estadoPartida ==
+				Gestores.Pantallas.EstadoPartida.Ciudad)
+				desconocido = false;
+			else if(mapaView.lugarSeleccionado.oculto == false)
+				desconocido = false;
+			if(desconocido == false)
 			{
-				SpriteFont fuente;
-				fuente = Gestores.Mundo.Instancia.fuentes["genericSpriteFont"];
-				
-				ILSXNA.Label texto = new ILSXNA.Label();
+				foreach(String frase in info)
+				{
+					texto = new ILSXNA.Label();
+					texto.innerComponent = fuente;
+					texto.color = Gestores.Mundo.Instancia.colores["genericColor"];
+					texto.message = (String)frase.Clone();
+					ILSXNA.Paragraph par = new ILSXNA.Paragraph(texto, anchoSeleccion);
+					vistaInformacion.addComponent(par);
+				}
+			}
+			else
+			{
+				texto = new ILSXNA.Label();
 				texto.innerComponent = fuente;
 				texto.color = Gestores.Mundo.Instancia.colores["genericColor"];
-				texto.message = (String)frase.Clone();
+				texto.message = "Este es un lugar que todavia no conoces. Para obtener mas informacion tienes que viajar hasta alli.";
 				ILSXNA.Paragraph par = new ILSXNA.Paragraph(texto, anchoSeleccion);
 				vistaInformacion.addComponent(par);
 			}
-
 
 			ILSXNA.Button boton = new ILSXNA.Button("Cerrar", Gestores.Mundo.Instancia.buttonFlyweights["button1"]);
 			boton.icons.Add(Gestores.Mundo.Instancia.imagenes["cancel"].textura);

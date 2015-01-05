@@ -15,6 +15,14 @@
 	iconoSeleccionado			: images/sprites/map/ruina_c
 	iconoActivoSeleccionado		: images/sprites/map/ruina_d
 	nombreTipoLugar				: Ruina
+
+
+	id							: desconocido
+	iconoPasivo					: images/sprites/map/desconocido_a
+	iconoActivo					: images/sprites/map/desconocido_b
+	iconoSeleccionado			: images/sprites/map/desconocido_c
+	iconoActivoSeleccionado		: images/sprites/map/desconocido_d
+	nombreTipoLugar				: Lugar desconocido
 }
 
 

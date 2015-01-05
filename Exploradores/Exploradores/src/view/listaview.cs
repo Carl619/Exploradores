@@ -139,14 +139,14 @@ namespace Programa
 			{
 				flecha = flyweight.flechaIzquierdaActivada.clone();
 				flecha.callbackConfigObj = this;
-				flecha.onMousePress = activacionFlecha;
-				flecha.onMouseRelease = null;
+				flecha.onLeftMousePress = activacionFlecha;
+				flecha.onLeftMouseRelease = null;
 			}
 			else
 			{
 				flecha = flyweight.flechaIzquierdaDesactivada.clone();
-				flecha.onMousePress = null;
-				flecha.onMouseRelease = null;
+				flecha.onLeftMousePress = null;
+				flecha.onLeftMouseRelease = null;
 			}
 			flechaIzquierda = null;
 			if(mostrarFlechasVacio == true || existePaginaAnterior() == true || existePaginaSiguiente() == true)
@@ -167,17 +167,21 @@ namespace Programa
 			{
 				flecha = flyweight.flechaDerechaActivada.clone();
 				flecha.callbackConfigObj = this;
-				flecha.onMousePress = activacionFlecha;
-				flecha.onMouseRelease = null;
+				flecha.onLeftMousePress = activacionFlecha;
+				flecha.onLeftMouseRelease = null;
 			}
 			else
 			{
 				flecha = flyweight.flechaDerechaDesactivada.clone();
-				flecha.onMousePress = null;
-				flecha.onMouseRelease = null;
+				flecha.onLeftMousePress = null;
+				flecha.onLeftMouseRelease = null;
 			}
-			flechaDerecha = flecha;
-			panelNavegacion.addComponent(flecha);
+			flechaDerecha = null;
+			if(mostrarFlechasVacio == true || existePaginaAnterior() == true || existePaginaSiguiente() == true)
+			{
+				panelNavegacion.addComponent(flecha);
+				flechaDerecha = flecha;
+			}
 
 			panelNavegacion.addComponent(titulo);
 		}
@@ -195,15 +199,15 @@ namespace Programa
 				if(index < nElementosAnteriores)
 				{
 					++index;
-					comp.onMousePress = null;
+					comp.onLeftMousePress = null;
 					continue;
 				}
 				if(index >= nElementosAnteriores + nElementos)
 					break;
 				
 				comp.updateContent();
-				comp.onMousePress = seleccionElemento;
-				comp.onMouseDoubleClick = seleccionDobleElemento;
+				comp.onLeftMousePress = seleccionElemento;
+				comp.onLeftMouseDoubleClick = seleccionDobleElemento;
 				comp.callbackConfigObj = this;
 				contenedorElementos.addComponent(comp);
 				++index;
@@ -247,7 +251,7 @@ namespace Programa
 		}
 
 
-		public void seleccionarElemento(Elemento elemento, bool doble)
+		public virtual void seleccionarElemento(Elemento elemento, bool doble)
 		{
 			guardarReferenciaSeleccion(elemento);
 			requestUpdateContent();
@@ -258,7 +262,7 @@ namespace Programa
 		}
 
 
-		public void deseleccionarElemento(Elemento elemento)
+		public virtual void deseleccionarElemento(Elemento elemento)
 		{
 			guardarReferenciaSeleccion(elemento);
 			requestUpdateContent();

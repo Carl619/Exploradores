@@ -8,7 +8,7 @@ namespace Interaccion
 {
 	
 
-	public abstract class Evento
+	public abstract partial class Evento
 	{
 		// variables
 		public String id { get; set; }
@@ -26,7 +26,7 @@ namespace Interaccion
 		
 		
 		// funciones
-		public abstract void ejecutar(List<String> valoresEntrada);
+		public abstract void ejecutar(List<Argumento> valoresEntrada);
 	}
 }
 

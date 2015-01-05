@@ -48,23 +48,23 @@ namespace Programa
 
 			vista.flechaDerechaActivada = new ILSXNA.MultiSprite();
 			texture = Exploradores.Instancia.Content.Load<Texture2D>(campos["flechaDerechaActivada 1"]);
-			vista.flechaDerechaActivada.innerComponent.Add(texture);
+			vista.flechaDerechaActivada.addTextura(texture);
 			texture = Exploradores.Instancia.Content.Load<Texture2D>(campos["flechaDerechaActivada 2"]);
-			vista.flechaDerechaActivada.innerComponent.Add(texture);
+			vista.flechaDerechaActivada.addTextura(texture);
 
 			vista.flechaIzquierdaActivada = new ILSXNA.MultiSprite();
 			texture = Exploradores.Instancia.Content.Load<Texture2D>(campos["flechaIzquierdaActivada 1"]);
-			vista.flechaIzquierdaActivada.innerComponent.Add(texture);
+			vista.flechaIzquierdaActivada.addTextura(texture);
 			texture = Exploradores.Instancia.Content.Load<Texture2D>(campos["flechaIzquierdaActivada 2"]);
-			vista.flechaIzquierdaActivada.innerComponent.Add(texture);
+			vista.flechaIzquierdaActivada.addTextura(texture);
 
 			vista.flechaDerechaDesactivada = new ILSXNA.MultiSprite();
 			texture = Exploradores.Instancia.Content.Load<Texture2D>(campos["flechaDerechaDesactivada"]);
-			vista.flechaDerechaDesactivada.innerComponent.Add(texture);
+			vista.flechaDerechaDesactivada.addTextura(texture);
 
 			vista.flechaIzquierdaDesactivada = new ILSXNA.MultiSprite();
 			texture = Exploradores.Instancia.Content.Load<Texture2D>(campos["flechaIzquierdaDesactivada"]);
-			vista.flechaIzquierdaDesactivada.innerComponent.Add(texture);
+			vista.flechaIzquierdaDesactivada.addTextura(texture);
 
 			vista.spriteFont = Gestores.Gestor<ListaViewFlyweight>.parseFont(campos["spriteFont"]);
 

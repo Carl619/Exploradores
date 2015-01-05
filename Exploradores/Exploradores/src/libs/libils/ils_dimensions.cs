@@ -47,6 +47,9 @@ namespace ILS
 		public uint minOutterInheritedY { get; set; }
 		public uint minOutterConstrainedX { get; set; }
 		public uint minOutterConstrainedY { get; set; }
+
+		public uint afterMinimizeOutterX { get { return minOutterConstrainedX; } }
+		public uint afterMinimizeOutterY { get { return minOutterConstrainedY; } }
 		public Table table { get; set; }
 		
 		
@@ -252,7 +255,7 @@ namespace ILS
 								ClipBox containerClipBox,
 								Layout layout)
 			{
-				if (layout.horizontalFlow == Layout.Flow.RightOrLowerFlow)
+				if (layout.horizontalFlow == Layout.Flow.RightOrBottomFlow)
 				{
 					if (xPos >= containerClipBox.width)
 						width = 0;
@@ -267,7 +270,7 @@ namespace ILS
 						width = (uint)xPos;
 				}
 				
-				if (layout.verticalFlow == Layout.Flow.RightOrLowerFlow)
+				if (layout.verticalFlow == Layout.Flow.RightOrBottomFlow)
 				{
 					if (yPos >= containerClipBox.height)
 						height = 0;

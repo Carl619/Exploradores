@@ -41,7 +41,7 @@ namespace Mapa
 				boton.icons.Add(edificio.iconoProfesion);
 			boton.updateContent();
 			boton.sizeSettings.minInnerWidth = edificio.anchoEdificioView;
-			boton.onMousePress = null;
+			boton.onLeftMousePress = null;
 			addComponent(boton);
 		}
 	}

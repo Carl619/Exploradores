@@ -4,13 +4,14 @@ using System.Linq;
 using System.Text;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Gestores;
 
 
 
 
 namespace Ruinas
 {
+	
+	
 	public partial class PersonajeRuina : Gestores.IObjetoIdentificable
 	{
 		// enumeraciones
@@ -30,6 +31,7 @@ namespace Ruinas
 		// variables
 		public static int ancho = 24;
 		public static int alto = 24;
+		public static uint espacioInventario = 30;
 		public String id { get { return personaje.id; } }
 		public Personajes.Personaje personaje { get; set; }
 		
@@ -46,27 +48,26 @@ namespace Ruinas
 		public Rectangle posicion { get; set; }
 		public Rectangle posicionAnterior { get; set; }
 		public Estado estado { get; protected set; }
-		public Movimiento movimiento { get; protected set; }
-		public int tiempoActual { get; protected set; }
-		public float velocidadMovimiento { get;  set; } // pixeles / unidadTiempo
-		public uint velocidadAnimacion { get;  set; } // milisegundos / imagen
 		public Texture2D imagenActual { get; set; }
-		public Texture2D imagenParado { get; set; }
-		public List<Texture2D> imagenesMovimiento { get; set; }
+		
+		public int prioridad { get; set; }
+		public int tiempoActual { get; protected set; }
+		public int tiempoEspera { get; set; }
+		public Movimiento movimiento { get; protected set; }
 		public Movimiento movimientoBackUp { get; set; }
-		public RuinaJugable ruina { get; set; }
-		public Habitacion habitacion { get; set; }
 		public List<Dijkstra.IRama> camino { get; set; }
 		public List<Dijkstra.IRama> caminoBackUp { get; set; }
+		public RuinaNodo destino { get; set; }
+		public RuinaNodo destinoBackUp { get; set; }
+
+		public RuinaJugable ruina { get; set; }
+		public Habitacion habitacion { get; set; }
+		public Objetos.Inventario inventario { get; set; }
 		public Reloj reloj { get; set; }
 		public Objeto objetoInteraccionable { get; protected set; }
 		public bool colisionFinal { get; protected set; }
 		protected Reloj.CallbackFinReloj accionReloj { get; set; }
 		protected PersonajeRuinaView vista { get; set; }
-		public int prioridad { get; set; }
-		public RuinaNodo destino { get; set; }
-		public RuinaNodo destinoBackUp { get; set; }
-		public int tiempoEspera { get; set; }
 
 
 		// constructor
@@ -78,29 +79,28 @@ namespace Ruinas
 			personaje = newPersonaje;
 
 			posicion = new Rectangle(0, 0, ancho, alto);
+			posicionAnterior = new Rectangle(0, 0, ancho, alto);
 			estado = Estado.Parado;
-			movimiento = null;
-			tiempoActual = 0;
-			velocidadMovimiento = 0.18f;
-			velocidadAnimacion = 500;
 			imagenActual = null;
-			imagenParado = null;
-			imagenesMovimiento = new List<Texture2D>();
+			
+			prioridad = 0;
+			tiempoActual = 0;
+			tiempoEspera = 0;
+			movimiento = null;
+			movimientoBackUp = null;
+			camino = null;
+			caminoBackUp = null;
+			destino = null;
+			destinoBackUp = null;
 
 			ruina = null;
 			habitacion = newHabitacion;
-			camino = null;
+			inventario = null;
 			reloj = null;
 			objetoInteraccionable = null;
 			colisionFinal = false;
 			accionReloj = null;
 			vista = null;
-			prioridad = 0;
-			tiempoEspera = 0;
-			destino = null;
-			destinoBackUp = null;
-			caminoBackUp = null;
-			movimientoBackUp = null;
 		}
 
 
@@ -115,47 +115,45 @@ namespace Ruinas
 				Gestores.Partidas.Instancia.gestorRuinas.habitaciones[campos["habitacion"]];
 			
 			personaje = new PersonajeRuina(protagonista, habitacion);
+			personaje.prioridad = Convert.ToInt32(campos["prioridad"]);
 			personaje.posicion = new Rectangle(Convert.ToInt32(campos["coordenada x"]),
 										Convert.ToInt32(campos["coordenada y"]),
 										Ruinas.PersonajeRuina.ancho,
 										Ruinas.PersonajeRuina.alto);
 			
-			personaje.velocidadMovimiento = Gestores.Mundo.parseFloat(campos["velocidadMovimiento"]);
-			personaje.velocidadAnimacion = Convert.ToUInt32(campos["velocidadAnimacion"]);
-			String nombre = "images/sprites/ruin/personajes/" + campos["carpeta"] + "/parado";
-			personaje.imagenParado = Programa.Exploradores.Instancia.Content.Load<Texture2D>(@nombre);
-			personaje.imagenParado.Name = "parado";
-			for (int i = 0; i < Convert.ToInt32(campos["numero imagenes"]); ++i)
-			{
-				nombre = "images/sprites/ruin/personajes/" + campos["carpeta"] + "/" + "movimiento" + i.ToString();
-				personaje.imagenesMovimiento.Add(Programa.Exploradores.Instancia.Content.Load<Texture2D>(@nombre));
-				personaje.imagenesMovimiento[i].Name = "movimiento" + i.ToString();
-			}
-			personaje.imagenActual = personaje.imagenParado;
-			
-			habitacion.personajes.Add(personaje);
-			personaje.ruina = ruina;
+			personaje.imagenActual = personaje.personaje.flyweightPersonajeRuina.imagenParado;
 
-			personaje.prioridad = Convert.ToInt32(campos["prioridad"]);
+			personaje.inventario = Gestores.Partidas.Instancia.inventarios[campos["inventario"]];
+			habitacion.personajes.Add(personaje);
+			ruina.personajes.Add(personaje);
+			personaje.ruina = ruina;
 
 			return personaje;
 		}
 
+
 		public RuinaNodo colisionPersonaje()
 		{
-			foreach(PersonajeRuina personaje in Partidas.Instancia.gestorRuinas.personajesRuinas.Values)
-				if(personaje.estado==Estado.Moviendo)
-					if(this!=personaje)
-				if (posicion.Intersects(personaje.posicion))
+			foreach(PersonajeRuina personaje in Gestores.Partidas.Instancia.gestorRuinas.ruinaActual.personajes)
+			{
+				if(personaje.estado == Estado.Moviendo)
 				{
-					if (prioridad < personaje.prioridad)
+					if(this != personaje)
 					{
-						estado = Estado.Colision;
-						return personaje.destino;
+						if (posicion.Intersects(personaje.posicion))
+						{
+							if (prioridad < personaje.prioridad)
+							{
+								estado = Estado.Colision;
+								return personaje.destino;
+							}
+						}
 					}
 				}
+			}
 			return null;
 		}
+
 
 		public void caminoDeVuelta(RuinaNodo dest)
 		{
@@ -166,7 +164,6 @@ namespace Ruinas
 			foreach (Puerta puerta in ruina.puertas)
 			{
 				puerta.generarNodosYRamas();
-				puerta.rama.cambioHabitacion = true;
 			}
 
 			List<RuinaNodo> nodosTotales = new List<RuinaNodo>();
@@ -237,8 +234,8 @@ namespace Ruinas
 
 			else
 			moverBackUp(caminoMinimo, origen);
-
 		}
+
 
 		public void actualizarTiempo(int tiempoMundo)
 		{
@@ -251,7 +248,7 @@ namespace Ruinas
 			if (estado != Estado.Interactuando)
 			{
 				if (estado == Estado.Esperando) {
-					if (tiempoMundo - tiempoEspera > 500)
+					if (tiempoMundo - tiempoEspera > 20)
 					{
 						movimientoBackUp = null;
 						caminoBackUp = null;
@@ -340,6 +337,31 @@ namespace Ruinas
 		}
 
 
+		public virtual List<RuinaNodo> nodos()
+		{
+			List<RuinaNodo> nodos = new List<RuinaNodo>();
+
+			nodos.Add(new RuinaNodo(
+						new Tuple<int, int>(
+							posicion.X - PersonajeRuina.ancho / 2,
+							posicion.Y - PersonajeRuina.alto / 2)));
+			nodos.Add(new RuinaNodo(
+						new Tuple<int, int>(
+							posicion.X - PersonajeRuina.ancho / 2,
+							posicion.Y + PersonajeRuina.alto / 2 + posicion.Height)));
+			nodos.Add(new RuinaNodo(
+						new Tuple<int, int>(
+							posicion.X + PersonajeRuina.ancho / 2 + posicion.Width,
+							posicion.Y - PersonajeRuina.alto / 2)));
+			nodos.Add(new RuinaNodo(
+						new Tuple<int, int>(
+							posicion.X + PersonajeRuina.ancho / 2 + posicion.Width,
+							posicion.Y + PersonajeRuina.alto / 2 + posicion.Height)));
+
+			return nodos;
+		}
+
+
 		public void finReloj()
 		{
 			if(estado == Estado.Interactuando)
@@ -347,9 +369,8 @@ namespace Ruinas
 				estado = Estado.Parado;
 				objetoInteraccionable = null;
 			}
-
 		}
-
+		
 		protected bool colisionBackUp(int x, int y)
 		{
 			Rectangle rectangulo = new Rectangle(x, y,posicion.Width, posicion.Height);
@@ -360,12 +381,13 @@ namespace Ruinas
 				if(rectangulo.Intersects(objeto.espacio)) return true;
 			}
 
-			foreach(PersonajeRuina personaje in Partidas.Instancia.gestorRuinas.personajesRuinas.Values){
+			foreach(PersonajeRuina personaje in Gestores.Partidas.Instancia.gestorRuinas.personajesRuinas.Values){
 				if (personaje != this)
 					if (rectangulo.Intersects(personaje.posicion)) return true;
 			}
 			return false;
 		}
+
 
 		protected RuinaNodo apartarse(int tiempoMundo)
 		{
@@ -388,6 +410,7 @@ namespace Ruinas
 			return null;
 		}
 
+
 		protected bool desplazarBackUp(int tiempoMundo)
 		{
 			bool llegada = false;
@@ -395,19 +418,16 @@ namespace Ruinas
 			Tuple<int, int> posicionSiguiente =
 				movimientoBackUp.getDesplazamiento(
 						tiempoMundo,
-						velocidadMovimiento,
+						personaje.flyweightPersonajeRuina.velocidadMovimiento,
 						objetoInteraccionable,
 						out llegada);
-
-			
-
 			posicion = new Rectangle(posicionSiguiente.Item1 - ancho / 2,
 									posicionSiguiente.Item2 - alto / 2,
 									posicion.Width, posicion.Height);
-
-			
+			comprobarColisionesAreasActivacion();
 			return llegada;
 		}
+
 
 		protected void seguirCaminoBackUp(List<Dijkstra.IRama> newCamino, RuinaNodo origen)
 		{
@@ -430,6 +450,7 @@ namespace Ruinas
 			vista.requestUpdateContent();
 		}
 
+
 		public void moverBackUp(List<Dijkstra.IRama> newCamino, Dijkstra.Nodo<RuinaNodo> origen)
 		{
 			if (newCamino != null)
@@ -444,6 +465,7 @@ namespace Ruinas
 			estado = Estado.Reintentando;
 			caminoBackUp = null;
 		}
+
 
 		public void mover(List<Dijkstra.IRama> newCamino, Dijkstra.Nodo<RuinaNodo> origen)
 		{
@@ -529,23 +551,42 @@ namespace Ruinas
 
 			return false;
 		}
-
-
-		public PersonajeRuinaView crearVista()
+		
+		
+		public void hacerDano(uint dano)
 		{
-			vista = new PersonajeRuinaView(this);
-			return vista;
+			Personajes.Atributo vida = null;
+			personaje.atributos.TryGetValue("idVida", out vida);
+			vida.valor -= (int)dano;
+			Programa.VistaGeneral.Instancia.contenedorJuego.interfazRuina.panelHudPersonajes.requestUpdateContent();
+			if(vida.valor < vida.valorMin)
+			{
+				morir();
+				personaje.vivo = false;
+				if(personaje.id.Equals(Personajes.Protagonista.idProtagonista))
+				{
+					List<String> causaFracaso = Gestores.Partidas.Instancia.mensajesFracasoJuego;
+					causaFracaso.Clear();
+					causaFracaso.Add("Cuando estabas explorando una ruina, alguna trampa te ha matado mientras estabas pensando en tesoros.");
+					causaFracaso.Add("Deberias prestar mas atencion a tus entornos.");
+
+					Gestores.Partidas.Instancia.finalizarPartida(Gestores.Pantallas.EstadoJuego.Fracaso);
+					return;
+				}
+				else
+				{
+					Gestores.Partidas.Instancia.gestorRuinas.ruinaActual.personajes.Remove(this);
+					Gestores.Partidas.Instancia.gestorRuinas.ruinaActual.personajesSeleccionados.Remove(id);
+					Programa.Jugador.Instancia.acompanantes.Remove(personaje.id);
+					Programa.Jugador.Instancia.actualizarEspacioInventario();
+				}
+			}
 		}
 
 
-		protected Texture2D getImagenActual()
+		public void morir()
 		{
-			if(estado == Estado.Parado || estado == Estado.Interactuando || estado == Estado.Esperando)
-				return imagenParado;
-			if(imagenesMovimiento.Count == 0)
-				return null;
-			int indice = (tiempoActual / (int)velocidadAnimacion) % imagenesMovimiento.Count;
-			return imagenesMovimiento[indice];
+			habitacion.vista.interfazPersonajes.requestUpdateContent();
 		}
 
 
@@ -555,12 +596,13 @@ namespace Ruinas
 			Tuple<int, int> posicionSiguiente =
 				movimiento.getDesplazamiento(
 						tiempoMundo,
-						velocidadMovimiento,
+						personaje.flyweightPersonajeRuina.velocidadMovimiento,
 						objetoInteraccionable,
 						out llegada);
 			posicion = new Rectangle(posicionSiguiente.Item1 - ancho / 2,
 									posicionSiguiente.Item2 - alto / 2,
 									posicion.Width, posicion.Height);
+			comprobarColisionesAreasActivacion();
 			return llegada;
 		}
 
@@ -574,12 +616,13 @@ namespace Ruinas
 			RuinaNodo siguiente = (RuinaNodo)nodo;
 			if(((RuinaRama)camino[0]).cambioHabitacion == true)
 			{
+				habitacion.vista.interfazPersonajes.requestUpdateContent();
+				siguiente.habitacion.vista.interfazPersonajes.requestUpdateContent();
 				origen.coordenadas = siguiente.coordenadasOpuestas;
 				habitacion.personajes.Remove(this);
 				habitacion = siguiente.habitacion;
 				habitacion.personajes.Add(this);
 				posicion = new Rectangle(origen.coordenadas.Item1, origen.coordenadas.Item2, ancho, alto);
-				Programa.VistaGeneral.Instancia.contenedorJuego.interfazRuina.requestUpdateContent();
 			}
 			movimiento = new Movimiento(origen, siguiente, tiempoActual, colisionFinal);
 			camino.RemoveAt(0);
@@ -587,38 +630,48 @@ namespace Ruinas
 		}
 
 
+		public PersonajeRuinaView crearVista()
+		{
+			vista = new PersonajeRuinaView(this);
+			return vista;
+		}
+
+
+		protected Texture2D getImagenActual()
+		{
+			PersonajeRuinaFlyweight flyweight = personaje.flyweightPersonajeRuina;
+			if(estado == Estado.Parado || estado == Estado.Interactuando)
+				return flyweight.imagenParado;
+			int nImagenes = flyweight.imagenesMovimiento.Count;
+			if(nImagenes == 0)
+				return null;
+			int indice = ((int)((float)tiempoActual / (float)flyweight.velocidadAnimacion)) % nImagenes;
+			return flyweight.imagenesMovimiento[indice];
+		}
+
+
+		protected void comprobarColisionesAreasActivacion()
+		{
+			if(Gestores.Partidas.Instancia.gestorPantallas.estadoJuego != Gestores.Pantallas.EstadoJuego.Jugando)
+				return;
+			List<Objeto> objetos = new List<Objeto>();
+			objetos.AddRange(habitacion.objetos);
+			objetos.AddRange(habitacion.proyectiles);
+			foreach(Objeto objeto in objetos)
+			{
+				if(objeto.areaActivacion.espacio.Intersects(posicion) == true)
+					objeto.activar();
+			}
+		}
+
 		
 		protected void crearReloj(int numeroAccionesMinimas, Reloj.CallbackFinReloj accionPosterior)
 		{
 			ruina.crearReloj(Gestores.Mundo.Instancia.relojFlyweights["reloj2"],
 				this,
 				tiempoActual,
-				numeroAccionesMinimas * (int)Gestores.Partidas.Instancia.gestorRuinas.tiempoAccionMinima,
+				numeroAccionesMinimas,
 				accionPosterior);
-		}
-
-		public virtual List<RuinaNodo> nodos()
-		{
-			List<RuinaNodo> nodos = new List<RuinaNodo>();
-
-			nodos.Add(new RuinaNodo(
-						new Tuple<int, int>(
-							posicion.X - PersonajeRuina.ancho / 2,
-							posicion.Y - PersonajeRuina.alto / 2)));
-			nodos.Add(new RuinaNodo(
-						new Tuple<int, int>(
-							posicion.X - PersonajeRuina.ancho / 2,
-							posicion.Y + PersonajeRuina.alto / 2 + posicion.Height)));
-			nodos.Add(new RuinaNodo(
-						new Tuple<int, int>(
-							posicion.X + PersonajeRuina.ancho / 2 + posicion.Width,
-							posicion.Y - PersonajeRuina.alto / 2)));
-			nodos.Add(new RuinaNodo(
-						new Tuple<int, int>(
-							posicion.X + PersonajeRuina.ancho / 2 + posicion.Width,
-							posicion.Y + PersonajeRuina.alto / 2 + posicion.Height)));
-
-			return nodos;
 		}
 	}
 }

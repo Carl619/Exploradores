@@ -43,51 +43,30 @@ namespace ILSXNA
 			if(visible == false)
 				return;
 			
-			if(border == null)
-			{
-				base.draw(renderSurface);
-				return;
-			}
-
-			/*ILS.Dimensions.ClipBox clipBox = new ILS.Dimensions.ClipBox();
-			clipBox.width = getFinalWidth() - (int)2*layout.outterSpacing;
-			clipBox.height = getFinalHeight() - (int)2*layout.outterSpacing;
-
-			uint width, height;
-			if(getParent() != null)
-			{
-				width = getMinOutterConstrainedWidth() - (int)2*layout.outterSpacing;
-				height = getMinOutterConstrainedHeight() - (int)2*layout.outterSpacing;
-			}
-			else
-			{
-				width = clipBox.width;
-				height = clipBox.height;
-			}*/
-
-			border.draw(renderSurface);
+			if(border != null)
+				border.draw(renderSurface);
 			base.draw(renderSurface);
-		}
-
-
-		public override void minimize(uint outterConstraintWidth, uint outterConstraintHeight)
-		{
-			base.minimize(outterConstraintWidth, outterConstraintHeight);
 		}
 
 
 		public override void calculatePosition(int xPos, int yPos, ILS.Dimensions.ClipBox clipBox)
 		{
 			base.calculatePosition(xPos, yPos, clipBox);
-			if (hasBorder() == true)
+			if(hasBorder() == true)
 			{
-				clipBox.width += getTotalBorderWidth();
-				clipBox.height += getTotalBorderHeight();
-				clipBox.width += getTotalInnerSpacingWidth();
-				clipBox.height += getTotalInnerSpacingHeight();
-				border.calculatePosition(xPos + (int)getSingleOutterSpacingWidth(),
-										yPos + (int)getSingleOutterSpacingHeight(),
-										clipBox);
+				int innerWidth, innerHeight;
+				innerWidth = (int)dimensions.afterMinimizeOutterX - (int)getTotalOutterSpacingWidth();
+				innerHeight = (int)dimensions.afterMinimizeOutterY - (int)getTotalOutterSpacingHeight();
+				if(innerWidth < 0)
+					innerWidth = 0;
+				if(innerHeight < 0)
+					innerHeight = 0;
+				int innerPosX = xPos + (int)getSingleOutterSpacingWidth();
+				int innerPosY = yPos + (int)getSingleOutterSpacingHeight();
+				
+				ILS.Dimensions.ClipBox borderClipBox = getComponentClipBox(clipBox, 0, 0,
+														(uint)innerWidth, (uint)innerHeight);
+				border.calculatePosition(innerPosX, innerPosY, borderClipBox);
 			}
 		}
 	}

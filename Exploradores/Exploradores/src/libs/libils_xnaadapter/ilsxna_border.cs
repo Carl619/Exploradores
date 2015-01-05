@@ -124,9 +124,15 @@ namespace ILSXNA
 		}
 
 
+		public override void calculatePosition(int xPos, int yPos, ILS.Dimensions.ClipBox outterClipBox)
+		{
+			base.calculatePosition(xPos, yPos, outterClipBox);
+		}
+
+
 		public override void draw(Object renderSurface)
 		{
-			drawBackground(renderSurface);
+			//drawBackground(renderSurface);
 			base.draw(renderSurface);
 		}
 
@@ -136,12 +142,21 @@ namespace ILSXNA
 			clearComponents(true);
 			requestedContentUpdate = false;
 
+			getCurrentAlternative().addLayer();
+
+			Container container = new Container();
+			container.contentSpacingX = container.contentSpacingY = flyweight.getTotalInnerSpacing() / 2;
+			addComponent(container);
+
 			background = new Sprite();
 			background.innerComponent = getCurrentBorder()[4];
 			background.displayModeWidth = flyweight.backgroundMode;
 			background.displayModeHeight = flyweight.backgroundMode;
-
+			container.addComponent(background);
+			
+			setCurrentLayer(1);
 			addBorder();
+			setCurrentLayer(0);
 		}
 
 		

@@ -12,12 +12,14 @@ namespace Mapa
 	{
 		// variables
 		public String id { get; protected set; } // id tiene que ser el nombre del lugar
+		public bool oculto { get; set; }
 
 
 		// constructor
-		public ElementoMapa(String newID)
+		public ElementoMapa(String newID, bool visible = true)
 		{
 			id = (String)newID.Clone();
+			oculto = !visible;
 		}
 	}
 

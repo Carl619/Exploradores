@@ -18,10 +18,11 @@ namespace ILSXNA
 	------------------------------------------------------------------------------------
 	Sprite implementation for XNA using ILS library
 	----------------------------------------------------------------------------------*/
-	public class MultiSprite : ILS.Component<List<Texture2D>>
+	public class MultiSprite : Sprite
 	{
 		// public variables
 		private int _currentSpriteIndex;
+		public List<Texture2D> texturas { get; protected set; }
 		public int currentSpriteIndex
 		{
 			get
@@ -36,9 +37,10 @@ namespace ILSXNA
 					_currentSpriteIndex = 0;
 					return;
 				}
-				if(value >= innerComponent.Count || value < 0)
+				if(value >= texturas.Count || value < 0)
 					return;
 				_currentSpriteIndex = value;
+				innerComponent = getCurrentSprite();
 			}
 		}
 
@@ -46,30 +48,31 @@ namespace ILSXNA
 		// constructors
 		public MultiSprite(ILS.Layer newParent = null) : base(newParent)
 		{
-			innerComponent = new List<Texture2D>();
+			innerComponent = null;
+			texturas = new List<Texture2D>();
 			currentSpriteIndex = 0;
 			onMouseOver = mouseActivate;
 			onMouseOut = mouseDeactivate;
-			onMousePress = mouseSelect;
+			onLeftMousePress = mouseSelect;
 		}
 
 
 		public MultiSprite(MultiSprite multiSprite, ILS.Layer newParent = null) : base(multiSprite, newParent)
 		{
+			innerComponent = null;
+			texturas = new List<Texture2D>();
 			if(multiSprite != null)
 			{
-				innerComponent = new List<Texture2D>();
-				foreach(Texture2D i in multiSprite.innerComponent)
-					innerComponent.Add(i);
+				foreach(Texture2D i in multiSprite.texturas)
+					addTextura(i);
 				currentSpriteIndex = multiSprite.currentSpriteIndex;
 			}
 			else
 			{
-				innerComponent = new List<Texture2D>();
 				currentSpriteIndex = 0;
 				onMouseOver = mouseActivate;
 				onMouseOut = mouseDeactivate;
-				onMousePress = mouseSelect;
+				onLeftMousePress = mouseSelect;
 			}
 		}
 		
@@ -132,13 +135,19 @@ namespace ILSXNA
 		}
 
 
+		public void addTextura(Texture2D textura)
+		{
+			texturas.Add(textura);
+			currentSpriteIndex = currentSpriteIndex;
+		}
+
+
 		public Texture2D getCurrentSprite()
 		{
-			if(innerComponent == null)
+			if(currentSpriteIndex >= texturas.Count)
 				return null;
-			if(currentSpriteIndex >= innerComponent.Count)
-				return null;
-			return innerComponent[currentSpriteIndex];
+			innerComponent = texturas[currentSpriteIndex];
+			return innerComponent;
 		}
 		
 		
@@ -147,7 +156,7 @@ namespace ILSXNA
 			return new MultiSprite(this, newParent);
 		}
 		
-		
+		/*
 		public override void draw(Object renderSurface)
 		{
 			if(visible == false)
@@ -157,7 +166,7 @@ namespace ILSXNA
 			
 			SpriteBatch spriteBatch = ((Window)renderSurface).innerWindow.spriteBatch;
 			spriteBatch.Draw(getCurrentSprite(), new Vector2(dimensions.positionX, dimensions.positionY), Color.White);
-		}
+		}*/
 
 
 		// protected functions
@@ -166,7 +175,7 @@ namespace ILSXNA
 			if(getCurrentSprite() == null)
 				return getAdjustedMinWidth(0);
 			
-			return getAdjustedMinWidth((uint)getCurrentSprite().Width);
+			return base.getMinInnerUnconstrainedWidth();
 		}
 		
 		
@@ -175,7 +184,7 @@ namespace ILSXNA
 			if(getCurrentSprite() == null)
 				return getAdjustedMinHeight(0);
 			
-			return getAdjustedMinHeight((uint)getCurrentSprite().Height);
+			return base.getMinInnerUnconstrainedHeight();
 		}
 	}
 

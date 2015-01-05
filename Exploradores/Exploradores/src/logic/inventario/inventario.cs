@@ -9,13 +9,23 @@ namespace Objetos
 	public class Inventario : Gestores.IObjetoIdentificable
 	{
 		// variables
+		public static uint espacioMinimo = 10;
 		public String id { get; protected set; }
 		public uint valor { get; protected set; }
 		public uint espacio { get; protected set; }
-		public uint espacioMax { get; protected set; }
+		public uint espacioMax { get; set; }
 		public Programa.ListaViewFlyweight flyweight { get; set; }
 		public SortedDictionary<String, ColeccionArticulos> articulos { get; set; }
 		public ColeccionArticulos articulosSeleccionados { get; set; }
+		public double factorSobrePeso
+		{
+			get
+			{
+				if(espacio <= espacioMax || espacioMax == 0)
+					return 1.0f;
+				return ((double)espacio) / (double)espacioMax;
+			}
+		}
 
 
 		// constructor
@@ -28,6 +38,8 @@ namespace Objetos
 			valor = 0;
 			espacio = 0;
 			espacioMax = newEspacioMax;
+			if(espacioMax < espacioMinimo)
+				espacioMax = espacioMinimo;
 			flyweight = newFlyweight;
 			articulos = new SortedDictionary<String, ColeccionArticulos>();
 			articulosSeleccionados = null;
@@ -110,6 +122,24 @@ namespace Objetos
 		}
 
 
+		public bool addArticulo(String idArticulo, uint cantidad = 1)
+		{
+			ColeccionArticulos value = null;
+			if(articulos.TryGetValue(idArticulo, out value))
+				value.cantidad += cantidad;
+			else
+			{
+				Objetos.Articulo articulo = Gestores.Partidas.Instancia.articulos[idArticulo];
+				value = new ColeccionArticulos(articulo, cantidad);
+				articulos.Add(articulo.id, value);
+			}
+			
+			valor += value.articulo.valor * cantidad;
+			espacio += value.articulo.peso * cantidad;
+			return true;
+		}
+
+
 		public bool addArticulo(Articulo articulo, uint cantidad = 1)
 		{
 			ColeccionArticulos value = null;
@@ -162,13 +192,6 @@ namespace Objetos
 				return true;
 			}
 			return false;
-		}
-
-
-		public void addEspacio(uint espacioExtra)
-		{
-			if(espacioExtra > 0)
-				espacioMax += espacioExtra;
 		}
 
 

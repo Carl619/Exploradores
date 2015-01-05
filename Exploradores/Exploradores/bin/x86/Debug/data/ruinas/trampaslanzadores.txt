@@ -1,0 +1,25 @@
+
+
+
+{
+	id							: lanzador1
+	flyweight					: lanzador1
+	flyweight proyectil			: proyectil1
+	habitacion					: 1
+	activado					: false
+	tiempoActivacion			: 30
+	velocidad					: 5.0
+	coordenada x				: 150
+	coordenada y				: 316
+	coordenada x origen			: 150
+	coordenada y origen			: 292
+	coordenada x destino		: 210
+	coordenada y destino		: 24
+	dano						: 10
+	area activacion x			: 50
+	area activacion y			: 300
+	area activacion ancho		: 250
+	area activacion alto		: 16
+}
+
+

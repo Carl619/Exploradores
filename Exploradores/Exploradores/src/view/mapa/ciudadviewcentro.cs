@@ -48,9 +48,26 @@ namespace Mapa
 		{
 			clearComponents();
 			requestedContentUpdate = false;
+			
+			double ancho, alto;
+			ancho = Programa.VistaGeneral.Instancia.window.currentWidth - 372;
+			alto = Programa.VistaGeneral.Instancia.window.currentHeight - 59;
+
+			sizeSettings.fixedInnerWidth = (uint)ancho;
+			sizeSettings.fixedInnerHeight = (uint)alto;
 
 			ILSXNA.Sprite sprite = new ILSXNA.Sprite();
 			sprite.innerComponent = ciudad.imagenCiudad.textura;
+			sprite.displayModeWidth = ILSXNA.Sprite.DisplayMode.Stretch;
+			sprite.displayModeHeight = ILSXNA.Sprite.DisplayMode.Stretch;
+			sprite.sizeSettings.fixedInnerWidth = (uint)ancho;
+			sprite.sizeSettings.fixedInnerHeight =
+				(uint)((double)sprite.innerComponent.Height *
+				(ancho / (double)sprite.innerComponent.Width));
+			if(sprite.sizeSettings.fixedInnerHeight > (uint)alto)
+				sprite.sizeSettings.fixedInnerHeight = (uint)alto;
+			if((uint)alto > sprite.sizeSettings.fixedInnerHeight)
+				sizeSettings.fixedInnerHeight = sprite.sizeSettings.fixedInnerHeight;
 
 			addComponent(sprite);
 		}

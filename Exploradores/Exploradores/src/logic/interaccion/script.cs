@@ -27,16 +27,16 @@ namespace Interaccion
 		
 		
 		// funciones
-		public override void ejecutar(List<String> valoresEntrada)
+		public override void ejecutar(List<Argumento> valoresEntrada)
 		{
-			List<String> valoresLocales = new List<String>();
+			List<Argumento> valoresLocales = new List<Argumento>();
 			foreach (String i in variablesLocales)
-				valoresLocales.Add("");
+				valoresLocales.Add(new Argumento());
 			
 			int index = 0;
 			foreach(Evento i in eventos)
 			{
-				List<String> valoresLlamada = new List<String>();
+				List<Argumento> valoresLlamada = new List<Argumento>();
 				if(parametrosLlamadas.Count > 0)
 				{
 					foreach (String j in parametrosLlamadas[index])
@@ -49,9 +49,11 @@ namespace Interaccion
 
 				if(parametrosLlamadas.Count > 0)
 				{
+					int k = 0;
 					foreach (String j in parametrosLlamadas[index])
 					{
-						actualizarVariableLocal(valoresLocales, valoresEntrada, valoresLlamada, j);
+						actualizarVariableLocal(valoresLocales, valoresEntrada, valoresLlamada[k], j);
+						++k;
 					}
 				}
 				
@@ -70,8 +72,8 @@ namespace Interaccion
 		}
 		
 		
-		protected void introducirValorEntrada(List<String> valoresLocales, List<String> valoresEntrada,
-											List<String> valoresLlamada, String parametro)
+		protected void introducirValorEntrada(List<Argumento> valoresLocales, List<Argumento> valoresEntrada,
+											List<Argumento> valoresLlamada, String parametro)
 		{
 			int index;
 			
@@ -80,7 +82,7 @@ namespace Interaccion
 			{
 				if (i.Equals(parametro) == true)
 				{
-					valoresLlamada.Add((String)valoresLocales[index].Clone());
+					valoresLlamada.Add(valoresLocales[index].clone());
 					return;
 				}
 				++index;
@@ -91,18 +93,18 @@ namespace Interaccion
 			{
 				if (i.Equals(parametro) == true)
 				{
-					valoresLlamada.Add((String)valoresEntrada[index].Clone());
+					valoresLlamada.Add(valoresEntrada[index].clone());
 					return;
 				}
 				++index;
 			}
 			
-			valoresLlamada.Add(parametro);
+			valoresLlamada.Add(new Argumento(parametro));
 		}
 		
 		
-		protected void actualizarVariableLocal(List<String> valoresLocales, List<String> valoresEntrada,
-											List<String> valoresLlamada, String parametro)
+		protected void actualizarVariableLocal(List<Argumento> valoresLocales, List<Argumento> valoresEntrada,
+											Argumento valorLlamada, String parametro)
 		{
 			int index;
 			
@@ -111,7 +113,7 @@ namespace Interaccion
 			{
 				if (i.Equals(parametro) == true)
 				{
-					valoresLocales[index] = (String)valoresLlamada[index].Clone();
+					valoresLocales[index] = valorLlamada.clone();
 					return;
 				}
 				++index;
@@ -122,7 +124,7 @@ namespace Interaccion
 			{
 				if (i.Equals(parametro) == true)
 				{
-					valoresEntrada[index] = (String)valoresEntrada[index].Clone();
+					valoresEntrada[index] = valorLlamada.clone();
 					return;
 				}
 				++index;

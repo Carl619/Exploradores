@@ -11,13 +11,13 @@ namespace Personajes
 	public class Enfermedad : Habilidad
 	{
 		// variables
-		protected uint _eficaciaBase { get; set; }
-		public uint eficaciaBase
+		protected double _eficaciaBase { get; set; }
+		public double eficaciaBase
 		{
 			get { return _eficaciaBase; }
 			set { _eficaciaBase = value; calcularEficacia(); }
 		}
-		public uint eficacia { get; protected set; }
+		public double eficacia { get; protected set; }
 
 
 		// constructor
@@ -36,7 +36,7 @@ namespace Personajes
 
 			if(campos.Count > 1)
 			{
-				enfermedad.eficaciaBase = Convert.ToUInt32(campos[1]);
+				enfermedad.eficaciaBase = Gestores.Mundo.parseFloat(campos[1]);
 			}
 			else
 			{
@@ -60,7 +60,7 @@ namespace Personajes
 			ILSXNA.Label label;
 
 			label = new ILSXNA.Label();
-			label.message = "Eficacia enfermedad: " + eficacia.ToString();
+			label.message = "Eficacia enfermedad: " + eficacia.ToString("F4");
 			label.color = color;
 			label.innerComponent = font;
 			contenedor.addComponent(label);
@@ -79,7 +79,7 @@ namespace Personajes
 			ILSXNA.Label label;
 
 			label = new ILSXNA.Label();
-			label.message = "Eficacia curacion base: " + eficaciaBase.ToString();
+			label.message = "Eficacia curacion base: " + eficaciaBase.ToString("F4");
 			label.color = color;
 			label.innerComponent = font;
 			contenedor.addComponent(label);
@@ -97,9 +97,9 @@ namespace Personajes
 
 		protected void calcularEficacia()
 		{
-			eficacia = 0;
+			eficacia = 1.0f;
 			for(int i=0; i<nivel; ++i)
-				eficacia += eficaciaBase;
+				eficacia *= eficaciaBase;
 		}
 	}
 }

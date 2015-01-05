@@ -1,13 +1,12 @@
 
 {
-	id							: tesoro
-	flyweight					: activador
+	id							: tesoro1
+	flyweight					: tesoro
 	habitacion					: 1
-	activado					: false
 	coordenada x				: 50
 	coordenada y				: 190
-	cantidad						: 1
-	articulo				: tesorin
+	tiempoActivacion			: 30
+	inventario					: idTesoro1
 }
 	
 	

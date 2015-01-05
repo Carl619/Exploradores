@@ -24,7 +24,7 @@ namespace Mapa
 				throw new ArgumentNullException();
 			
 			lugar = newLugar;
-			onMouseDoubleClick = Controller.accionLugarVisitable;
+			onLeftMouseDoubleClick = Controller.accionLugarVisitable;
 		}
 	}
 }

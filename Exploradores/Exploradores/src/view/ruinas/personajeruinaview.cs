@@ -26,7 +26,7 @@ namespace Ruinas
 				throw new ArgumentNullException();
 			
 			personaje = newpersonaje;
-			onMousePress = Ruinas.Controller.selectPersonaje;
+			onLeftMousePress = Ruinas.Controller.selectPersonaje;
 			innerComponent = personaje.imagenActual;
 			updateContent();
 		}

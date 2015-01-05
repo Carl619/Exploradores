@@ -11,13 +11,13 @@ namespace Personajes
 	public class Cazador : Habilidad
 	{
 		// variables
-		protected uint _habilidadBase { get; set; }
-		public uint habilidadBase
+		protected float _habilidadBase { get; set; }
+		public float habilidadBase
 		{
 			get { return _habilidadBase; }
 			set { _habilidadBase = value; calcularHabilidad(); }
 		}
-		public uint habilidad { get; protected set; }
+		public float habilidad { get; protected set; }
 
 
 		// constructor
@@ -36,7 +36,7 @@ namespace Personajes
 
 			if(campos.Count > 1)
 			{
-				cazador.habilidadBase = Convert.ToUInt32(campos[1]);
+				cazador.habilidadBase = Gestores.Mundo.parseFloat(campos[1]);
 			}
 			else
 			{
@@ -60,7 +60,7 @@ namespace Personajes
 			ILSXNA.Label label;
 
 			label = new ILSXNA.Label();
-			label.message = "Habilidad de caza: " + habilidad.ToString();
+			label.message = "Habilidad de caza: " + habilidad.ToString("F4");
 			label.color = color;
 			label.innerComponent = font;
 			contenedor.addComponent(label);
@@ -79,7 +79,7 @@ namespace Personajes
 			ILSXNA.Label label;
 
 			label = new ILSXNA.Label();
-			label.message = "Habilidad de caza base: " + habilidadBase.ToString();
+			label.message = "Habilidad de caza base: " + habilidadBase.ToString("F4");
 			label.color = color;
 			label.innerComponent = font;
 			contenedor.addComponent(label);
@@ -97,7 +97,7 @@ namespace Personajes
 
 		protected void calcularHabilidad()
 		{
-			habilidad = 0;
+			habilidad = 0.0f;
 			for(int i=0; i<nivel; ++i)
 				habilidad += habilidadBase;
 		}

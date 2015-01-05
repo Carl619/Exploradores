@@ -24,7 +24,7 @@ namespace Ruinas
 			callbackConfigObj = new Tuple<RuinaJugable, Reloj.CallbackFinReloj>(
 									ruina,
 									Controller.activarPuertaSalida);
-			onMousePress = Controller.buscarObjeto;
+			onRightMousePress = Controller.buscarObjeto;
 		}
 	}
 }

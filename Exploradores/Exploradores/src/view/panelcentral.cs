@@ -36,6 +36,7 @@ namespace Programa
 			requestedContentUpdate = false;
 
 			ILSXNA.Container principal = new ILSXNA.Container(Gestores.Mundo.Instancia.borders["border1"]);
+			//principal.layout.verticalAlignment = ILS.Layout.Alignment.RightOrBottomAlignment;
 			addComponent(principal);
 
 			principal.getCurrentAlternative().addLayer();
@@ -43,14 +44,9 @@ namespace Programa
 				panelFondo = new PanelFondo();
 				principal.addComponent(panelFondo);
 			principal.setCurrentLayer(1);
-				principal.getCurrentAlternative().getCurrentLayer().offsetX = 4;
-				principal.getCurrentAlternative().getCurrentLayer().offsetY = 4;
 				panelHUD = new PanelHUD();
 				principal.addComponent(panelHUD);
 			principal.setCurrentLayer(0);
-
-			//Interaccion.VentanaDialogo.Instancia.comenzarDialogo(Gestores.Mundo.Instancia.npcs[0]);
-			//window.container.addComponent(Interaccion.VentanaDialogo.Instancia);
 
 		}
 	}

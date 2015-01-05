@@ -16,9 +16,12 @@ namespace Ruinas
 		// variables
 		public String id { get; protected set; }
 		public ObjetoFlyweight objetoFlyweight { get; protected set; }
+		public AreaActivacion areaActivacion { get; set; }
+		public Habitacion habitacion { get; set; }
 		public Rectangle espacio { get; set; }
         public bool activado { get; set; }
 		public int tiempoActivacion { get; set; } // numero de acciones minimas
+		public int imagenActual { get; set; }
 		public ObjetoView vista { get; protected set; }
 
 
@@ -29,18 +32,40 @@ namespace Ruinas
 				throw new ArgumentNullException();
 			id = (String)newID.Clone();
 			objetoFlyweight = newFlyweight;
+			areaActivacion = new AreaActivacion();
+			areaActivacion.objeto = this;
+			habitacion = null;
 			espacio = new Rectangle(0, 0, 1, 1);
 			activado = false;
 			tiempoActivacion = 200;
+			imagenActual = 0;
 			vista = null;
 		}
 
 		
 		// funciones
+		public virtual void activar()
+		{
+			activado = true;
+			vista.requestUpdateContent();
+		}
+
+
+		public virtual bool esBloqueante()
+		{
+			return true;
+		}
+
+
 		public virtual void actualizarEstado(bool estado)
 		{
 			activado = estado;
 			vista.requestUpdateContent();
+		}
+
+
+		public virtual void actualizarTiempo(int tiempo)
+		{
 		}
 
 
@@ -54,6 +79,8 @@ namespace Ruinas
 		public virtual List<RuinaNodo> nodos()
 		{
 			List<RuinaNodo> nodos = new List<RuinaNodo>();
+			if(esBloqueante() == false)
+				return nodos;
 			
 			nodos.Add(new RuinaNodo(
 						new Tuple<int, int>(

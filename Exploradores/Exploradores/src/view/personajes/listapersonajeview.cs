@@ -61,6 +61,11 @@ namespace Personajes
 		}
 
 
+		public override void seleccionarElemento(Elemento elemento, bool doble)
+		{
+		}
+
+
 		public override void guardarReferenciaSeleccion(Elemento elemento)
 		{
 		}

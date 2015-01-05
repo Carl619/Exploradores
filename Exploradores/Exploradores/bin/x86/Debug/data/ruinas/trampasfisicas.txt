@@ -1,0 +1,18 @@
+
+{
+	id							: trampa1
+	flyweight					: trampa1
+	habitacion					: 1
+	activado					: false
+	tiempoActivacion			: 30
+	coordenada x				: 150
+	coordenada y				: 190
+	dano						: 10
+	area activacion x			: 150
+	area activacion y			: 190
+	area activacion ancho		: 32
+	area activacion alto		: 32
+}
+	
+	
+	

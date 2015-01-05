@@ -39,20 +39,20 @@ namespace Personajes
 			clearComponents();
 			requestedContentUpdate = false;
 
-			SpriteFont font = npc.flyweight.fuente;
+			SpriteFont font = npc.npcFlyweight.fuente;
 			
 			ILSXNA.Label label;
 
 			label = new ILSXNA.Label();
 			label.message = npc.nombre;
-			label.color = npc.flyweight.color;
+			label.color = npc.npcFlyweight.color;
 			label.innerComponent = font;
 			label.sizeSettings.fixedInnerWidth = espacioNombre;
 			addComponent(label);
 
 			label = new ILSXNA.Label();
-			label.message = npc.flyweight.nombreProfesion;
-			label.color = npc.flyweight.color;
+			label.message = npc.npcFlyweight.nombreProfesion;
+			label.color = npc.npcFlyweight.color;
 			label.innerComponent = font;
 			addComponent(label);
 		}

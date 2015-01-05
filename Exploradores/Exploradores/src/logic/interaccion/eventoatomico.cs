@@ -11,7 +11,7 @@ namespace Interaccion
 	public class EventoAtomico : Evento
 	{
 		// delegados
-		public delegate void AccionEvento(List<String> valoresEntrada);
+		public delegate void AccionEvento(List<Argumento> valoresEntrada);
 		
 		
 		// variables
@@ -27,7 +27,7 @@ namespace Interaccion
 		
 		
 		// funciones
-		public override void ejecutar(List<String> valoresEntrada)
+		public override void ejecutar(List<Argumento> valoresEntrada)
 		{
 			if(accion != null)
 				accion(valoresEntrada);

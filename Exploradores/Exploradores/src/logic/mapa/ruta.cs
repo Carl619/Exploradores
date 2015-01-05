@@ -20,8 +20,8 @@ namespace Mapa
 
 
 		// constructor
-		public Ruta(String newID, LugarVisitable lugar1, LugarVisitable lugar2, RutaFlyweight newFlyweight)
-			: base(newID)
+		public Ruta(String newID, LugarVisitable lugar1, LugarVisitable lugar2, RutaFlyweight newFlyweight, bool visible = true)
+			: base(newID, visible)
 		{
 			if(lugar1 == null || lugar2 == null || newFlyweight == null)
 				throw new ArgumentNullException();
@@ -47,6 +47,7 @@ namespace Mapa
 			LugarVisitable lugarDestino = Gestores.Partidas.Instancia.lugares[campos["lugar B"]];
 
 			ruta = new Ruta(campos["id"], lugarOrigen, lugarDestino, rutaFlyweight);
+			ruta.oculto = Convert.ToBoolean(campos["oculto"]);
 			ruta.distancia = (float)Gestores.Mundo.parseFloat(campos["distancia"]);
 			ruta.peligro = (float)Gestores.Mundo.parseFloat(campos["peligro"]);
 

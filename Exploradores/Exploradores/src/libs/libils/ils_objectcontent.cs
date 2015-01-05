@@ -93,7 +93,6 @@ namespace ILS
 			dimensions = layer.dimensions.clone();
 			offsetX = layer.offsetX;
 			offsetY = layer.offsetY;
-			blockSubsequentLayerEvents = layer.blockSubsequentLayerEvents;
 			parent = newParent;
 		}
 		
@@ -128,6 +127,74 @@ namespace ILS
 		{
 			foreach(BaseComponent i in group)
 				i.parent = this;
+		}
+
+
+		public void scrollTop(uint amount)
+		{
+			if(offsetY >= 0)
+				return;
+			int min = (int)amount < - offsetY ? (int)amount : - offsetY;
+			offsetY += min;
+		}
+
+
+		public void scrollBottom(uint amount)
+		{
+			if(parent == null)
+				return;
+			if(parent.parent == null)
+				return;
+			BaseComponent component;
+			component = parent.parent;
+
+			int parentHeight = (int)component.getMinOutterConstrainedHeight() - (int)component.getTotalOffsetHeight();
+			int layerHeight = (int)dimensions.afterMinimizeOutterY;
+			int maxOffset;
+			if(parentHeight > layerHeight)
+				maxOffset = 0;
+			else
+				maxOffset = layerHeight - parentHeight;
+			
+			maxOffset += offsetY;
+			if(maxOffset < 1)
+				return;
+			int min = (int)amount < maxOffset ? (int)amount : maxOffset;
+			offsetY -= min;
+		}
+
+
+		public void scrollLeft(uint amount)
+		{
+			if(offsetX >= 0)
+				return;
+			int min = (int)amount < - offsetX ? (int)amount : - offsetX;
+			offsetX += min;
+		}
+
+
+		public void scrollRight(uint amount)
+		{
+			if(parent == null)
+				return;
+			if(parent.parent == null)
+				return;
+			BaseComponent component;
+			component = parent.parent;
+
+			int parentWidth = (int)component.getMinOutterConstrainedWidth() - (int)component.getTotalOffsetWidth();
+			int layerWidth = (int)dimensions.afterMinimizeOutterX;
+			int maxOffset;
+			if(parentWidth > layerWidth)
+				maxOffset = 0;
+			else
+				maxOffset = layerWidth - parentWidth;
+			
+			maxOffset += offsetX;
+			if(maxOffset < 1)
+				return;
+			int min = (int)amount < maxOffset ? (int)amount : maxOffset;
+			offsetX -= min;
 		}
 	}
 	
@@ -240,6 +307,7 @@ namespace ILS
 		public uint eventTime { get; set; } // the time this event occured, with no specific unit
 		public uint lastPressTime { get; set; } // the last time the mouse button was pressed, with no specific unit
 		public Type eventType { get; set; }
+		public bool leftButton { get; set; }
 		
 		
 		// enums
@@ -279,6 +347,7 @@ namespace ILS
 			eventTime = 0;
 			lastPressTime = 0;
 			eventType = Type.Press;
+			leftButton = true;
 		}
 	}
 	

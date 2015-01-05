@@ -1,15 +1,8 @@
 
 {
-	personaje					: idProtagonista
-	ruina						: 4
-	habitacion					: 1
-	coordenada x				: 200
-	coordenada y				: 60
-	velocidadMovimiento			: 0.1
-	velocidadAnimacion			: 200
-	carpeta						: 0
-	numero imagenes				: 4
-	prioridad				: 1
+
+
+
 }
 
 

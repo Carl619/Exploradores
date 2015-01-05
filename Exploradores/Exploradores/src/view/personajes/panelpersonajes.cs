@@ -38,7 +38,9 @@ namespace Personajes
 			
 			List<Personajes.Personaje> personajes = new List<Personaje>();
 			personajes.Add(Programa.Jugador.Instancia.protagonista);
-			personajes.AddRange(Programa.Jugador.Instancia.grupoAcompanantes);
+			foreach(KeyValuePair<String, Personajes.Acompanante> acompanante in
+					Programa.Jugador.Instancia.acompanantes)
+				personajes.Add(acompanante.Value);
 			Programa.ListaViewFlyweight flyweight = Gestores.Mundo.Instancia.listaViewFlyweights["list1"];
 
 			Personajes.ListaPersonajeView personajesView =

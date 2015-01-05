@@ -3,9 +3,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
+
+
+
+
 namespace Ruinas
 {
-	class TesoroView : ObjetoView
+	
+	
+	public class TesoroView : ObjetoView
 	{
 		// variables
 		public Tesoro tesoro { get { return (Tesoro)objeto; } }
@@ -17,8 +23,11 @@ namespace Ruinas
 		{
 			callbackConfigObj = new Tuple<RuinaJugable, Reloj.CallbackFinReloj>(
 				ruina,
-				Controller.activarTesoro);
-			onMousePress = Controller.buscarObjeto;
+				Controller.abrirTesoro);
+			onRightMousePress = Controller.buscarObjeto;
 		}
 	}
 }
+
+
+

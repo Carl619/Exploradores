@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 
@@ -33,8 +34,19 @@ namespace Programa
 
 		public static void iniMapaView()
 		{
-			Mapa.Mapa.Instancia.imagenMapa =
-				Exploradores.Instancia.Content.Load<Texture2D>(@"images/sprites/map/mapa640x512");
+			Mapa.Mapa.Instancia.imagenesMapa.Add(
+				Exploradores.Instancia.Content.Load<Texture2D>(@"images/sprites/map/mapa1"));
+			Mapa.Mapa.Instancia.imagenesMapa.Add(
+				Exploradores.Instancia.Content.Load<Texture2D>(@"images/sprites/map/mapa2"));
+			Mapa.Mapa.Instancia.imagenesMapa.Add(
+				Exploradores.Instancia.Content.Load<Texture2D>(@"images/sprites/map/mapa3"));
+			Mapa.Mapa.Instancia.offsetsImagenesMapa.Add(
+				new Vector2(300, 0));
+			Mapa.Mapa.Instancia.offsetsImagenesMapa.Add(
+				new Vector2(0, 400));
+			Mapa.Mapa.Instancia.offsetsImagenesMapa.Add(
+				new Vector2(1050, 450));
+			
 			Mapa.Mapa.Instancia.marcadorJugador =
 				Exploradores.Instancia.Content.Load<Texture2D>(@"images/sprites/map/flag");
 			Mapa.Mapa.Instancia.spriteFont =

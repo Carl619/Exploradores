@@ -25,6 +25,7 @@ namespace Programa
 		public PanelCentral panelCentral { get; protected set; }
 		public PanelLateral panelLateral { get; protected set; }
 		public Interaccion.PanelComercio panelComercio { get; protected set; }
+		public Mapa.PanelDefensa panelDefensa { get; protected set; }
 
 
 		// constructor
@@ -38,6 +39,7 @@ namespace Programa
 			panelCentral = null;
 			panelLateral = null;
 			panelComercio = null;
+			panelDefensa = null;
 
 			alternativeNames.Add("mapa", 0);
 			alternativeNames.Add("ciudad", 0);
@@ -70,6 +72,7 @@ namespace Programa
 
 			panelContenido.setNumberAlternatives(2);
 			panelContenido.getCurrentAlternative().addLayer();
+			panelContenido.getCurrentAlternative().addLayer();
 
 			panelCentral = new PanelCentral();
 			panelContenido.addComponent(panelCentral);
@@ -81,6 +84,12 @@ namespace Programa
 			panelComercio = new Interaccion.PanelComercio();
 			panelContenido.addComponent(panelComercio);
 			actualizarVentanaComercio();
+			panelContenido.setCurrentLayer(0);
+
+			panelContenido.setCurrentLayer(2);
+			panelDefensa = new Mapa.PanelDefensa();
+			panelContenido.addComponent(panelDefensa);
+			actualizarVentanaDefensa();
 			panelContenido.setCurrentLayer(0);
 			
 			panelContenido.setCurrentAlternative(1);
@@ -109,12 +118,6 @@ namespace Programa
 		}
 
 
-		public void actualizarContenidoRuina()
-		{
-			interfazRuina.updateContent();
-		}
-
-
 		public void actualizarVentanaComercio()
 		{
 			panelContenido.setCurrentLayer(1);
@@ -123,6 +126,18 @@ namespace Programa
 			panelComercio.visible = interaccionVisible;
 			panelContenido.getCurrentAlternative().getCurrentLayer().blockSubsequentLayerEvents = interaccionVisible;
 			panelComercio.requestUpdateContent();
+			panelContenido.setCurrentLayer(0);
+		}
+
+
+		public void actualizarVentanaDefensa()
+		{
+			panelContenido.setCurrentLayer(2);
+			bool interaccionVisible = (Gestores.Partidas.Instancia.gestorPantallas.estadoInteraccion ==
+						Gestores.Pantallas.EstadoInteraccion.Defensa);
+			panelDefensa.visible = interaccionVisible;
+			panelContenido.getCurrentAlternative().getCurrentLayer().blockSubsequentLayerEvents = interaccionVisible;
+			panelDefensa.requestUpdateContent();
 			panelContenido.setCurrentLayer(0);
 		}
 

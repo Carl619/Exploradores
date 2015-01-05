@@ -5,6 +5,7 @@
 	nombre						: Erebor
 	ruina flyweight				: ruin1
 	lugar flyweight				: ruin1
+	oculto						: false
 	coordenada x				: 420
 	coordenada y				: 50
 	
@@ -13,6 +14,7 @@
 	nombre						: Orodruin
 	ruina flyweight				: ruin1
 	lugar flyweight				: ruin1
+	oculto						: true
 	coordenada x				: 500
 	coordenada y				: 290
 }

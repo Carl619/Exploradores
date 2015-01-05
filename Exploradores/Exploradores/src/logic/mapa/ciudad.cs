@@ -44,6 +44,7 @@ namespace Mapa
 			Programa.ListaViewFlyweight listaViewFlyweight = Gestores.Mundo.Instancia.listaViewFlyweights[campos["lista flyweight"]];
 
 			ciudad = new Ciudad(campos["id"], campos["nombre"], lugarFlyweight, ciudadFlyweight, listaViewFlyweight);
+			ciudad.oculto = Convert.ToBoolean(campos["oculto"]);
 			ciudad.coordenadas = new Tuple<int, int>(Convert.ToInt32(campos["coordenada x"]), Convert.ToInt32(campos["coordenada y"]));
 			ciudad.imagenCiudad.path = campos["imagenCiudad"];
 			ciudad.imagenCiudad.textura = Programa.Exploradores.Instancia.Content.Load<Texture2D>(@ciudad.imagenCiudad.path);
@@ -77,8 +78,8 @@ namespace Mapa
 			foreach(Personajes.NPC npc in listaNPC)
 			{
 				Personajes.NPCFlyweight p;
-				if(diccionarioEdificios.TryGetValue(npc.flyweight.edificioEncuentro, out p) == false)
-					diccionarioEdificios.Add(npc.flyweight.edificioEncuentro, npc.flyweight);
+				if(diccionarioEdificios.TryGetValue(npc.npcFlyweight.edificioEncuentro, out p) == false)
+					diccionarioEdificios.Add(npc.npcFlyweight.edificioEncuentro, npc.npcFlyweight);
 			}
 
 			List<Personajes.NPCFlyweight> edificios = new List<Personajes.NPCFlyweight>();

@@ -24,7 +24,7 @@ namespace Personajes
 			if(newAtributos == null)
 				throw new ArgumentNullException();
 			atributos = newAtributos;
-			maxRowsPerPage = 2;
+			maxRowsPerPage = 3;
 
 			onElementSelect = Programa.Controller.funcionVerAtributo;
 		}
@@ -56,7 +56,7 @@ namespace Personajes
 			label.message = "Atributos:";
 			label.color = Gestores.Mundo.Instancia.colores["menuColor"];
 			label.innerComponent = Gestores.Mundo.Instancia.fuentes["genericSpriteFont"];
-			label.minLateralSpacing = 16;
+			label.minLateralSpacing = 49;
 			titulo.addComponent(label);
 		}
 

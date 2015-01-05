@@ -55,7 +55,7 @@ namespace Programa
 				boton.onButtonPress = Controller.funcionNuevaPartida;
 				addComponent(boton);
 			}
-
+			
 			boton = new ILSXNA.Button("Cargar Partida", Gestores.Mundo.Instancia.buttonFlyweights["button1"]);
 			boton.onButtonPress = Controller.funcionCargarPartida;
 			addComponent(boton);

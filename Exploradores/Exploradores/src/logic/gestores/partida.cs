@@ -27,6 +27,8 @@ namespace Gestores
 			}
 		}
 			// variables utiles
+		public Random aleatorio { get; protected set; }
+		public GMisiones gestorMisiones { get; protected set; }
 		public GRuinas gestorRuinas { get; protected set; }
 		public Pantallas gestorPantallas { get; protected set; }
 		public uint numeroLugaresVisitables { get; protected set; }
@@ -38,6 +40,8 @@ namespace Gestores
 		public String npcSeleccionado { get; set; }
 		public Song musicaActual { get; set; }
 		public bool bloquearSonidoYMusica { get; set; }
+		public List<String> mensajesFracasoJuego { get; set; }
+		public List<String> mensajesExitoJuego { get; set; }
 			// objetos
 		public Gestor<Mapa.LugarVisitable> lugares { get; protected set; }
 		public Gestor<Mapa.Ciudad> ciudades { get; protected set; }
@@ -45,7 +49,8 @@ namespace Gestores
 		public Gestor<Mapa.Ruta> rutas { get; protected set; }
 		public Gestor<Objetos.Articulo> articulos { get; protected set; }
 		public Gestor<Objetos.Inventario> inventarios { get; protected set; }
-		public Dictionary<String, Interaccion.EventoAtomico> eventos { get; protected set; }
+		public Dictionary<String, Interaccion.Evento> eventos { get; protected set; }
+		public Dictionary<String, Interaccion.ElementoDialogo> elementosDialogo { get; protected set; }
 		public Gestor<Interaccion.MenuDialogo> dialogos { get; protected set; }
 		public Gestor<Personajes.NPC> npcs { get; protected set; }
 		//public Gestor<Personajes.Acompanante> acompanantes { get; protected set; }
@@ -62,6 +67,8 @@ namespace Gestores
 		// funciones
 		public void clear()
 		{
+			aleatorio = new Random();
+			gestorMisiones = new GMisiones();
 			gestorRuinas = new GRuinas();
 			gestorPantallas = new Pantallas();
 			numeroLugaresVisitables = 0;
@@ -72,7 +79,11 @@ namespace Gestores
 			edificioSeleccionado = null;
 			npcSeleccionado = null;
 			musicaActual = null;
-			bloquearSonidoYMusica = false;
+			bloquearSonidoYMusica = true;
+			mensajesFracasoJuego = new List<String>();
+			mensajesExitoJuego = new List<String>();
+			mensajesExitoJuego.Add("Por fin, ya has conseguido cumplir con tus objetivos principales. Despues de vencer a tus enemigos, y sobrevivir las ruinas en busqueda de tesoros, tus aventuras ya se acaba aqui.");
+			mensajesExitoJuego.Add("Ha llegado el momento de terminar el viaje que empezaste hace tanto tiempo, descansar y disfrutar de las riquiezas acumuladas.");
 
 			lugares = new Gestor<Mapa.LugarVisitable>();
 			ciudades = new Gestor<Mapa.Ciudad>();
@@ -80,7 +91,8 @@ namespace Gestores
 			rutas = new Gestor<Mapa.Ruta>();
 			articulos = new Gestor<Objetos.Articulo>();
 			inventarios = new Gestor<Objetos.Inventario>();
-			eventos = new Dictionary<string,Interaccion.EventoAtomico>();
+			eventos = new Dictionary<String, Interaccion.Evento>();
+			elementosDialogo = new Dictionary<String, Interaccion.ElementoDialogo>();
 			dialogos = new Gestor<Interaccion.MenuDialogo>();
 			npcs = new Gestor<Personajes.NPC>();
 			//acompanantes = new Gestor<Personajes.Acompanante>();
@@ -116,6 +128,19 @@ namespace Gestores
 				++dias;
 				horas -= 24;
 			}
+
+			Programa.Jugador.Instancia.addHambre(numeroHoras + 24 * numeroDias);
+			Programa.Jugador.Instancia.comerPorPrioridadGrupo();
+			gestorMisiones.notify(Interaccion.Mision.Evento.Tiempo, null);
+		}
+
+
+		public void finalizarPartida(Pantallas.EstadoJuego estadoJuego)
+		{
+			if(estadoJuego != Pantallas.EstadoJuego.Exito &&
+				estadoJuego != Pantallas.EstadoJuego.Fracaso)
+				return;
+			Programa.VistaGeneral.Instancia.cambiarVista(estadoJuego);
 		}
 
 
@@ -140,6 +165,7 @@ namespace Gestores
 		protected void cargarPartida(String carpeta)
 		{
 			clear();
+			aleatorio = new Random();
 			Partidas.Instancia.cambiarMusica("ciudad");
 
 			// no cargar lugares por separado
@@ -153,7 +179,27 @@ namespace Gestores
 			cargarContenidoNPCs(@carpeta + "/npcs.txt");
 			//cargarContenidoAcompanantes(@carpeta + "/acompanantes.txt");
 
+
 			Programa.Jugador.Instancia.crearProtagonista("Yo", ciudades["1"]);
+			Personajes.Atributo atributo;
+			List<String> lista;
+
+			atributo = Gestores.Mundo.Instancia.atributos["idVida"];
+			lista = new List<string>();
+			lista.Add("300");
+			Programa.Jugador.Instancia.protagonista.atributos.Add(atributo.id, atributo.clone(lista));
+			atributo = Gestores.Mundo.Instancia.atributos["idFuerza"];
+			lista = new List<string>();
+			lista.Add("300");
+			Programa.Jugador.Instancia.protagonista.atributos.Add(atributo.id, atributo.clone(lista));
+			atributo = Gestores.Mundo.Instancia.atributos["idHambre"];
+			lista = new List<string>();
+			lista.Add("0");
+			Programa.Jugador.Instancia.protagonista.atributos.Add(atributo.id, atributo.clone(lista));
+
+			Programa.Jugador.Instancia.actualizarEspacioInventario();
+
+
 			int i = 0;
 			foreach(KeyValuePair<String, Mapa.Ciudad> ciudad in ciudades)
 			{
@@ -168,6 +214,7 @@ namespace Gestores
 			numeroLugaresVisitables = (uint)i;
 
 			gestorRuinas.cargarTodo();
+			gestorMisiones.cargarTodo();
 		}
 
 
@@ -233,14 +280,149 @@ namespace Gestores
 		protected void cargarContenidoEventos()
 		{
 			Interaccion.EventoAtomico evento;
+			Interaccion.Script script;
 
-			evento = new Interaccion.EventoAtomico("comercio");
-			evento.accion = Programa.Controller.funcionAbrirComercio;
+			evento = new Interaccion.EventoAtomico("abrirComercio");
+			evento.accion = Mapa.Controller.abrirComercio;
 			eventos.Add(evento.id, evento);
 
-			evento = new Interaccion.EventoAtomico("reclutamiento");
-			evento.accion = Programa.Controller.funcionReclutar;
+			evento = new Interaccion.EventoAtomico("reclutar");
+			evento.accion = Mapa.Controller.reclutar;
 			eventos.Add(evento.id, evento);
+
+			evento = new Interaccion.EventoAtomico("empezarMision");
+			evento.accion = Mapa.Controller.empezarMision;
+			eventos.Add(evento.id, evento);
+
+			evento = new Interaccion.EventoAtomico("addEventoDialogo");
+			evento.accion = Mapa.Controller.addEventoDialogo;
+			eventos.Add(evento.id, evento);
+
+			evento = new Interaccion.EventoAtomico("removeEventoDialogo");
+			evento.accion = Mapa.Controller.removeEventoDialogo;
+			eventos.Add(evento.id, evento);
+
+			evento = new Interaccion.EventoAtomico("elementoDialogoCondicional");
+			evento.accion = Mapa.Controller.elementoDialogoCondicional;
+			eventos.Add(evento.id, evento);
+
+			evento = new Interaccion.EventoAtomico("habilitarElementoDialogo");
+			evento.accion = Mapa.Controller.habilitarElementoDialogo;
+			eventos.Add(evento.id, evento);
+
+			evento = new Interaccion.EventoAtomico("deshabilitarElementoDialogo");
+			evento.accion = Mapa.Controller.deshabilitarElementoDialogo;
+			eventos.Add(evento.id, evento);
+
+			evento = new Interaccion.EventoAtomico("recibirArticulos");
+			evento.accion = Mapa.Controller.recibirArticulos;
+			eventos.Add(evento.id, evento);
+
+			evento = new Interaccion.EventoAtomico("entregarArticulos");
+			evento.accion = Mapa.Controller.entregarArticulos;
+			eventos.Add(evento.id, evento);
+
+			evento = new Interaccion.EventoAtomico("comprobarExistenciaArticulos");
+			evento.accion = Mapa.Controller.comprobarExistenciaArticulos;
+			eventos.Add(evento.id, evento);
+
+
+			List<String> listaLlamada;
+
+
+			// ----------------------------------------------------------------
+			script = new Interaccion.Script("dialogoEntregaArticulo");
+			script.variablesLocales.Add("resultadoArticulos");
+			script.parametrosEntrada.Add("idEntradaDialogo");
+			script.parametrosEntrada.Add("idMenuDialogo");
+			script.parametrosEntrada.Add("valorCondicion");
+			script.parametrosEntrada.Add("idArticulo");
+			script.parametrosEntrada.Add("cantidadArticulos");
+
+			listaLlamada = new List<String>();
+			listaLlamada.Add("idEntradaDialogo");
+			listaLlamada.Add("idMenuDialogo");
+			listaLlamada.Add("resultadoArticulos");
+			listaLlamada.Add("idArticulo");
+			listaLlamada.Add("cantidadArticulos");
+			script.parametrosLlamadas.Add(listaLlamada);
+
+			listaLlamada = new List<String>();
+			listaLlamada.Add("idEntradaDialogo");
+			listaLlamada.Add("idMenuDialogo");
+			listaLlamada.Add("resultadoArticulos");
+			listaLlamada.Add("valorCondicion");
+			script.parametrosLlamadas.Add(listaLlamada);
+
+			script.eventos.Add(eventos["comprobarExistenciaArticulos"]);
+			script.eventos.Add(eventos["elementoDialogoCondicional"]);
+
+			eventos.Add(script.id, script);
+			// ----------------------------------------------------------------
+
+
+			// ----------------------------------------------------------------
+			script = new Interaccion.Script("dialogoDobleEntregaArticulo");
+			script.parametrosEntrada.Add("idEntradaHabilitadaDialogo");
+			script.parametrosEntrada.Add("idMenuHabilitadoDialogo");
+			script.parametrosEntrada.Add("idEntradaDeshabilitadaDialogo");
+			script.parametrosEntrada.Add("idMenuDeshabilitadoDialogo");
+			script.parametrosEntrada.Add("idArticulo");
+			script.parametrosEntrada.Add("cantidadArticulos");
+
+			listaLlamada = new List<String>();
+			listaLlamada.Add("idEntradaHabilitadaDialogo");
+			listaLlamada.Add("idMenuHabilitadoDialogo");
+			listaLlamada.Add("true");
+			listaLlamada.Add("idArticulo");
+			listaLlamada.Add("cantidadArticulos");
+			script.parametrosLlamadas.Add(listaLlamada);
+
+			listaLlamada = new List<String>();
+			listaLlamada.Add("idEntradaDeshabilitadaDialogo");
+			listaLlamada.Add("idMenuDeshabilitadoDialogo");
+			listaLlamada.Add("false");
+			listaLlamada.Add("idArticulo");
+			listaLlamada.Add("cantidadArticulos");
+			script.parametrosLlamadas.Add(listaLlamada);
+
+			script.eventos.Add(eventos["dialogoEntregaArticulo"]);
+			script.eventos.Add(eventos["dialogoEntregaArticulo"]);
+
+			eventos.Add(script.id, script);
+			// ----------------------------------------------------------------
+
+
+			// ----------------------------------------------------------------
+			script = new Interaccion.Script("relizarIntercambioUnico");
+			script.parametrosEntrada.Add("idEntradaDialogo");
+			script.parametrosEntrada.Add("idMenuDialogo");
+			script.parametrosEntrada.Add("listaArticulosEntrega");
+			script.parametrosEntrada.Add("listaArticulosRecibo");
+
+			listaLlamada = new List<String>();
+			listaLlamada.Add("idEntradaDialogo");
+			listaLlamada.Add("idMenuDialogo");
+			script.parametrosLlamadas.Add(listaLlamada);
+
+			listaLlamada = new List<String>();
+			listaLlamada.Add("idEntradaDialogo");
+			listaLlamada.Add("idMenuDialogo");
+			listaLlamada.Add("listaArticulosEntrega");
+			script.parametrosLlamadas.Add(listaLlamada);
+
+			listaLlamada = new List<String>();
+			listaLlamada.Add("idEntradaDialogo");
+			listaLlamada.Add("idMenuDialogo");
+			listaLlamada.Add("listaArticulosRecibo");
+			script.parametrosLlamadas.Add(listaLlamada);
+
+			script.eventos.Add(eventos["deshabilitarElementoDialogo"]);
+			script.eventos.Add(eventos["entregarArticulos"]);
+			script.eventos.Add(eventos["recibirArticulos"]);
+
+			eventos.Add(script.id, script);
+			// ----------------------------------------------------------------
 		}
 
 

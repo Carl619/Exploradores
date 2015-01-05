@@ -39,9 +39,10 @@ namespace Ruinas
 			activador.tiempoActivacion = Convert.ToInt32(campos["tiempoActivacion"]);
 			activador.espacio = new Rectangle(Convert.ToInt32(campos["coordenada x"]),
 										Convert.ToInt32(campos["coordenada y"]),
-										flyweight.iconoPasivo.Width,
-										flyweight.iconoPasivo.Height);
+										flyweight.ancho,
+										flyweight.alto);
 			
+			activador.habitacion = habitacion;
 			habitacion.objetos.Add(activador);
 
 			return activador;
@@ -53,22 +54,31 @@ namespace Ruinas
 			if(mecanismo == null)
 				return;
 			mecanismo.ejecutarAccion(id, Mecanismo.Accion.Alternar);
+			if(activado)
+			{
+				activado = false;
+				vista.requestUpdateContent();
+			}
+			else
+				base.activar();
 		}
 
 
-		public void activar()
+		public override void activar()
 		{
 			if(mecanismo == null)
 				return;
 			mecanismo.ejecutarAccion(id, Mecanismo.Accion.Activar);
+			base.activar();
 		}
 
 
-		public void desctivar()
+		public void desactivar()
 		{
 			if(mecanismo == null)
 				return;
 			mecanismo.ejecutarAccion(id, Mecanismo.Accion.Desactivar);
+			activado = false;
 		}
 
 		

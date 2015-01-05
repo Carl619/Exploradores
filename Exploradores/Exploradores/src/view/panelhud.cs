@@ -26,7 +26,10 @@ namespace Programa
 			panelVentanas = null;
 			labelTiempo = null;
 
+			contentSpacingX = 4;
+			contentSpacingY = 4;
 			layout.axisPriority = ILS.Layout.AxisPriority.VerticalFirst;
+			//layout.verticalFlow = ILS.Layout.Flow.LeftOrTopFlow;
 
 			if(actualizarVista == true)
 				updateContent();
@@ -73,6 +76,7 @@ namespace Programa
 			boton = new ILSXNA.Button("Misiones", Gestores.Mundo.Instancia.buttonFlyweights["button1"]);
 			boton.icons.Add(Gestores.Mundo.Instancia.imagenes["misiones"].textura);
 			boton.updateContent();
+			boton.onButtonPress = Controller.funcionAbrirMisiones;
 			panelMenu.addComponent(boton);
 
 			boton = new ILSXNA.Button("Personajes", Gestores.Mundo.Instancia.buttonFlyweights["button1"]);

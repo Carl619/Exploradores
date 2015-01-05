@@ -29,11 +29,11 @@ namespace ILS
 			VerticalFirst
 		}
 		/* Where are the components located
-		(Latin script paragraphs are usually LeftOrUpperAlignment). */
+		(Latin script paragraphs are usually LeftOrTopAlignment). */
 		public enum Alignment
 		{
-			LeftOrUpperAlignment,
-			RightOrLowerAlignment,
+			LeftOrTopAlignment,
+			RightOrBottomAlignment,
 			CenterAlignment
 		}
 		/* How spread out the content is
@@ -45,11 +45,11 @@ namespace ILS
 			Maximize
 		}
 		/* In which direction are the components displayed
-		(Latin script paragraphs are usually RightOrLowerFlow). */
+		(Latin script paragraphs are usually RightOrBottomFlow). */
 		public enum Flow
 		{
-			LeftOrUpperFlow,
-			RightOrLowerFlow
+			LeftOrTopFlow,
+			RightOrBottomFlow
 		}
 		
 		
@@ -74,10 +74,10 @@ namespace ILS
 		public Layout()
 		{
 			axisPriority = AxisPriority.HorizontalFirst;
-			horizontalAlignment = Alignment.LeftOrUpperAlignment;
-			verticalAlignment = Alignment.LeftOrUpperAlignment;
-			horizontalFlow = Flow.RightOrLowerFlow;
-			verticalFlow = Flow.RightOrLowerFlow;
+			horizontalAlignment = Alignment.LeftOrTopAlignment;
+			verticalAlignment = Alignment.LeftOrTopAlignment;
+			horizontalFlow = Flow.RightOrBottomFlow;
+			verticalFlow = Flow.RightOrBottomFlow;
 			horizontalSizePolicy = SizePolicy.Neutral;
 			verticalSizePolicy = SizePolicy.Neutral;
 

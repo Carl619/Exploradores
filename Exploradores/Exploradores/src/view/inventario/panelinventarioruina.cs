@@ -31,23 +31,29 @@ namespace Objetos
 		{
 			clearComponents();
 			requestedContentUpdate = false;
-
-			if(Gestores.Partidas.Instancia.gestorPantallas.estadoHUD != Gestores.Pantallas.EstadoHUD.Inventario)
+			
+			Ruinas.Tesoro tesoro = Gestores.Partidas.Instancia.gestorRuinas.ruinaActual.tesoroAbierto;
+			if(tesoro == null)
 				return;
+			Objetos.Inventario inventarioTesoro = tesoro.inventario;
+			Objetos.Inventario inventarioPersonaje = tesoro.personaje.inventario;
 			
-			Objetos.Inventario inventario = Programa.Jugador.Instancia.protagonista.inventario;
+			Objetos.InventarioView inventarioPersonajeView = inventarioPersonaje.crearVista();
+			inventarioPersonajeView.textoTitulo = "Inventario:";
+			inventarioPersonajeView.updateContent();
+			addComponent(inventarioPersonajeView);
 			
-			Objetos.InventarioView inventarioView = inventario.crearVista();
-			inventarioView.textoTitulo = "Inventario:";
-			inventarioView.updateContent();
-			addComponent(inventarioView);
+			Objetos.InventarioView inventarioTesoroView = inventarioTesoro.crearVista();
+			inventarioTesoroView.textoTitulo = "Tesoro:";
+			inventarioTesoroView.updateContent();
+			addComponent(inventarioTesoroView);
 
 			ILSXNA.Button boton;
 
 			boton = new ILSXNA.Button("Cerrar", Gestores.Mundo.Instancia.buttonFlyweights["button1"]);
 			boton.icons.Add(Gestores.Mundo.Instancia.imagenes["cancel"].textura);
 			boton.updateContent();
-			boton.onButtonPress = Ruinas.Controller.cerrarInventario;
+			boton.onButtonPress = Ruinas.Controller.cerrarTesoro;
 			addComponent(boton);
 		}
 	}

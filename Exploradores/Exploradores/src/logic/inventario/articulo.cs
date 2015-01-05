@@ -13,6 +13,7 @@ namespace Objetos
 	{
 		// variables
 		public static String idDinero = "idDinero";
+		public static String idComida = "idComida";
 		public String id { get; protected set; }
 		public String nombre { get; protected set; }
 		public uint peso { get; set; }

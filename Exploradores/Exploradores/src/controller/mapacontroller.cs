@@ -10,7 +10,7 @@ namespace Mapa
 {
 	
 
-	public static class Controller
+	public static partial class Controller
 	{
 		public static void mouseSelectLugar(ILS.Drawable drawable, ILS.MouseEvent eventInfo, Object configObj)
 		{
@@ -29,6 +29,11 @@ namespace Mapa
 		{
 			Gestores.Partidas.Instancia.cambiarMusica("ciudad");
 			Programa.VistaGeneral.Instancia.cambiarVista(Gestores.Pantallas.EstadoPartida.Ciudad);
+
+			Interaccion.Mision.Evento evento = Interaccion.Mision.Evento.LlegadaLugar;
+			Interaccion.Mision.InfoEvento info = new Interaccion.Mision.InfoEvento();
+			info.lugar = Programa.Jugador.Instancia.protagonista.lugarActual;
+			Gestores.Partidas.Instancia.gestorMisiones.notify(evento, info);
 		}
 		
 
@@ -41,6 +46,10 @@ namespace Mapa
 		
 		public static void entrarRuina(ILS.Drawable drawable, ILS.MouseEvent eventInfo, Object configObj)
 		{
+			LugarVisitable lugar = Programa.Jugador.Instancia.protagonista.lugarActual;
+			if(lugar.GetType() != typeof(Ruina))
+				return;
+			Gestores.Partidas.Instancia.gestorRuinas.cargarRuinaActual((Ruina)lugar);
 			Gestores.Partidas.Instancia.cambiarMusica("ruina");
 			Programa.VistaGeneral.Instancia.cambiarVista(Gestores.Pantallas.EstadoPartida.Ruina);
 		}
@@ -94,13 +103,13 @@ namespace Mapa
 				origen.buscarCaminoMinimo(mapaView.lugarSeleccionado, 0,
 							(int)Gestores.Partidas.Instancia.numeroLugaresVisitables,
 							ref distancia);
-			Programa.Jugador.Instancia.protagonista.camino = camino;
+			Programa.Jugador.Instancia.protagonista.viaje.asignar(camino, mapaView.lugarSeleccionado);
 			
 			mapaView.actualizarRutas();
 
 			Programa.PanelHUD panelHUD = Programa.VistaGeneral.Instancia.contenedorJuego.panelCentral.panelHUD;
 			panelHUD.panelVentanas.cambiarAlternativa(Gestores.Pantallas.EstadoHUD.Viaje);
-			panelHUD.panelVentanas.panelViaje.setViaje(camino);
+			panelHUD.panelVentanas.panelViaje.setViaje(Programa.Jugador.Instancia.protagonista.viaje);
 			panelHUD.actualizarBloqueoVentana();
 		}
 
@@ -111,7 +120,7 @@ namespace Mapa
 				return;
 			
 			Gestores.Partidas.Instancia.gestorPantallas.estadoHUD = Gestores.Pantallas.EstadoHUD.Vacio;
-			Programa.Jugador.Instancia.protagonista.camino = null;
+			Programa.Jugador.Instancia.protagonista.viaje.clear(true);
 			Programa.VistaGeneral.Instancia.contenedorJuego.panelCentral.panelFondo.vistaMapa.actualizarRutas();
 
 			Programa.PanelHUD panelHUD = Programa.VistaGeneral.Instancia.contenedorJuego.panelCentral.panelHUD;
@@ -120,16 +129,21 @@ namespace Mapa
 		}
 
 		
-		public static void viajar(ILS.Drawable drawable, ILS.MouseEvent eventInfo, Object configObj)
+		public static void intentarViajar(ILS.Drawable drawable, ILS.MouseEvent eventInfo, Object configObj)
 		{
-			Programa.Jugador.Instancia.protagonista.viajarSiguiente();
-			Programa.VistaGeneral.Instancia.contenedorJuego.interfazRuina.requestUpdateContent();
+			if(Programa.Jugador.Instancia.protagonista.viajarSiguiente(true) == false)
+				actualizarViaje(drawable, eventInfo, configObj);
+		}
+
+		
+		public static void actualizarViaje(ILS.Drawable drawable, ILS.MouseEvent eventInfo, Object configObj)
+		{
 			Programa.VistaGeneral.Instancia.contenedorJuego.panelCentral.panelFondo.vistaMapa.requestUpdateContent();
 			Programa.VistaGeneral.Instancia.contenedorJuego.panelLateral.actualizarLugar();
 			
 			Programa.PanelHUD panelHUD = Programa.VistaGeneral.Instancia.contenedorJuego.panelCentral.panelHUD;
 			panelHUD.actualizarTiempo();
-			panelHUD.panelVentanas.panelViaje.setViaje(Programa.Jugador.Instancia.protagonista.camino);
+			panelHUD.panelVentanas.panelViaje.setViaje(Programa.Jugador.Instancia.protagonista.viaje);
 			panelHUD.actualizarBloqueoVentana();
 			
 			Programa.VistaGeneral.Instancia.contenedorJuego.panelLateral.vistaMapa.requestUpdateContent();
@@ -137,147 +151,68 @@ namespace Mapa
 		}
 
 
-		public static void verEdificio(Object infoObj, Object elemento)
+		public static void viajePagar(ILS.Drawable drawable, ILS.MouseEvent eventInfo, Object configObj)
 		{
 			if(Gestores.Partidas.Instancia.gestorPantallas.estadoJuego ==
 				Gestores.Pantallas.EstadoJuego.Jugando &&
 				Gestores.Partidas.Instancia.gestorPantallas.estadoPartida !=
 				Gestores.Pantallas.EstadoPartida.Ruina &&
 				Gestores.Partidas.Instancia.gestorPantallas.estadoHUD ==
-				Gestores.Pantallas.EstadoHUD.Vacio)
-			{
-				Gestores.Partidas.Instancia.gestorPantallas.estadoHUD =
-					Gestores.Pantallas.EstadoHUD.Edificio;
-				Programa.PanelHUD panelHUD = Programa.VistaGeneral.Instancia.contenedorJuego.panelCentral.panelHUD;
-				panelHUD.panelVentanas.cambiarAlternativa(Gestores.Pantallas.EstadoHUD.Edificio);
-				panelHUD.panelVentanas.requestUpdateContent();
-				panelHUD.actualizarBloqueoVentana();
-			}
-		}
-
-
-		public static void cerrarEdificio(ILS.Drawable drawable, ILS.MouseEvent eventInfo, Object configObj)
-		{
-			if(Gestores.Partidas.Instancia.gestorPantallas.estadoJuego ==
-				Gestores.Pantallas.EstadoJuego.Jugando &&
-				Gestores.Partidas.Instancia.gestorPantallas.estadoPartida !=
-				Gestores.Pantallas.EstadoPartida.Ruina &&
-				Gestores.Partidas.Instancia.gestorPantallas.estadoHUD ==
-				Gestores.Pantallas.EstadoHUD.Edificio)
-			{
-				Gestores.Partidas.Instancia.gestorPantallas.estadoHUD =
-					Gestores.Pantallas.EstadoHUD.Vacio;
-				Gestores.Partidas.Instancia.edificioSeleccionado = null;
-				Programa.PanelHUD panelHUD = Programa.VistaGeneral.Instancia.contenedorJuego.panelCentral.panelHUD;
-				panelHUD.panelVentanas.cambiarAlternativa(Gestores.Pantallas.EstadoHUD.Vacio);
-				panelHUD.panelVentanas.requestUpdateContent();
-				panelHUD.actualizarBloqueoVentana();
-			}
-		}
-
-
-		public static void abrirDialogoNPC(Object infoObj, Object elemento)
-		{
-			if(Gestores.Partidas.Instancia.gestorPantallas.estadoJuego ==
-				Gestores.Pantallas.EstadoJuego.Jugando &&
-				Gestores.Partidas.Instancia.gestorPantallas.estadoPartida !=
-				Gestores.Pantallas.EstadoPartida.Ruina &&
-				(Gestores.Partidas.Instancia.gestorPantallas.estadoHUD ==
-				Gestores.Pantallas.EstadoHUD.Edificio ||
-				Gestores.Partidas.Instancia.gestorPantallas.estadoHUD ==
-				Gestores.Pantallas.EstadoHUD.Vacio))
-			{
-				if(Gestores.Partidas.Instancia.gestorPantallas.estadoHUD ==
-				Gestores.Pantallas.EstadoHUD.Edificio)
-				{
-					cerrarEdificio(null, null, null);
-				}
-				
-				Gestores.Partidas.Instancia.gestorPantallas.estadoHUD =
-					Gestores.Pantallas.EstadoHUD.Dialogo;
-				Programa.PanelHUD panelHUD = Programa.VistaGeneral.Instancia.contenedorJuego.panelCentral.panelHUD;
-				panelHUD.panelVentanas.cambiarAlternativa(Gestores.Pantallas.EstadoHUD.Dialogo);
-				panelHUD.panelVentanas.requestUpdateContent();
-				panelHUD.actualizarBloqueoVentana();
-			}
-		}
-
-
-		public static void cerrarDialogoNPC(ILS.Drawable drawable, ILS.MouseEvent eventInfo, Object configObj)
-		{
-			if(Gestores.Partidas.Instancia.gestorPantallas.estadoJuego ==
-				Gestores.Pantallas.EstadoJuego.Jugando &&
-				Gestores.Partidas.Instancia.gestorPantallas.estadoPartida !=
-				Gestores.Pantallas.EstadoPartida.Ruina &&
-				Gestores.Partidas.Instancia.gestorPantallas.estadoHUD ==
-				Gestores.Pantallas.EstadoHUD.Dialogo)
-			{
-				Gestores.Partidas.Instancia.gestorPantallas.estadoHUD =
-					Gestores.Pantallas.EstadoHUD.Vacio;
-				Gestores.Partidas.Instancia.npcSeleccionado = null;
-				Programa.PanelHUD panelHUD = Programa.VistaGeneral.Instancia.contenedorJuego.panelCentral.panelHUD;
-				panelHUD.panelVentanas.cambiarAlternativa(Gestores.Pantallas.EstadoHUD.Vacio);
-				panelHUD.panelVentanas.requestUpdateContent();
-				panelHUD.actualizarBloqueoVentana();
-			}
-		}
-
-
-		public static void elegirOpcionDialogo(ILS.Drawable drawable, ILS.MouseEvent eventInfo, Object configObj)
-		{
-			if(configObj.GetType() != typeof(Tuple<Int32, Interaccion.VentanaDialogo>))
-				return;
-			Tuple<Int32, Interaccion.VentanaDialogo> t = (Tuple<Int32, Interaccion.VentanaDialogo>)configObj;
-			t.Item2.activarOpcion(t.Item1);
-		}
-
-
-		public static void clickArticulo(Object infoObj, Object elemento)
-		{
-			transferenciaArticulo(infoObj, elemento, false);
-		}
-
-
-		public static void doubleClickArticulo(Object infoObj, Object elemento)
-		{
-			transferenciaArticulo(infoObj, elemento, true);
-		}
-
-
-		public static void transferenciaArticulo(Object infoObj, Object elemento, bool todo)
-		{
-			if(Gestores.Partidas.Instancia.gestorPantallas.estadoJuego ==
-				Gestores.Pantallas.EstadoJuego.Jugando &&
-				Gestores.Partidas.Instancia.gestorPantallas.estadoPartida !=
-				Gestores.Pantallas.EstadoPartida.Ruina &&
-				Gestores.Partidas.Instancia.gestorPantallas.estadoHUD ==
-				Gestores.Pantallas.EstadoHUD.Dialogo &&
+				Gestores.Pantallas.EstadoHUD.Viaje &&
 				Gestores.Partidas.Instancia.gestorPantallas.estadoInteraccion ==
-				Gestores.Pantallas.EstadoInteraccion.Comercio)
+				Gestores.Pantallas.EstadoInteraccion.Defensa)
 			{
-				Tuple<Objetos.InventarioView, Objetos.InventarioView> inventarios;
-				inventarios = (Tuple<Objetos.InventarioView, Objetos.InventarioView>)infoObj;
+				Gestores.Partidas.Instancia.gestorPantallas.estadoInteraccion =
+					Gestores.Pantallas.EstadoInteraccion.Vacio;
+				Programa.VistaGeneral.Instancia.contenedorJuego.actualizarVentanaDefensa();
 				
-				Objetos.ArticuloView articulo = (Objetos.ArticuloView)elemento;
-				uint cantidad = inventarios.Item1.inventario.articulos[articulo.coleccion.articulo.id].cantidad;
-				if(todo == false)
-					cantidad = 1;
-				
-				bool transferencia = inventarios.Item2.inventario.addArticulo(articulo.coleccion.articulo, cantidad);
-				if(transferencia == false)
-					return;
-				inventarios.Item1.inventario.removeArticulo(articulo.coleccion.articulo, cantidad);
+				Programa.Jugador.Instancia.protagonista.pagarAtacantes();
+				Programa.Jugador.Instancia.protagonista.viajarSiguiente(false);
+				actualizarViaje(null, null, null);
+			}
+		}
 
-				Objetos.ColeccionArticulos coleccion;
-				if(inventarios.Item1.inventario.articulos.TryGetValue(
-					articulo.coleccion.articulo.id, out coleccion) == false)
-				{
-					inventarios.Item1.inventario.articulosSeleccionados = null;
-				}
+
+		public static void viajeDefender(ILS.Drawable drawable, ILS.MouseEvent eventInfo, Object configObj)
+		{
+			if(Gestores.Partidas.Instancia.gestorPantallas.estadoJuego ==
+				Gestores.Pantallas.EstadoJuego.Jugando &&
+				Gestores.Partidas.Instancia.gestorPantallas.estadoPartida !=
+				Gestores.Pantallas.EstadoPartida.Ruina &&
+				Gestores.Partidas.Instancia.gestorPantallas.estadoHUD ==
+				Gestores.Pantallas.EstadoHUD.Viaje &&
+				Gestores.Partidas.Instancia.gestorPantallas.estadoInteraccion ==
+				Gestores.Pantallas.EstadoInteraccion.Defensa)
+			{
+				Gestores.Partidas.Instancia.gestorPantallas.estadoInteraccion =
+					Gestores.Pantallas.EstadoInteraccion.Vacio;
+				Programa.VistaGeneral.Instancia.contenedorJuego.actualizarVentanaDefensa();
 				
-				inventarios.Item1.requestUpdateContent();
-				inventarios.Item2.requestUpdateContent();
-				Programa.VistaGeneral.Instancia.contenedorJuego.panelComercio.actualizarCabecera();
+				Programa.Jugador.Instancia.protagonista.defender();
+				Programa.Jugador.Instancia.protagonista.viajarSiguiente(false);
+				actualizarViaje(null, null, null);
+			}
+		}
+
+
+		public static void viajeHuir(ILS.Drawable drawable, ILS.MouseEvent eventInfo, Object configObj)
+		{
+			if(Gestores.Partidas.Instancia.gestorPantallas.estadoJuego ==
+				Gestores.Pantallas.EstadoJuego.Jugando &&
+				Gestores.Partidas.Instancia.gestorPantallas.estadoPartida !=
+				Gestores.Pantallas.EstadoPartida.Ruina &&
+				Gestores.Partidas.Instancia.gestorPantallas.estadoHUD ==
+				Gestores.Pantallas.EstadoHUD.Viaje &&
+				Gestores.Partidas.Instancia.gestorPantallas.estadoInteraccion ==
+				Gestores.Pantallas.EstadoInteraccion.Defensa)
+			{
+				Gestores.Partidas.Instancia.gestorPantallas.estadoInteraccion =
+					Gestores.Pantallas.EstadoInteraccion.Vacio;
+				Programa.VistaGeneral.Instancia.contenedorJuego.actualizarVentanaDefensa();
+				
+				Programa.Jugador.Instancia.protagonista.huir();
+				Programa.Jugador.Instancia.protagonista.viajeVolver();
+				actualizarViaje(null, null, null);
 			}
 		}
 	}

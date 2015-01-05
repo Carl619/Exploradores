@@ -1,31 +1,90 @@
 
 
 {
-	id							: object1
-	iconoPasivo					: trampa
-	iconoActivo					: trampa
-	iconoSeleccionado			: trampa
-	iconoActivoSeleccionado		: trampa
+	id								: trampa1
+	iconosParado					: 1
+		trampa1/trampa_a
+	iconosActivado					: 1
+		trampa1/trampa_b
 	
 	
-	id							: puertaHorizontal
-	iconoPasivo					: puerta1/puerta1_a
-	iconoActivo					: puerta1/puerta1_b
-	iconoSeleccionado			: puerta1/puerta1_c
-	iconoActivoSeleccionado		: puerta1/puerta1_d
+	id								: lanzador1
+	iconosParado					: 1
+		lanzador1/lanzador_a
 	
 	
-	id							: puertaVertical
-	iconoPasivo					: puerta2/puerta2_a
-	iconoActivo					: puerta2/puerta2_b
-	iconoSeleccionado			: puerta2/puerta2_c
-	iconoActivoSeleccionado		: puerta2/puerta2_d
+	id								: proyectil1
+	ancho							: 24
+	alto							: 24
+	velocidadAnimacion				: 2.0
+	iconosMovimiento				: 13
+		proyectil1/fire1_01
+		proyectil1/fire1_02
+		proyectil1/fire1_03
+		proyectil1/fire1_04
+		proyectil1/fire1_05
+		proyectil1/fire1_06
+		proyectil1/fire1_07
+		proyectil1/fire1_08
+		proyectil1/fire1_09
+		proyectil1/fire1_10
+		proyectil1/fire1_11
+		proyectil1/fire1_12
+		proyectil1/fire1_13
 	
 	
-	id							: activador
-	iconoPasivo					: activador/activador_a
-	iconoActivo					: activador/activador_b
-	iconoSeleccionado			: activador/activador_c
-	iconoActivoSeleccionado		: activador/activador_d
+	id								: puerta1
+	iconosParado					: 1
+		puerta1/puerta_a
+	iconosParadoSeleccionado		: 1
+		puerta1/puerta_b
+	iconosActivado					: 1
+		puerta1/puerta_c
+	iconosActivadoSeleccionado		: 1
+		puerta1/puerta_d
+	
+	
+	id								: puerta2
+	iconosParado					: 1
+		puerta2/puerta_a
+	iconosParadoSeleccionado		: 1
+		puerta2/puerta_b
+	iconosActivado					: 1
+		puerta2/puerta_c
+	iconosActivadoSeleccionado		: 1
+		puerta2/puerta_d
+	
+	
+	id								: puerta3
+	iconosParado					: 1
+		puerta3/puerta_a
+	iconosParadoSeleccionado		: 1
+		puerta3/puerta_b
+	iconosActivado					: 1
+		puerta3/puerta_c
+	iconosActivadoSeleccionado		: 1
+		puerta3/puerta_d
+	
+	
+	id								: activador
+	iconosParado					: 1
+		activador/activador_a
+	iconosParadoSeleccionado		: 1
+		activador/activador_b
+	iconosActivado					: 1
+		activador/activador_c
+	iconosActivadoSeleccionado		: 1
+		activador/activador_d
+	
+	
+	id								: tesoro
+	iconosParado					: 1
+		tesoro/tesoro_a
+	iconosParadoSeleccionado		: 1
+		tesoro/tesoro_b
+	iconosActivado					: 1
+		tesoro/tesoro_c
+	iconosActivadoSeleccionado		: 1
+		tesoro/tesoro_d
 }
 

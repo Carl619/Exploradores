@@ -23,8 +23,8 @@ namespace Mapa
 		
 
 		// constructor
-		public LugarVisitable(String newID, String newNombre, LugarVisitableFlyweight newFlyweight)
-			: base(newID)
+		public LugarVisitable(String newID, String newNombre, LugarVisitableFlyweight newFlyweight, bool visible = true)
+			: base(newID, visible)
 		{
 			if(newFlyweight == null)
 				throw new ArgumentNullException();
@@ -35,10 +35,24 @@ namespace Mapa
 			nombre = (String)newNombre.Clone();
 			informacionEspecifica = new List<string>();
 			indiceGrafo = 0;
+			vista = null;
 		}
 
 
 		// funciones
+		public bool esVisibleDesconocido()
+		{
+			if(oculto == false)
+				return false;
+			foreach(Ruta ruta in rutas)
+			{
+				if(ruta.oculto == false)
+					return true;
+			}
+			return false;
+		}
+
+
 		public List<String> getInformacion()
 		{
 			List<String> lista = getInformacionLugar();
@@ -51,7 +65,10 @@ namespace Mapa
 		{
 			List<Dijkstra.IRama> listaRamas = new List<Dijkstra.IRama>();
 			foreach(Ruta ruta in rutas)
-				listaRamas.Add(ruta);
+			{
+				if(ruta.oculto == false)
+					listaRamas.Add(ruta);
+			}
 			
 			return listaRamas;
 		}

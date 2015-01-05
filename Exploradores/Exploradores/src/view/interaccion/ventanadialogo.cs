@@ -29,6 +29,7 @@ namespace Interaccion
 		public SpriteFont fuenteOpcion { get; set; }
 		public uint minIndexWidth { get; set; }
 		public uint minOptionHeight { get; set; }
+		public uint anchoConversacion { get; set; }
 
 
 		// constructor
@@ -48,6 +49,7 @@ namespace Interaccion
 
 			minIndexWidth = 24;
 			minOptionHeight = 24;
+			anchoConversacion = 512;
 		}
 
 
@@ -112,8 +114,8 @@ namespace Interaccion
 			texto.color = Gestores.Mundo.Instancia.colores["genericColor"];
 			texto.message = dialogo.menu.texto;
 
-			//ILSXNA.Paragraph cuerpoDialogo = new ILSXNA.Paragraph(texto);
-			addComponent(texto);
+			ILSXNA.Paragraph cuerpoDialogo = new ILSXNA.Paragraph(texto, anchoConversacion);
+			addComponent(cuerpoDialogo);
 			
 			if (dialogo.menu.GetType() == typeof(MenuDialogo))
 			{
@@ -124,23 +126,24 @@ namespace Interaccion
 
 				foreach(ElementoDialogo elem in ((MenuDialogo)dialogo.menu).dialogo)
 				{
+					if(elem.visible == false)
+						break;
+					
 					ILSXNA.Label labelIndice = new ILSXNA.Label();
 					labelIndice.innerComponent = fuente3;
 					labelIndice.color = Gestores.Mundo.Instancia.colores["menuColor"];
 					labelIndice.message = indiceMenu + ".";
-					//ILSXNA.Paragraph opcionMenuIndice = new ILSXNA.Paragraph(labelIndice);
 
 					ILSXNA.Label titulo = (ILSXNA.Label)labelIndice.clone();
 					titulo.message = " " + elem.titulo;
-					//ILSXNA.Paragraph opcionMenuTexto = new ILSXNA.Paragraph(titulo);
 					
 					ILSXNA.Container opcionMenu = new ILSXNA.Container();
 					opcionMenu.sizeSettings.minInnerHeight = minOptionHeight;
-					opcionMenu.layout.verticalAlignment = ILS.Layout.Alignment.RightOrLowerAlignment;
+					opcionMenu.layout.verticalAlignment = ILS.Layout.Alignment.RightOrBottomAlignment;
 					Int32 i = new Int32();
 					i = (Int32)indiceMenu - 1;
 					opcionMenu.callbackConfigObj = new Tuple<Int32, VentanaDialogo>(i, this);
-					opcionMenu.onMousePress = Mapa.Controller.elegirOpcionDialogo;
+					opcionMenu.onLeftMousePress = Mapa.Controller.elegirOpcionDialogo;
 					
 					ILSXNA.Container opcionMenuIC = new ILSXNA.Container();
 					opcionMenuIC.sizeSettings.minInnerWidth = minIndexWidth;

@@ -17,7 +17,9 @@ namespace Gestores
 		public enum EstadoJuego
 		{
 			MenuPrincipal,
-			Jugando
+			Jugando,
+			Exito,
+			Fracaso
 		}
 		public enum EstadoPartida
 		{
@@ -49,13 +51,20 @@ namespace Gestores
 		public enum EstadoInteraccion
 		{
 			Vacio,
-			Comercio
+			Comercio,
+			Defensa
 		}
 		public enum EstadoCaracteristica
 		{
 			Vacio,
 			Atributo,
 			Habilidad
+		}
+		public enum EstadoMisiones
+		{
+			Activas,
+			Terminadas,
+			Fracasadas
 		}
 
 
@@ -67,18 +76,20 @@ namespace Gestores
 		public EstadoHUD estadoHUD { get; set; }
 		public EstadoInteraccion estadoInteraccion { get; set; }
 		public EstadoCaracteristica estadoCaracteristica { get; set; }
+		public EstadoMisiones estadoMisiones { get; set; }
 
 
 		// constructor
 		public Pantallas()
 		{
 			estadoJuego = EstadoJuego.MenuPrincipal;
-			estadoPartida = EstadoPartida.Ciudad;
+			estadoPartida = EstadoPartida.Mapa;
 			estadoMenu = EstadoMenu.VistaPrincipal;
 			estadoInformacion = EstadoInformacion.Invisible;
 			estadoHUD = EstadoHUD.Vacio;
 			estadoInteraccion = EstadoInteraccion.Vacio;
 			estadoCaracteristica = EstadoCaracteristica.Vacio;
+			estadoMisiones = EstadoMisiones.Activas;
 		}
 	}
 }

@@ -48,6 +48,7 @@ namespace Gestores
 		public Gestor<Objetos.ArticuloFlyweight> articuloFlyweights { get; protected set; }
 		public Gestor<Ruinas.ObjetoFlyweight> objetoFlyweights { get; protected set; }
 		public Gestor<Ruinas.RelojFlyweight> relojFlyweights { get; protected set; }
+		public Gestor<Ruinas.PersonajeRuinaFlyweight> personajeRuinaFlyweights { get; protected set; }
 		public Gestor<Personajes.NPCFlyweight> npcFlyweights { get; protected set; }
 
 
@@ -77,6 +78,7 @@ namespace Gestores
 			articuloFlyweights = new Gestor<Objetos.ArticuloFlyweight>();
 			objetoFlyweights = new Gestor<Ruinas.ObjetoFlyweight>();
 			relojFlyweights = new Gestor<Ruinas.RelojFlyweight>();
+			personajeRuinaFlyweights = new Gestor<Ruinas.PersonajeRuinaFlyweight>();
 			npcFlyweights = new Gestor<Personajes.NPCFlyweight>();
 		}
 
@@ -158,6 +160,7 @@ namespace Gestores
 			cargarFlyweightsArticulos(@"data/articuloflyweight.txt");
 			cargarFlyweightsObjetos(@"data/objetoflyweight.txt");
 			cargarFlyweightsRelojes(@"data/relojflyweight.txt");
+			cargarFlyweightsPersonajeRuinas(@"data/personajeruinaflyweight.txt");
 			cargarFlyweightsNPCs(@"data/npcflyweight.txt");
 		}
 
@@ -181,6 +184,41 @@ namespace Gestores
 		{
 			Imagen imagen;
 
+			List<Tuple<String, String>> lista;
+			lista = new List<Tuple<String, String>>();
+
+			String pathBase = "images/icons/personajes/avatares/";
+			lista.Add(new Tuple<String, String>("cazador1", pathBase + "cazador1"));
+			lista.Add(new Tuple<String, String>("cazador2", pathBase + "cazador2"));
+			lista.Add(new Tuple<String, String>("cazador3", pathBase + "cazador3"));
+			lista.Add(new Tuple<String, String>("comerciante1", pathBase + "comerciante1"));
+			lista.Add(new Tuple<String, String>("comerciante2", pathBase + "comerciante2"));
+			lista.Add(new Tuple<String, String>("comerciante3", pathBase + "comerciante3"));
+			lista.Add(new Tuple<String, String>("medico1", pathBase + "medico1"));
+			lista.Add(new Tuple<String, String>("medico2", pathBase + "medico2"));
+			lista.Add(new Tuple<String, String>("mercenario1", pathBase + "mercenario1"));
+			lista.Add(new Tuple<String, String>("mercenario2", pathBase + "mercenario2"));
+			lista.Add(new Tuple<String, String>("mercenario3", pathBase + "mercenario3"));
+			lista.Add(new Tuple<String, String>("protagonista", pathBase + "protagonista"));
+
+			foreach(Tuple<String, String> tupla in lista)
+			{
+				imagen = new Imagen();
+				imagen.path = tupla.Item2;
+				imagen.textura = Programa.Exploradores.Instancia.Content.Load<Texture2D>(@imagen.path);
+				imagenes.Add(tupla.Item1, imagen);
+				
+				imagen = new Imagen();
+				imagen.path = tupla.Item2 + "b";
+				imagen.textura = Programa.Exploradores.Instancia.Content.Load<Texture2D>(@imagen.path);
+				imagenes.Add(tupla.Item1 + "b", imagen);
+			}
+
+			imagen = new Imagen();
+			imagen.path = "images/sprites/other/fracaso";
+			imagen.textura = Programa.Exploradores.Instancia.Content.Load<Texture2D>(@imagen.path);
+			imagenes.Add("fracaso", imagen);
+
 			imagen = new Imagen();
 			imagen.path = "images/icons/items/genericitem16";
 			imagen.textura = Programa.Exploradores.Instancia.Content.Load<Texture2D>(@imagen.path);
@@ -200,6 +238,16 @@ namespace Gestores
 			imagen.path = "images/icons/other/cerrar";
 			imagen.textura = Programa.Exploradores.Instancia.Content.Load<Texture2D>(@imagen.path);
 			imagenes.Add("cancel", imagen);
+
+			imagen = new Imagen();
+			imagen.path = "images/icons/other/reloj";
+			imagen.textura = Programa.Exploradores.Instancia.Content.Load<Texture2D>(@imagen.path);
+			imagenes.Add("reloj", imagen);
+			
+			imagen = new Imagen();
+			imagen.path = "images/icons/other/vacio";
+			imagen.textura = Programa.Exploradores.Instancia.Content.Load<Texture2D>(@imagen.path);
+			imagenes.Add("vacio", imagen);
 			
 			imagen = new Imagen();
 			imagen.path = "images/icons/error/error16";
@@ -255,6 +303,7 @@ namespace Gestores
 			imagen.path = "images/icons/buttons/ruina";
 			imagen.textura = Programa.Exploradores.Instancia.Content.Load<Texture2D>(@imagen.path);
 			imagenes.Add("ruina", imagen);
+			
 		}
 
 
@@ -307,10 +356,11 @@ namespace Gestores
 		{
 			Personajes.Vida vida;
 			Personajes.Fuerza fuerza;
+			Personajes.Hambre hambre;
 
 			vida = new Personajes.Vida("idVida", "Vida");
-			vida.valorMin = 0;
-			vida.valorMax = 100;
+			vida.valorMin = 1;
+			vida.valorMax = 1000;
 			vida.valor = 10;
 			vida.descripcion = "La vida es un atributo importante que indica cuanto dano puedes recibir hasta morir.";
 			vida.icono = new Imagen();
@@ -320,13 +370,23 @@ namespace Gestores
 
 			fuerza = new Personajes.Fuerza("idFuerza", "Fuerza");
 			fuerza.valorMin = 0;
-			fuerza.valorMax = 100;
-			fuerza.valor = 10;
+			fuerza.valorMax = 500;
+			fuerza.valor = 100;
 			fuerza.descripcion = "La fuerza te permite llevar mas peso en tu inventario a lo largo de tus viajes.";
 			fuerza.icono = new Imagen();
 			fuerza.icono.path = "images/icons/personajes/fuerza";
 			fuerza.icono.textura = Programa.Exploradores.Instancia.Content.Load<Texture2D>(fuerza.icono.path);
 			atributos.Add(fuerza.id, fuerza);
+
+			hambre = new Personajes.Hambre("idHambre", "Hambre");
+			hambre.valorMin = 0;
+			hambre.valorMax = 120;
+			hambre.valor = 0;
+			hambre.descripcion = "Si pasa demasiado tiempo sin comer, puedes morir. El valor maximo indica el numero de horas que puedes estar sin comer.";
+			hambre.icono = new Imagen();
+			hambre.icono.path = "images/icons/personajes/hambre";
+			hambre.icono.textura = Programa.Exploradores.Instancia.Content.Load<Texture2D>(hambre.icono.path);
+			atributos.Add(hambre.id, hambre);
 		}
 
 
@@ -349,7 +409,7 @@ namespace Gestores
 
 			mercenario = new Personajes.Mercenario("idMercenario", "Mercenario");
 			mercenario.precioBaseReclutamiento = 50;
-			mercenario.defensaBase = 3;
+			mercenario.defensaBase = 2;
 			mercenario.descripcion = "Los mercenarios son capaces de protejerte en tus viajes.";
 			mercenario.icono = new Imagen();
 			mercenario.icono.path = "images/icons/personajes/mercenario";
@@ -357,7 +417,7 @@ namespace Gestores
 			habilidades.Add(mercenario.id, mercenario);
 
 			cazador = new Personajes.Cazador("idCazador", "Cazador");
-			cazador.habilidadBase = 3;
+			cazador.habilidadBase = 0.02f;
 			cazador.descripcion = "La caza es importante para obtener comida fuera de las ciudades.";
 			cazador.icono = new Imagen();
 			cazador.icono.path = "images/icons/personajes/cazador";
@@ -365,7 +425,7 @@ namespace Gestores
 			habilidades.Add(cazador.id, cazador);
 
 			medico = new Personajes.Medico("idMedico", "Medico");
-			medico.eficaciaBase = 5;
+			medico.eficaciaBase = 3;
 			medico.descripcion = "Los medicos pueden curar enfermedades y heridas de tu grupo.";
 			medico.icono = new Imagen();
 			medico.icono.path = "images/icons/personajes/medico";
@@ -373,7 +433,7 @@ namespace Gestores
 			habilidades.Add(medico.id, medico);
 
 			enfermedad = new Personajes.Enfermedad("idEnfermedad", "Enfermedad");
-			enfermedad.eficaciaBase = 5;
+			enfermedad.eficaciaBase = 1.23f;
 			enfermedad.descripcion = "Una enfermedad afecta de forma negativa a varias caracteristicas de tu personaje.";
 			enfermedad.icono = new Imagen();
 			enfermedad.icono.path = "images/icons/personajes/enfermedad";
@@ -447,7 +507,7 @@ namespace Gestores
 		{
 			using (System.IO.StreamReader reader = new System.IO.StreamReader(fileName))
 			{
-				objetoFlyweights.loadAll(reader, Ruinas.ObjetoFlyweight.cargarObjeto);
+				objetoFlyweights.loadAll(reader, Ruinas.ObjetoFlyweight.cargarObjeto, Ruinas.ObjetoFlyweight.esLista);
 			}
 		}
 
@@ -457,6 +517,15 @@ namespace Gestores
 			using (System.IO.StreamReader reader = new System.IO.StreamReader(fileName))
 			{
 				relojFlyweights.loadAll(reader, Ruinas.RelojFlyweight.cargarObjeto);
+			}
+		}
+
+
+		protected void cargarFlyweightsPersonajeRuinas(String fileName)
+		{
+			using (System.IO.StreamReader reader = new System.IO.StreamReader(fileName))
+			{
+				personajeRuinaFlyweights.loadAll(reader, Ruinas.PersonajeRuinaFlyweight.cargarObjeto);
 			}
 		}
 

@@ -19,7 +19,7 @@ namespace ILS
 	public abstract class BaseComponent : Drawable
 	{
 		// protected variables
-		public Layer parent { protected get; set; }
+		public Layer parent { get; set; }
 		
 		
 		// constructors

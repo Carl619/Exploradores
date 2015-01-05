@@ -22,15 +22,14 @@ namespace Interaccion
 		public int dineroFinal { get; protected set; }
 		public uint alturaInventarios { get; set; }
 		public uint alturaInventariosCompraVenta { get; set; }
+		protected double tasaVenta { get; set; }
+		protected double tasaCompra { get; set; }
 
 
 		// constructor
 		public PanelComercio(bool actualizarVista = true)
 			: base()
 		{
-			if(actualizarVista == true)
-				updateContent();
-			
 			inventarioProtagonista = null;
 			inventarioNPC = null;
 			inventarioVenta = null;
@@ -45,6 +44,9 @@ namespace Interaccion
 			contentSpacingY = 4;
 			layout.axisPriority = ILS.Layout.AxisPriority.VerticalFirst;
 			border = (ILSXNA.Border)Gestores.Mundo.Instancia.borders["border1"].clone();
+
+			if(actualizarVista == true)
+				updateContent();
 		}
 
 
@@ -63,19 +65,7 @@ namespace Interaccion
 			if(npc.inventario == null)
 				return;
 			
-			double tasaCompra, tasaVenta; // compra comerciante = venta protagonista
-			tasaVenta = 1.0f;
-			tasaCompra = 1.0f;
-			
-			Personajes.Habilidad habilidad;
-			if(npc.habilidades.TryGetValue("idComerciante", out habilidad) == true)
-			{
-				if(habilidad.GetType() != typeof(Personajes.Comerciante))
-					throw new ArgumentException();
-				Personajes.Comerciante comerciante = (Personajes.Comerciante)habilidad;
-				tasaVenta = comerciante.tasaCompras;
-				tasaCompra = comerciante.tasaVentas;
-			}
+			actualizarTasas();
 			
 			header = new ILSXNA.Container();
 			addComponent(header);
@@ -117,6 +107,35 @@ namespace Interaccion
 			actualizarCabecera();
 		}
 
+
+		public void actualizarTasas()
+		{
+			String idNPC = Gestores.Partidas.Instancia.npcSeleccionado;
+			Personajes.NPC npc = Gestores.Partidas.Instancia.npcs[idNPC];
+			if(npc.inventario == null)
+				return;
+			
+			tasaVenta = Programa.Jugador.Instancia.getTasaVentas();
+			tasaCompra = Programa.Jugador.Instancia.getTasaCompras();
+			
+			Personajes.Habilidad habilidad;
+			if(npc.habilidades.TryGetValue("idComerciante", out habilidad) == true)
+			{
+				if(habilidad.GetType() != typeof(Personajes.Comerciante))
+					throw new ArgumentException();
+				Personajes.Comerciante comerciante = (Personajes.Comerciante)habilidad;
+				// compra comerciante = venta protagonista
+				tasaVenta *= comerciante.tasaCompras;
+				tasaCompra *= comerciante.tasaVentas;
+			}
+			if(tasaVenta > tasaCompra)
+			{
+				double media = (tasaVenta + tasaCompra) / 2;
+				tasaVenta = media;
+				tasaCompra = media;
+			}
+		}
+
 		
 		public void actualizarCabecera()
 		{
@@ -125,23 +144,15 @@ namespace Interaccion
 			String idNPC = Gestores.Partidas.Instancia.npcSeleccionado;
 			Personajes.NPC npc = Gestores.Partidas.Instancia.npcs[idNPC];
 			
-			Personajes.Habilidad habilidad;
-			if(npc.habilidades.TryGetValue("idComerciante", out habilidad) == false)
-				throw new ArgumentException();
-			if(habilidad.GetType() != typeof(Personajes.Comerciante))
-				throw new ArgumentException();
-			Personajes.Comerciante comerciante = (Personajes.Comerciante)habilidad;
-			double tasaCompra, tasaVenta; // compra comerciante = venta protagonista
-			tasaVenta = comerciante.tasaCompras;
-			tasaCompra = comerciante.tasaVentas;
+			actualizarTasas();
 
-			String etiquetaBalance = getEtiquetaBalance(tasaVenta, tasaCompra);
+			String etiquetaBalance = getEtiquetaBalance();
 			ILSXNA.Button boton;
 
 			boton = new ILSXNA.Button("Cerrar", Gestores.Mundo.Instancia.buttonFlyweights["button1"]);
 			boton.icons.Add(Gestores.Mundo.Instancia.imagenes["cancel"].textura);
 			boton.updateContent();
-			boton.onButtonPress = Programa.Controller.funcionCerrarComercio;
+			boton.onButtonPress = Mapa.Controller.cerrarComercio;
 			header.addComponent(boton);
 
 			boton = new ILSXNA.Button("Intercambiar", Gestores.Mundo.Instancia.buttonFlyweights["button1"]);
@@ -156,7 +167,7 @@ namespace Interaccion
 				boton.enabled = true;
 			}
 			boton.updateContent();
-			boton.onButtonPress = Programa.Controller.funcionRealizarIntercambio;
+			boton.onButtonPress = Mapa.Controller.realizarIntercambio;
 			header.addComponent(boton);
 			
 			ILSXNA.Label label;
@@ -177,7 +188,7 @@ namespace Interaccion
 		}
 
 
-		public String getEtiquetaBalance(double tasaVenta, double tasaCompra)
+		protected String getEtiquetaBalance()
 		{
 			int dineroActual;
 

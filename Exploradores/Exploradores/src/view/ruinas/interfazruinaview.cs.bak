@@ -1,0 +1,65 @@
+﻿using System;
+using System.Collections.Generic;
+using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Graphics;
+
+
+
+
+namespace Programa
+{
+	
+
+	public class InterfazRuinaView : InterfazGrafica
+	{
+		// variables
+		public Ruinas.RuinaJugableView ruina  { get; protected set; }
+		public PanelHUDPersonajes panelHudPersonajes  { get; protected set; }
+
+
+		// constructor
+		public InterfazRuinaView(bool actualizarVista = true)
+			: base()
+		{
+			ruina = null;
+			
+			if(actualizarVista == true)
+				updateContent();
+		}
+
+
+		// funciones
+		public override void updateContent()
+		{
+			clearComponents();
+			requestedContentUpdate = false;
+			
+			Mapa.LugarVisitable lugar = Programa.Jugador.Instancia.protagonista.lugarActual;
+			if(lugar.GetType() != typeof(Mapa.Ruina))
+				return;
+			Gestores.Partidas.Instancia.gestorRuinas.cargarRuinaActual((Mapa.Ruina)lugar);
+			
+			panelHudPersonajes = new PanelHUDPersonajes();
+			addComponent(panelHudPersonajes);
+
+			ILSXNA.Container contenedor = new ILSXNA.Container(Gestores.Mundo.Instancia.borders["border1"]);
+			contenedor.sizeSettings.fixedInnerWidth = 800;
+			contenedor.sizeSettings.fixedInnerHeight = 400;
+			addComponent(contenedor);
+			Programa.VistaGeneral.Instancia.scrollableContainer = contenedor;
+
+			ILSXNA.Container contenedor2 = new ILSXNA.Container(Gestores.Mundo.Instancia.borders["ruin1"]);
+			contenedor2.contentSpacingX = 64;
+			contenedor2.contentSpacingY = 64;
+			contenedor.addComponent(contenedor2);
+			
+			Ruinas.RuinaJugable ruinaJugable = Gestores.Partidas.Instancia.gestorRuinas.ruinaActual;
+
+			ruina = ruinaJugable.crearVista();
+			contenedor2.addComponent(ruina);
+		}
+	}
+}
+
+
+

@@ -13,8 +13,8 @@ namespace Personajes
 	public class Acompanante : Personaje, Gestores.IObjetoIdentificable
 	{
 		// constructor
-		public Acompanante(String id, String nombre)
-			: base(id, nombre)
+		public Acompanante(String id, String nombre, Ruinas.PersonajeRuinaFlyweight newFlyweightRuina)
+			: base(id, nombre, newFlyweightRuina)
 		{
 		}
 	}

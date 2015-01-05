@@ -1,0 +1,16 @@
+
+{
+	prioridad					: 0
+	ruina						: 4
+	habitacion					: 1
+	coordenada x				: 200
+	coordenada y				: 60
+	
+	prioridad					: 1
+	ruina						: 4
+	habitacion					: 1
+	coordenada x				: 100
+	coordenada y				: 70
+}
+
+

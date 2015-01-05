@@ -30,14 +30,17 @@ namespace Programa
 			}
 		}
 		public ILSXNA.Window window { get; protected set; }
+		public ILSXNA.Container scrollableContainer { get; set; }
 		public MouseState lastMouseState { get; protected set; }
 		public MouseState currentMouseState { get; protected set; }
 		public KeyboardState lastKeyboardState { get; protected set; }
 		public KeyboardState currentKeyboardState { get; protected set; }
 		public bool salirDelJuego { get; set; }
+		public uint scrollSpeed { get; set; }
 
 		public ContenedorJuego contenedorJuego { get; protected set; }
 		public ContenedorMenu contenedorMenu { get; protected set; }
+		public ContenedorFin contenedorFin { get; protected set; }
 		public Dictionary<String, int> alternativeNames
 		{
 			get
@@ -58,15 +61,17 @@ namespace Programa
 			instancia = this;
 			
 			window = null;
+			scrollableContainer = null;
 			lastMouseState = Mouse.GetState();
 			currentMouseState = Mouse.GetState();
 			lastKeyboardState = Keyboard.GetState();
 			currentKeyboardState = Keyboard.GetState();
 			salirDelJuego = false;
+			scrollSpeed = 16;
 			
 			contenedorJuego = null;
 			contenedorMenu = null;
-
+			contenedorFin = null;
 		}
 
 
@@ -76,9 +81,11 @@ namespace Programa
 			window = ILSXNA.Window.Instancia;
 			window.container.layout.enableLineWrap = true;
 			window.container.layout.axisPriority = ILS.Layout.AxisPriority.VerticalFirst;
+
 			alternativeNames.Clear();
 			alternativeNames.Add("menu", 0);
 			alternativeNames.Add("juego", 1);
+			alternativeNames.Add("fin", 2);
 		}
 
 
@@ -92,7 +99,7 @@ namespace Programa
 			window.container.contentSpacingX = 4;
 			window.container.contentSpacingY = 4;
 
-			window.container.setNumberAlternatives(2);
+			window.container.setNumberAlternatives(3);
 
 			contenedorMenu = new ContenedorMenu(true);
 			window.container.addComponent(contenedorMenu);
@@ -100,6 +107,10 @@ namespace Programa
 			window.container.setCurrentAlternative(1);
 			contenedorJuego = new ContenedorJuego(true);
 			window.container.addComponent(contenedorJuego);
+
+			window.container.setCurrentAlternative(2);
+			contenedorFin = new ContenedorFin(true);
+			window.container.addComponent(contenedorFin);
 			
 			cambiarVista(Gestores.Partidas.Instancia.gestorPantallas.estadoJuego);
 			cambiarVista(Gestores.Partidas.Instancia.gestorPantallas.estadoPartida);
@@ -116,10 +127,12 @@ namespace Programa
 				alt = "juego";
 				Gestores.Partidas.Instancia.gestorPantallas.estadoMenu = Gestores.Pantallas.EstadoMenu.Invisible;
 			}
+			else
+				alt = "fin";
 			window.container.setCurrentAlternative(alternativeNames[alt]);
 			Gestores.Partidas.Instancia.gestorPantallas.estadoJuego = estadoJuego;
 			contenedorJuego.updateContent();
-			cambiarVista(Gestores.Partidas.Instancia.gestorPantallas.estadoPartida);
+			contenedorFin.updateContent();
 		}
 
 
@@ -144,8 +157,7 @@ namespace Programa
 				else if(estadoAnterior == Gestores.Pantallas.EstadoPartida.Ruina)
 				{
 					contenedorJuego.cambiarAlternativa(estadoPartida);
-					contenedorJuego.panelCentral.panelFondo.cambiarAlternativa(estadoPartida);
-					contenedorJuego.panelLateral.cambiarAlternativa(estadoPartida);
+					contenedorJuego.requestUpdateContent();
 					Gestores.Partidas.Instancia.gestorPantallas.estadoPartida = estadoPartida;
 				}
 			}
@@ -155,6 +167,7 @@ namespace Programa
 					estadoAnterior == Gestores.Pantallas.EstadoPartida.Ciudad)
 				{
 					contenedorJuego.cambiarAlternativa(estadoPartida);
+					contenedorJuego.interfazRuina.requestUpdateContent();
 					Gestores.Partidas.Instancia.gestorPantallas.estadoPartida = estadoPartida;
 				}
 			}
@@ -177,29 +190,62 @@ namespace Programa
 			
 			actualizarMouseState();
 			actualizarKeyboardState();
-			uint timer = (uint)gameTime.TotalGameTime.TotalMilliseconds;
-			
-			//Mouse.SetPosition(GraphicsDevice.Viewport.Width / 2, GraphicsDevice.Viewport.Height / 2);
-			window.mouseAction(currentMouseState.X, currentMouseState.Y,
-								ILS.MouseEvent.Type.Move, timer);
-			
-
-			if(comprobarMouseLeftClick() == true)
-			{
-				window.mouseAction(currentMouseState.X, currentMouseState.Y,
-									ILS.MouseEvent.Type.Press, timer);
-			}
-			
-			if(comprobarMouseLeftRelease() == true)
-			{
-				window.mouseAction(currentMouseState.X, currentMouseState.Y,
-									ILS.MouseEvent.Type.Release, timer);
-			}
+			applyScroll(scrollSpeed);
 
 			if(comprobarKeyPress(Keys.Escape) == true)
 			{
 				Controller.funcionEscapePress(null, null, null);
 			}
+
+			/*if(currentMouseState.X < 0 || currentMouseState.Y < 0 ||
+				currentMouseState.X > window.currentWidth - 1 ||
+				currentMouseState.Y > window.currentHeight - 1)
+				return;*/
+			
+			uint timer = (uint)gameTime.TotalGameTime.TotalMilliseconds;
+			
+			//Mouse.SetPosition(GraphicsDevice.Viewport.Width / 2, GraphicsDevice.Viewport.Height / 2);
+			window.mouseAction(currentMouseState.X, currentMouseState.Y,
+								ILS.MouseEvent.Type.Move, true, timer);
+			
+
+			if(comprobarMouseLeftClick() == true)
+			{
+				window.mouseAction(currentMouseState.X, currentMouseState.Y,
+									ILS.MouseEvent.Type.Press, true, timer);
+			}
+			
+			if(comprobarMouseLeftRelease() == true)
+			{
+				window.mouseAction(currentMouseState.X, currentMouseState.Y,
+									ILS.MouseEvent.Type.Release, true, timer);
+			}
+			if(comprobarMouseRightClick() == true)
+			{
+				window.mouseAction(currentMouseState.X, currentMouseState.Y,
+									ILS.MouseEvent.Type.Press, false, timer);
+			}
+			
+			if(comprobarMouseRightRelease() == true)
+			{
+				window.mouseAction(currentMouseState.X, currentMouseState.Y,
+									ILS.MouseEvent.Type.Release, false, timer);
+			}
+		}
+
+
+		public void applyScroll(uint scrollSpeed)
+		{
+			if(scrollableContainer == null)
+				return;
+			if(currentMouseState.X < 1 || comprobarKeyHold(Keys.Left) == true)
+				scrollableContainer.getCurrentAlternative().getCurrentLayer().scrollLeft(scrollSpeed);
+			else if(currentMouseState.X > window.currentWidth - 2 || comprobarKeyHold(Keys.Right) == true)
+				scrollableContainer.getCurrentAlternative().getCurrentLayer().scrollRight(scrollSpeed);
+			if(currentMouseState.Y < 1 || comprobarKeyHold(Keys.Up) == true)
+				scrollableContainer.getCurrentAlternative().getCurrentLayer().scrollTop(scrollSpeed);
+			else if(currentMouseState.Y > window.currentHeight - 2 || comprobarKeyHold(Keys.Down) == true)
+				scrollableContainer.getCurrentAlternative().getCurrentLayer().scrollBottom(scrollSpeed);
 		}
 
 
@@ -248,6 +294,14 @@ namespace Programa
 		{
 			if(lastMouseState.RightButton == ButtonState.Pressed &&
 				currentMouseState.RightButton == ButtonState.Released)
+				return true;
+			return false;
+		}
+
+
+		public bool comprobarKeyHold(Keys key)
+		{
+			if(currentKeyboardState.IsKeyDown(key) == true)
 				return true;
 			return false;
 		}

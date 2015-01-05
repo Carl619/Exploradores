@@ -24,7 +24,7 @@ namespace Personajes
 			if(newHabilidades == null)
 				throw new ArgumentNullException();
 			habilidades = newHabilidades;
-			maxRowsPerPage = 5;
+			maxRowsPerPage = 3;
 			
 			onElementSelect = Programa.Controller.funcionVerHabilidad;
 		}
@@ -56,7 +56,7 @@ namespace Personajes
 			label.message = "Habilidades:";
 			label.color = Gestores.Mundo.Instancia.colores["menuColor"];
 			label.innerComponent = Gestores.Mundo.Instancia.fuentes["genericSpriteFont"];
-			label.minLateralSpacing = 16;
+			label.minLateralSpacing = 49;
 			titulo.addComponent(label);
 		}
 

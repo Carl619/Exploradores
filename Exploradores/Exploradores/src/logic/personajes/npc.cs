@@ -1,11 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using Objetos;
-using Ruinas;
-using Microsoft.Xna.Framework;
-using Microsoft.Xna.Framework.Graphics;
-using Gestores;
-using Programa;
 
 
 
@@ -17,22 +12,24 @@ namespace Personajes
 	public class NPC : Personaje, Gestores.IObjetoIdentificable
 	{
 		// variables
-		public NPCFlyweight flyweight { get; protected set; }
+		public NPCFlyweight npcFlyweight { get; protected set; }
 		public Interaccion.MenuDialogo menuDialogo { get; set; }
+		public Objetos.Inventario inventario { get; set; }
 		public Mapa.Ciudad ciudadResidencia { get; set; }
 		public Dictionary<String, String> cadenasRegexDialogo { get; set; } // cadenas para Regex replace
 		public bool eliminar { get; set; }
 
 
 		// constructor
-		public NPC(String newID, String newNombre, NPCFlyweight newFlyweight, Mapa.Ciudad newResidencia)
-			: base(newID, newNombre)
+		public NPC(String newID, String newNombre, Ruinas.PersonajeRuinaFlyweight newFlyweightRuina, NPCFlyweight newNPCFlyweight, Mapa.Ciudad newResidencia)
+			: base(newID, newNombre, newFlyweightRuina)
 		{
-			if(newFlyweight == null)
+			if(newNPCFlyweight == null)
 				throw new ArgumentNullException();
 			
-			flyweight = newFlyweight;
+			npcFlyweight = newNPCFlyweight;
 			menuDialogo = null;
+			inventario = null;
 			ciudadResidencia = newResidencia;
 			cadenasRegexDialogo = new Dictionary<String, String>();
 			eliminar = false;
@@ -47,43 +44,13 @@ namespace Personajes
 			ciudadResidencia.listaNPC.Remove(this);
 			Gestores.Partidas.Instancia.npcs.Remove(id);
 
-			Acompanante acom = new Acompanante(id, nombre);
+			Acompanante acom = new Acompanante(id, nombre, flyweightPersonajeRuina);
 			foreach(KeyValuePair<String, Habilidad> habilidad in habilidades)
 				acom.habilidades.Add(habilidad.Key, habilidad.Value);
 			foreach(KeyValuePair<String, Atributo> atributo in atributos)
 				acom.atributos.Add(atributo.Key, atributo.Value);
-
-			PersonajeRuina personajeRuina;
-			RuinaJugable ruina = Gestores.Partidas.Instancia.gestorRuinas.ruinasJugables["4"];
-
-			Habitacion habitacion = Gestores.Partidas.Instancia.gestorRuinas.habitaciones[
-				Gestores.Partidas.Instancia.gestorRuinas.personajesRuinas[Jugador.Instancia.protagonista.id].habitacion.id];
-				
-				
-
-			personajeRuina = new PersonajeRuina(acom, habitacion);
-			personajeRuina.posicion = new Rectangle(260,
-										60,
-										Ruinas.PersonajeRuina.ancho,
-										Ruinas.PersonajeRuina.alto);
-
-			personajeRuina.velocidadMovimiento = Gestores.Mundo.parseFloat("0.1");
-			personajeRuina.velocidadAnimacion = 200;
-			String nombreRuina = "images/sprites/ruin/personajes/" + "0" + "/parado";
-			personajeRuina.imagenParado = Programa.Exploradores.Instancia.Content.Load<Texture2D>(@nombreRuina);
-			personajeRuina.imagenParado.Name = "parado";
-			for (int i = 0; i < 4; ++i)
-			{
-				nombreRuina = "images/sprites/ruin/personajes/" + "0" + "/" + "movimiento" + i.ToString();
-				personajeRuina.imagenesMovimiento.Add(Programa.Exploradores.Instancia.Content.Load<Texture2D>(@nombreRuina));
-				personajeRuina.imagenesMovimiento[i].Name = "movimiento" + i.ToString();
-			}
-			personajeRuina.imagenActual = personajeRuina.imagenParado;
-
-			habitacion.personajes.Add(personajeRuina);
-			personajeRuina.ruina = ruina;
-			personajeRuina.prioridad = 2;
-			Partidas.Instancia.gestorRuinas.personajesRuinas.Add("Acom", personajeRuina);
+			acom.avatarSeleccionado = avatarSeleccionado;
+			acom.avatar = avatar;
 			return acom;
 		}
 
@@ -103,12 +70,16 @@ namespace Personajes
 		{
 			NPC npc;
 			NPCFlyweight npcFlyweight;
+			Ruinas.PersonajeRuinaFlyweight ruinaFlyweight;
 			Mapa.Ciudad ciudad;
 			
 			ciudad = Gestores.Partidas.Instancia.ciudades[campos["ciudad"]];
-			npcFlyweight = Gestores.Mundo.Instancia.npcFlyweights[campos["flyweight"]];
+			npcFlyweight = Gestores.Mundo.Instancia.npcFlyweights[campos["flyweight npc"]];
+			ruinaFlyweight = Gestores.Mundo.Instancia.personajeRuinaFlyweights[campos["flyweight personaje ruina"]];
 
-			npc = new NPC(campos["id"], campos["nombre"], npcFlyweight, ciudad);
+			npc = new NPC(campos["id"], campos["nombre"], ruinaFlyweight, npcFlyweight, ciudad);
+			npc.avatarSeleccionado = Gestores.Mundo.Instancia.imagenes[campos["avatar"]];
+			npc.avatar = Gestores.Mundo.Instancia.imagenes[campos["avatar"] + "b"];
 			npc.menuDialogo = Gestores.Partidas.Instancia.dialogos[campos["menuDialogo"]];
 
 			List<String> atributos;
@@ -173,15 +144,16 @@ namespace Personajes
 		public static String guardarObjeto(NPC npc)
 		{
 			String resultado;
-			resultado = "	id						: " + npc.id + "\n" +
-						"	nombre					: " + npc.nombre + "\n" +
-						"	flyweight				: " + npc.flyweight.id + "\n" +
-						"	ciudad					: " + npc.ciudadResidencia.id + "\n" +
-						"	menuDialogo				: " + npc.menuDialogo.id + "\n";
+			resultado = "	id							: " + npc.id + "\n" +
+						"	nombre						: " + npc.nombre + "\n" +
+						"	flyweight npc				: " + npc.npcFlyweight.id + "\n" +
+						"	flyweight personaje ruina	: " + npc.flyweightPersonajeRuina.id + "\n" +
+						"	ciudad						: " + npc.ciudadResidencia.id + "\n" +
+						"	menuDialogo					: " + npc.menuDialogo.id + "\n";
 			if(npc.inventario == null)
 				return resultado;
 			return resultado +
-						"	inventario				: " + npc.inventario.id + "\n";
+						"	inventario					: " + npc.inventario.id + "\n";
 		}
 
 		

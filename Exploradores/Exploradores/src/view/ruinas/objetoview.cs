@@ -26,14 +26,9 @@ namespace Ruinas
 				throw new ArgumentNullException();
 			
 			objeto = newobjeto;
-			innerComponent.Add(objeto.objetoFlyweight.iconoPasivo);
-			innerComponent.Add(objeto.objetoFlyweight.iconoActivo);
-			innerComponent.Add(objeto.objetoFlyweight.iconoSeleccionado);
-			innerComponent.Add(objeto.objetoFlyweight.iconoActivoSeleccionado);
-			onMousePress = null;
-			onMouseRelease = null;
-			if(objeto.activado == true)
-				select();
+			actualizarTexturas();
+			onLeftMousePress = null;
+			onLeftMouseRelease = null;
 		}
 
 
@@ -41,9 +36,28 @@ namespace Ruinas
 		public override void updateContent()
 		{
 			base.updateContent();
-			deselect();
+			requestedContentUpdate = false;
+
 			if(objeto.activado == true)
 				select();
+			else
+				deselect();
+		}
+
+
+		public virtual void actualizarTexturas()
+		{
+			texturas.Clear();
+
+			addTextura(objeto.objetoFlyweight.iconosParado[objeto.imagenActual]);
+			addTextura(objeto.objetoFlyweight.iconosParadoSeleccionado[objeto.imagenActual]);
+			addTextura(objeto.objetoFlyweight.iconosActivado[objeto.imagenActual]);
+			addTextura(objeto.objetoFlyweight.iconosActivadoSeleccionado[objeto.imagenActual]);
+
+			if(objeto.activado == true)
+				select();
+			else
+				deselect();
 		}
 	}
 }

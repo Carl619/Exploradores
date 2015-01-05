@@ -3,8 +3,10 @@
 {
 	id							: 2
 	nombre						: Mickey
-	flyweight					: npc1
+	flyweight npc				: npc1
+	flyweight personaje ruina	: 1
 	ciudad						: 1
+	avatar						: comerciante1
 	menuDialogo					: comercio
 	inventario					: 2
 	habilidades					: 1
@@ -13,47 +15,76 @@
 
 	id							: 3
 	nombre						: Goofy
-	flyweight					: npc2
+	flyweight npc				: npc2
+	flyweight personaje ruina	: 1
 	ciudad						: 1
+	avatar						: comerciante2
 	menuDialogo					: 3
 
 
 	id							: 4
 	nombre						: Chuck Norris
-	flyweight					: npc3
+	flyweight npc				: npc3
+	flyweight personaje ruina	: 1
 	ciudad						: 1
+	avatar						: mercenario1
 	menuDialogo					: reclutamiento1
-	atributos					: 2
-		idVida | 80
-		idFuerza | 20
+	atributos					: 3
+		idVida | 30
+		idFuerza | 100
+		idHambre | 0
 	habilidades					: 5
-		idMercenario | 4
-		idComerciante | 12
-		idCazador | 6
-		idMedico | 2
-		idEnfermedad | 1
+		idMercenario | 10
+		idComerciante | 10
+		idCazador | 10
+		idMedico | 10
+		idEnfermedad | 2
 
 
 	id							: 5
 	nombre						: Alex
-	flyweight					: npc4
+	flyweight npc				: npc4
+	flyweight personaje ruina	: 1
 	ciudad						: 1
+	avatar						: mercenario2
 	menuDialogo					: 5
 	inventario					: 1
 
 
 	id							: 6
 	nombre						: Pluto
-	flyweight					: npc5
+	flyweight npc				: npc5
+	flyweight personaje ruina	: 1
 	ciudad						: 1
+	avatar						: mercenario3
 	menuDialogo					: 6
 
 
 	id							: 7
 	nombre						: Donald
-	flyweight					: npc6
+	flyweight npc				: npc6
+	flyweight personaje ruina	: 1
 	ciudad						: 1
+	avatar						: medico2
 	menuDialogo					: 7
+
+
+	id							: 8
+	nombre						: Grima
+	flyweight npc				: npc2
+	flyweight personaje ruina	: 1
+	ciudad						: 2
+	avatar						: comerciante3
+	menuDialogo					: 8
+
+
+	id							: 9
+	nombre						: Saruman
+	flyweight npc				: npc4
+	flyweight personaje ruina	: 1
+	ciudad						: 3
+	avatar						: medico1
+	menuDialogo					: 12
 }
 
 

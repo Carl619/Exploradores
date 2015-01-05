@@ -8,8 +8,8 @@ using Microsoft.Xna.Framework.Graphics;
 
 namespace Mapa
 {
-
-
+	
+	
 	public class Mapa
 	{
 		// variables
@@ -25,7 +25,8 @@ namespace Mapa
 		}
 		public List<LugarVisitable> lugares { get; set; }
 		public List<Ruta> rutas { get; set; }
-		public Texture2D imagenMapa { get; set; }
+		public List<Texture2D> imagenesMapa { get; set; }
+		public List<Vector2> offsetsImagenesMapa { get; set; }
 		public Texture2D marcadorJugador { get; set; }
 		public SpriteFont spriteFont { get; set; }
 		public Color colorTexto { get; set; }
@@ -37,7 +38,8 @@ namespace Mapa
 			instancia = this;
 			lugares = new List<LugarVisitable>();
 			rutas = new List<Ruta>();
-			imagenMapa = null;
+			imagenesMapa = new List<Texture2D>();
+			offsetsImagenesMapa = new List<Vector2>();
 			marcadorJugador = null;
 			spriteFont = null;
 			colorTexto = Color.Black;

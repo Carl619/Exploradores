@@ -71,10 +71,13 @@ namespace Mapa
 				ILSXNA.Button boton;
 
 				label = new ILSXNA.Label();
-				label.message = (String)lugarSeleccionado.nombre.Clone() +
-								" ( " + 
-								lugarSeleccionado.flyweightLugar.nombreTipoLugar +
-								" ) ";
+				if(lugarSeleccionado.oculto == false)
+					label.message = (String)lugarSeleccionado.nombre.Clone() +
+									" ( " + 
+									lugarSeleccionado.flyweightLugar.nombreTipoLugar +
+									" ) ";
+				else
+					label.message = "Un lugar desconocido";
 				label.color = mapa.colorTexto;
 				label.innerComponent = font;
 				addComponent(label);

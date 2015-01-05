@@ -25,14 +25,22 @@ namespace ILS
 		public SizeSettings sizeSettings { get; protected set; }
 			// event callback variables and functions
 		public Object callbackConfigObj { get; set; } // object passed to callback functions as extra parameter
-		public MouseEvent.CallbackFunction onMousePress { get; set; }
-		public MouseEvent.CallbackFunction onMouseRelease { get; set; }
-		public MouseEvent.CallbackFunction onMouseDoubleClick { get; set; }
-		public MouseEvent.CallbackFunction onMouseGrab { get; set; }
-		public MouseEvent.CallbackFunction onMouseDrag { get; set; }
-		public MouseEvent.CallbackFunction onMouseDrop { get; set; }
 		public MouseEvent.CallbackFunction onMouseOver { get; set; }
 		public MouseEvent.CallbackFunction onMouseOut { get; set; }
+
+		public MouseEvent.CallbackFunction onLeftMousePress { get; set; }
+		public MouseEvent.CallbackFunction onLeftMouseRelease { get; set; }
+		public MouseEvent.CallbackFunction onLeftMouseDoubleClick { get; set; }
+		public MouseEvent.CallbackFunction onLeftMouseGrab { get; set; }
+		public MouseEvent.CallbackFunction onLeftMouseDrag { get; set; }
+		public MouseEvent.CallbackFunction onLeftMouseDrop { get; set; }
+
+		public MouseEvent.CallbackFunction onRightMousePress { get; set; }
+		public MouseEvent.CallbackFunction onRightMouseRelease { get; set; }
+		public MouseEvent.CallbackFunction onRightMouseDoubleClick { get; set; }
+		public MouseEvent.CallbackFunction onRightMouseGrab { get; set; }
+		public MouseEvent.CallbackFunction onRightMouseDrag { get; set; }
+		public MouseEvent.CallbackFunction onRightMouseDrop { get; set; }
 		
 		
 		// constructors
@@ -44,15 +52,22 @@ namespace ILS
 			dimensions = new Dimensions();
 			sizeSettings = new SizeSettings();
 			callbackConfigObj = null;
-
-			onMousePress = null;
-			onMouseRelease = null;
-			onMouseDoubleClick = null;
-			onMouseGrab = null;
-			onMouseDrag = null;
-			onMouseDrop = null;
 			onMouseOver = null;
 			onMouseOut = null;
+
+			onLeftMousePress = null;
+			onLeftMouseRelease = null;
+			onLeftMouseDoubleClick = null;
+			onLeftMouseGrab = null;
+			onLeftMouseDrag = null;
+			onLeftMouseDrop = null;
+
+			onRightMousePress = null;
+			onRightMouseRelease = null;
+			onRightMouseDoubleClick = null;
+			onRightMouseGrab = null;
+			onRightMouseDrag = null;
+			onRightMouseDrop = null;
 		}
 		
 		
@@ -65,15 +80,22 @@ namespace ILS
 			sizeSettings = drawable.sizeSettings.clone();
 
 			callbackConfigObj = drawable.callbackConfigObj;
-
-			onMousePress = drawable.onMousePress;
-			onMouseRelease = drawable.onMouseRelease;
-			onMouseDoubleClick = drawable.onMouseDoubleClick;
-			onMouseGrab = drawable.onMouseGrab;
-			onMouseDrag = drawable.onMouseDrag;
-			onMouseDrop = drawable.onMouseDrop;
 			onMouseOver = drawable.onMouseOver;
 			onMouseOut = drawable.onMouseOut;
+
+			onLeftMousePress = drawable.onLeftMousePress;
+			onLeftMouseRelease = drawable.onLeftMouseRelease;
+			onLeftMouseDoubleClick = drawable.onLeftMouseDoubleClick;
+			onLeftMouseGrab = drawable.onLeftMouseGrab;
+			onLeftMouseDrag = drawable.onLeftMouseDrag;
+			onLeftMouseDrop = drawable.onLeftMouseDrop;
+
+			onRightMousePress = drawable.onRightMousePress;
+			onRightMouseRelease = drawable.onRightMouseRelease;
+			onRightMouseDoubleClick = drawable.onRightMouseDoubleClick;
+			onRightMouseGrab = drawable.onRightMouseGrab;
+			onRightMouseDrag = drawable.onRightMouseDrag;
+			onRightMouseDrop = drawable.onRightMouseDrop;
 		}
 		
 		
@@ -196,7 +218,7 @@ namespace ILS
 		{
 			uint value = width;
 			if (value == 0)
-				value = getMinInnerUnconstrainedWidth();
+				value = getMinInnerUnconstrainedWidth() + getTotalOffsetWidth();
 			dimensions.minOutterConstrainedX = value;
 		}
 		
@@ -205,23 +227,39 @@ namespace ILS
 		{
 			uint value = height;
 			if (value == 0)
-				value = getMinInnerUnconstrainedHeight();
+				value = getMinInnerUnconstrainedHeight()+ getTotalOffsetHeight();
 			dimensions.minOutterConstrainedY = value;
 		}
 		
 		
 		public virtual void mouseAction(MouseEvent mouseEvent, List<Drawable> drawables)
 		{
-			if(mouseEvent.eventType == MouseEvent.Type.Press &&
-					(onMousePress != null || onMouseGrab != null || onMouseDoubleClick != null))
-				drawables.Add(this);
-			else if(mouseEvent.eventType == MouseEvent.Type.Release &&
-					(onMouseRelease != null || onMouseDrop != null || onMouseDoubleClick != null))
-				drawables.Add(this);
-			else if(mouseEvent.eventType == MouseEvent.Type.Drag && onMouseDrag != null)
-				drawables.Add(this);
-			else if(mouseEvent.eventType == MouseEvent.Type.Move && (onMouseOver != null || onMouseOut != null))
-				drawables.Add(this);
+			if(mouseEvent.leftButton == true)
+			{
+				if(mouseEvent.eventType == MouseEvent.Type.Press &&
+						(onLeftMousePress != null || onLeftMouseGrab != null || onLeftMouseDoubleClick != null))
+					drawables.Add(this);
+				else if(mouseEvent.eventType == MouseEvent.Type.Release &&
+						(onLeftMouseRelease != null || onLeftMouseDrop != null || onLeftMouseDoubleClick != null))
+					drawables.Add(this);
+				else if(mouseEvent.eventType == MouseEvent.Type.Drag && onLeftMouseDrag != null)
+					drawables.Add(this);
+				else if(mouseEvent.eventType == MouseEvent.Type.Move && (onMouseOver != null || onMouseOut != null))
+					drawables.Add(this);
+			}
+			else
+			{
+				if(mouseEvent.eventType == MouseEvent.Type.Press &&
+						(onRightMousePress != null || onRightMouseGrab != null || onRightMouseDoubleClick != null))
+					drawables.Add(this);
+				else if(mouseEvent.eventType == MouseEvent.Type.Release &&
+						(onRightMouseRelease != null || onRightMouseDrop != null || onRightMouseDoubleClick != null))
+					drawables.Add(this);
+				else if(mouseEvent.eventType == MouseEvent.Type.Drag && onRightMouseDrag != null)
+					drawables.Add(this);
+				else if(mouseEvent.eventType == MouseEvent.Type.Move && (onMouseOver != null || onMouseOut != null))
+					drawables.Add(this);
+			}
 		}
 		
 		

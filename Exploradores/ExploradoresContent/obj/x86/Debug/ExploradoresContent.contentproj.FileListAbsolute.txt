@@ -1,4 +1,6 @@
+E:\Other\Dropbox\Programming\C# Projects\Exploradores mio\Exploradores\ExploradoresContent\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\Other\Dropbox\Programming\C# Projects\Alex\Exploradores\ExploradoresContent\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\Other\Dropbox\Programming\C# Projects\Nuevo\Exploradores\ExploradoresContent\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\Other\Dropbox\Programming\C# Projects\Alex_1\Exploradores\ExploradoresContent\obj\x86\Debug\ResolveAssemblyReference.cache
 E:\Other\Dropbox\Programming\C# Projects\Exploradores\Exploradores\ExploradoresContent\obj\x86\Debug\ResolveAssemblyReference.cache
-C:\Users\Carlos Guerrero\Documents\Visual Studio 2010\Projects\Alex5\Exploradores\Exploradores\ExploradoresContent\obj\x86\Debug\ExploradoresContent.contentprojResolveAssemblyReference.cache
-F:\Github\Exploradores\Exploradores\Exploradores\ExploradoresContent\obj\x86\Debug\ExploradoresContent.contentprojResolveAssemblyReference.cache
 C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\ExploradoresContent\obj\x86\Debug\ExploradoresContent.contentprojResolveAssemblyReference.cache

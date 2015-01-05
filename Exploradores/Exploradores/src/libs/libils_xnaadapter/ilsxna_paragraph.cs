@@ -25,7 +25,8 @@ namespace ILSXNA
 
 
 		// constructors
-		public Paragraph(Label text, uint maxInnerWidth = 400, ILS.Layer newParent = null) : base((Border)null, newParent)
+		public Paragraph(Label text, uint maxInnerWidth = 400, ILS.Layer newParent = null)
+			: base((Border)null, newParent)
 		{
 			newLineAfterParagraph = true;
 			containerParagraph = null;
@@ -35,7 +36,8 @@ namespace ILSXNA
 		}
 
 
-		public Paragraph(Paragraph paragraph, ILS.Layer newParent = null) : base(paragraph, newParent)
+		public Paragraph(Paragraph paragraph, ILS.Layer newParent = null)
+			: base(paragraph, newParent)
 		{
 			newLineAfterParagraph = true;
 			containerParagraph = null;
@@ -48,6 +50,7 @@ namespace ILSXNA
 		public void setText(Label text, uint maxInnerWidth)
 		{
 			clearComponents();
+			requestedContentUpdate = false;
 
 			containerParagraph = new Container();
 			containerParagraph.layout.enableLineWrap = true;

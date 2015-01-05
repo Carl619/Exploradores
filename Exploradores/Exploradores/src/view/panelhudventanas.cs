@@ -14,6 +14,7 @@ namespace Programa
 	{
 		// variables
 		public Mapa.PanelViaje panelViaje { get; protected set; }
+		public Interaccion.PanelMisiones panelMisiones { get; protected set; }
 		public Personajes.PanelAtributo panelAtributo { get; protected set; }
 		public Personajes.PanelHabilidad panelHabilidad { get; protected set; }
 		public Personajes.PanelPersonajes panelPersonajes { get; protected set; }
@@ -27,6 +28,7 @@ namespace Programa
 			: base()
 		{
 			panelViaje = null;
+			panelMisiones = null;
 			panelAtributo = null;
 			panelHabilidad = null;
 			panelPersonajes = null;
@@ -36,10 +38,11 @@ namespace Programa
 			
 			alternativeNames.Add("vacio", 0);
 			alternativeNames.Add("viaje", 1);
-			alternativeNames.Add("personajes", 2);
-			alternativeNames.Add("inventario", 3);
-			alternativeNames.Add("edificio", 4);
-			alternativeNames.Add("dialogo", 5);
+			alternativeNames.Add("misiones", 2);
+			alternativeNames.Add("personajes", 3);
+			alternativeNames.Add("inventario", 4);
+			alternativeNames.Add("edificio", 5);
+			alternativeNames.Add("dialogo", 6);
 			
 			alternativeNames.Add("atributo", 1);
 			alternativeNames.Add("habilidad", 2);
@@ -55,12 +58,15 @@ namespace Programa
 			clearComponents(true);
 			requestedContentUpdate = false;
 
-			setNumberAlternatives(6);
+			setNumberAlternatives(7);
 
 			setCurrentAlternative(alternativeNames["viaje"]);
 			panelViaje = new Mapa.PanelViaje();
 			addComponent(panelViaje);
 			
+			setCurrentAlternative(alternativeNames["misiones"]);
+			panelMisiones = new Interaccion.PanelMisiones();
+			addComponent(panelMisiones);
 
 			setCurrentAlternative(alternativeNames["personajes"]);
 			getCurrentAlternative().addLayer();
@@ -106,6 +112,8 @@ namespace Programa
 				alt = "vacio";
 			else if(estadoHUD == Gestores.Pantallas.EstadoHUD.Viaje)
 				alt = "viaje";
+			else if(estadoHUD == Gestores.Pantallas.EstadoHUD.Misiones)
+				alt = "misiones";
 			else if(estadoHUD == Gestores.Pantallas.EstadoHUD.Personajes)
 				alt = "personajes";
 			else if(estadoHUD == Gestores.Pantallas.EstadoHUD.Inventario)

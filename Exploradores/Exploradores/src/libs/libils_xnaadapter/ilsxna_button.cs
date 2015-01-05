@@ -94,7 +94,7 @@ namespace ILSXNA
 
 			onMouseOver = mouseActivate;
 			onMouseOut = mouseDeactivate;
-			onMousePress = mouseSelect;
+			onLeftMousePress = mouseSelect;
 			onButtonPress = null;
 
 			updateContent();
@@ -121,7 +121,7 @@ namespace ILSXNA
 
 			onMouseOver = button.onMouseOver;
 			onMouseOut = button.onMouseOut;
-			onMousePress = button.onMousePress;
+			onLeftMousePress = button.onLeftMousePress;
 			onButtonPress = button.onButtonPress;
 
 			updateContent();
@@ -158,11 +158,12 @@ namespace ILSXNA
 			if(icons.Count > 0)
 			{
 				multiSprite = new MultiSprite();
-				multiSprite.innerComponent.AddRange(icons);
+				foreach(Texture2D textura in icons)
+					multiSprite.addTextura(textura);
 				multiSprite.onMouseOver =
 					multiSprite.onMouseOut =
-					multiSprite.onMousePress =
-					multiSprite.onMouseRelease =
+					multiSprite.onLeftMousePress =
+					multiSprite.onLeftMouseRelease =
 					null;
 				multiSprite.currentSpriteIndex = _currentViewIndex;
 				addComponent(multiSprite);

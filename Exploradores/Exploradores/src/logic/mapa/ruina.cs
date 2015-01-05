@@ -35,6 +35,7 @@ namespace Mapa
 			LugarVisitableFlyweight lugarFlyweight = Gestores.Mundo.Instancia.lugarFlyweights[campos["lugar flyweight"]];
 
 			ruina = new Ruina(campos["id"], campos["nombre"], lugarFlyweight, ruinaFlyweight);
+			ruina.oculto = Convert.ToBoolean(campos["oculto"]);
 			ruina.coordenadas = new Tuple<int, int>(Convert.ToInt32(campos["coordenada x"]), Convert.ToInt32(campos["coordenada y"]));
 
 			Mapa.Instancia.lugares.Add(ruina);

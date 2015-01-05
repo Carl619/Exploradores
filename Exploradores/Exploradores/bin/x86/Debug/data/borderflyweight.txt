@@ -36,9 +36,25 @@
 	id				: room1
 	carpeta			: room1
 	nSubCarpetas	: 1
-	innerMargin		: 11
+	innerMargin		: 24
 	backgroundMode	: Repeat
 	borderMode		: Repeat
+
+
+	id				: ruin1
+	carpeta			: ruin1
+	nSubCarpetas	: 1
+	innerMargin		: 22
+	backgroundMode	: Repeat
+	borderMode		: Stretch
+
+
+	id				: map1
+	carpeta			: map1
+	nSubCarpetas	: 1
+	innerMargin		: 22
+	backgroundMode	: Repeat
+	borderMode		: Stretch
 }
 
 

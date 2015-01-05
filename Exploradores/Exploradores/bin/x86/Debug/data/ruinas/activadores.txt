@@ -1,6 +1,6 @@
 
 {
-	id							: 4
+	id							: activador1
 	flyweight					: activador
 	habitacion					: 1
 	activado					: false

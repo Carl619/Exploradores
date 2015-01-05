@@ -15,6 +15,7 @@ namespace Gestores
 	{
 		// variables
 		public GameTime tiempoAnteriorRuina { get; protected set; }
+		public uint tiempoActual { get; protected set; } // milisegundos
 		public uint tiempoAccionMinima { get; protected set; } // milisegundos
 		public Ruinas.RuinaJugable ruinaActual { get; protected set; }
 			// objetos
@@ -24,9 +25,9 @@ namespace Gestores
 		public Gestor<Ruinas.Trampa> trampas { get; protected set; }
 		public Gestor<Ruinas.Tesoro> tesoros { get; protected set; }
 		public Gestor<Ruinas.Puerta> puertas { get; protected set; }
-		public Gestor<Ruinas.PuertaSalida> puertaSalidas { get; protected set; }
 		public Gestor<Ruinas.Activador> activadores { get; protected set; }
 		public Gestor<Ruinas.Mecanismo> mecanismos { get; protected set; }
+		public Gestor<Ruinas.SpawnPersonaje> spawnPersonajes { get; protected set; }
 		public Gestor<Ruinas.PersonajeRuina> personajesRuinas { get; protected set; }
 
 
@@ -34,32 +35,36 @@ namespace Gestores
 		public GRuinas()
 		{
 			tiempoAnteriorRuina = null;
+			tiempoActual = 0;
 			tiempoAccionMinima = 50;
 			ruinaActual = null;
 			
-			ruinasJugables = new Dictionary<string,Ruinas.RuinaJugable>();
-			objetos = new Dictionary<string,Ruinas.Objeto>();
+			ruinasJugables = new Dictionary<String, Ruinas.RuinaJugable>();
+			objetos = new Dictionary<String, Ruinas.Objeto>();
 			habitaciones = new Gestor<Ruinas.Habitacion>();
 			trampas = new Gestor<Ruinas.Trampa>();
 			tesoros = new Gestor<Ruinas.Tesoro>();
 			puertas = new Gestor<Ruinas.Puerta>();
 			activadores = new Gestor<Ruinas.Activador>();
 			mecanismos = new Gestor<Ruinas.Mecanismo>();
+			spawnPersonajes = new Gestor<Ruinas.SpawnPersonaje>();
 			personajesRuinas = new Gestor<Ruinas.PersonajeRuina>();
-			puertaSalidas = new Gestor<Ruinas.PuertaSalida>();
 		}
 
 
+		// funciones
 		public void cargarTodo()
 		{
 			cargarContenidoRuinasJugables();
 			cargarContenidoHabitaciones(@"data/ruinas/habitaciones.txt");
-			cargarContenidoTrampas(@"data/ruinas/trampas.txt");
+			cargarContenidoTrampasFisicas(@"data/ruinas/trampasfisicas.txt");
+			cargarContenidoTrampasLanzadores(@"data/ruinas/trampaslanzadores.txt");
 			cargarContenidoTesoros(@"data/ruinas/tesoros.txt");
 			cargarContenidoPuertas(@"data/ruinas/puertas.txt");
 			cargarContenidoPuertasSalidas(@"data/ruinas/puertassalidas.txt");
 			cargarContenidoActivadores(@"data/ruinas/activadores.txt");
 			cargarContenidoMecanismos(@"data/ruinas/mecanismos.txt");
+			cargarContenidoSpawnPersonajes(@"data/ruinas/spawnpersonajes.txt");
 			cargarContenidoPersonajesRuinas(@"data/ruinas/personajes.txt");
 		}
 
@@ -67,6 +72,15 @@ namespace Gestores
 		public void cargarRuinaActual(Mapa.Ruina ruina)
 		{
 			ruinaActual = ruinasJugables[ruina.id];
+			
+			int i = 0;
+			List<Personajes.Personaje> personajes = Programa.Jugador.Instancia.getPersonajesGrupo();
+			foreach(Personajes.Personaje personaje in personajes)
+			{
+				Ruinas.PersonajeRuina personajeRuina = spawnPersonajes[i.ToString()].crearPersonajeRuina(personaje);
+				personajesRuinas.Add(personajeRuina.id, personajeRuina);
+				++i;
+			}
 		}
 
 
@@ -79,13 +93,14 @@ namespace Gestores
 		public void avanzarTiempoRuina(int tiempoActual)
 		{
 			if(ruinaActual != null)
-				ruinaActual.actualizarTiempo(tiempoActual);
+				ruinaActual.actualizarTiempo((int)((float)tiempoActual / (float)tiempoAccionMinima));
 		}
 
 
 		public void actualizarRuinaActual(GameTime tiempo)
 		{
 			int t = (int)tiempo.TotalGameTime.TotalMilliseconds;
+			tiempoActual = (uint)t;
 			avanzarTiempoRuina(t);
 			tiempoAnteriorRuina = tiempo;
 		}
@@ -112,15 +127,27 @@ namespace Gestores
 		}
 
 		
-		protected void cargarContenidoTrampas(String fileName)
+		protected void cargarContenidoTrampasFisicas(String fileName)
 		{
 			using (System.IO.StreamReader reader = new System.IO.StreamReader(fileName))
 			{
-				trampas.loadAll(reader, Ruinas.Trampa.cargarObjeto);
+				trampas.loadAll(reader, Ruinas.TrampaFisica.cargarObjeto);
+			}
+			/*foreach(KeyValuePair<String, Ruinas.Trampa> objeto in trampas)
+				objetos.Add(objeto.Key, objeto.Value);*/
+		}
+
+		
+		protected void cargarContenidoTrampasLanzadores(String fileName)
+		{
+			using (System.IO.StreamReader reader = new System.IO.StreamReader(fileName))
+			{
+				trampas.loadAll(reader, Ruinas.TrampaLanzador.cargarObjeto);
 			}
 			foreach(KeyValuePair<String, Ruinas.Trampa> objeto in trampas)
 				objetos.Add(objeto.Key, objeto.Value);
 		}
+
 
 		protected void cargarContenidoTesoros(String fileName)
 		{
@@ -139,17 +166,18 @@ namespace Gestores
 			{
 				puertas.loadAll(reader, Ruinas.Puerta.cargarObjeto);
 			}
-			foreach(KeyValuePair<String, Ruinas.Puerta> objeto in puertas)
-				objetos.Add(objeto.Key, objeto.Value);
+			/*foreach(KeyValuePair<String, Ruinas.Puerta> objeto in puertas)
+				objetos.Add(objeto.Key, objeto.Value);*/
 		}
 
+		
 		protected void cargarContenidoPuertasSalidas(String fileName)
 		{
 			using (System.IO.StreamReader reader = new System.IO.StreamReader(fileName))
 			{
-				puertaSalidas.loadAll(reader, Ruinas.PuertaSalida.cargarObjetoSalida);
+				puertas.loadAll(reader, Ruinas.PuertaSalida.cargarObjetoSalida);
 			}
-			foreach (KeyValuePair<String, Ruinas.PuertaSalida> objeto in puertaSalidas)
+			foreach (KeyValuePair<String, Ruinas.Puerta> objeto in puertas)
 				objetos.Add(objeto.Key, objeto.Value);
 		}
 
@@ -170,6 +198,15 @@ namespace Gestores
 			using (System.IO.StreamReader reader = new System.IO.StreamReader(fileName))
 			{
 				mecanismos.loadAll(reader, Ruinas.Mecanismo.cargarObjeto, Ruinas.Mecanismo.esLista);
+			}
+		}
+
+
+		protected void cargarContenidoSpawnPersonajes(String fileName)
+		{
+			using (System.IO.StreamReader reader = new System.IO.StreamReader(fileName))
+			{
+				spawnPersonajes.loadAll(reader, Ruinas.SpawnPersonaje.cargarObjeto);
 			}
 		}
 

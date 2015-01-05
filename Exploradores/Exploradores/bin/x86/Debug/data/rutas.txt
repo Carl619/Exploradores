@@ -2,42 +2,47 @@
 
 {
 	id							: 1
-	flyweight				: road1
+	flyweight					: road1
 	lugar A						: 1
 	lugar B						: 2
-	distancia					: 35
+	oculto						: false
+	distancia					: 18
 	peligro						: 12
 
 
 	id							: 2
-	flyweight				: road1
+	flyweight					: road1
 	lugar A						: 1
 	lugar B						: 3
-	distancia					: 51
+	oculto						: true
+	distancia					: 26
 	peligro						: 9
 
 
 	id							: 3
-	flyweight				: road1
+	flyweight					: road1
 	lugar A						: 1
 	lugar B						: 4
-	distancia					: 14
+	oculto						: false
+	distancia					: 11
 	peligro						: 27
 
 
 	id							: 4
-	flyweight				: road1
+	flyweight					: road1
 	lugar A						: 2
 	lugar B						: 3
-	distancia					: 62
+	oculto						: false
+	distancia					: 12
 	peligro						: 13
 
 
 	id							: 5
-	flyweight				: road1
+	flyweight					: road1
 	lugar A						: 3
 	lugar B						: 5
-	distancia					: 8
+	oculto						: false
+	distancia					: 4
 	peligro						: 73
 }
 

@@ -13,24 +13,27 @@
 	
 	id							: 1
 	flyweight					: list1
-	espacio						: 1000
-	articulos					: 5
-		idDinero | 512
-		1 | 2
-		2 | 3
-		3 | 5
-		4 | 1
+	espacio						: 300
+	articulos					: 3
+		idDinero | 500
+		idMonedasPlata | 12
+		idMonedasOro | 4
 	
 	
 	id							: 2
 	flyweight					: list1
 	espacio						: 1000000
-	articulos					: 4
-		2 | 28
-		3 | 31
-		5 | 12
-		idLlave1 | 1
+	articulos					: 3
+		idComida | 500
+		idDiamantes | 3
+		idLlave | 1
+	
+	
+	id							: idTesoro1
+	flyweight					: list1
+	espacio						: 300
+	articulos					: 1
+		idMonedasOro | 3
 }
-	
-	
-	
+
+

@@ -37,8 +37,8 @@ namespace Ruinas
 
 
 		// constructor
-		public Puerta(String newid, ObjetoFlyweight newObjetoFlyweight)
-			: base(newid, newObjetoFlyweight)
+		public Puerta(String newID, ObjetoFlyweight newObjetoFlyweight)
+			: base(newID, newObjetoFlyweight)
 		{
 			habitacionPrincipal = null;
 			habitacionSecundaria = null;
@@ -89,7 +89,6 @@ namespace Ruinas
 			ruina.puertas.Add(puerta);
 			
 			puerta.generarNodosYRamas();
-			puerta.rama.cambioHabitacion = true;
 
 			return puerta;
 		}
@@ -100,13 +99,14 @@ namespace Ruinas
 			float posX = 0;
 			float posY = 0;
 			
-			float sizeX = objetoFlyweight.iconoPasivo.Width;
-			float sizeY = objetoFlyweight.iconoPasivo.Height;
+			float sizeX = objetoFlyweight.ancho;
+			float sizeY = objetoFlyweight.alto;
 
 			if(paredAsociada == Pared.Arriba || paredAsociada == Pared.Abajo)
 			{
-				posX = habitacionPrincipal.espacio.Width + 2 * habitacionPrincipal.grosorPared;
+				posX = habitacionPrincipal.espacio.Width;
 				posX *= porcentajeLugar;
+				posX += habitacionPrincipal.grosorPared;
 				posX -= (sizeX / 2);
 
 				if(paredAsociada == Pared.Arriba)
@@ -126,11 +126,11 @@ namespace Ruinas
 
 				espacio = new Rectangle((int)posX, (int)posY, (int)sizeX, (int)sizeY);
 			}
-
-			if (paredAsociada == Pared.Derecha || paredAsociada == Pared.Izquierda)
+			else if (paredAsociada == Pared.Derecha || paredAsociada == Pared.Izquierda)
 			{
-				posY = habitacionPrincipal.espacio.Height + 2 * habitacionPrincipal.grosorPared;
+				posY = habitacionPrincipal.espacio.Height;
 				posY *= porcentajeLugar;
+				posY += habitacionPrincipal.grosorPared;
 				posY -= (sizeY / 2);
 
 				if (paredAsociada == Pared.Derecha)
@@ -160,7 +160,7 @@ namespace Ruinas
 		}
 
 
-		public void generarNodosYRamas()
+		public virtual void generarNodosYRamas()
 		{
 			if (paredAsociada == Pared.Arriba)
 			{
@@ -239,6 +239,8 @@ namespace Ruinas
 				rama.distancia = espacio.Height + PersonajeRuina.alto;
 			else
 				rama.distancia = espacio.Height + PersonajeRuina.ancho;
+			if(activado == true)
+				rama.cambioHabitacion = true;
 		}
 
 

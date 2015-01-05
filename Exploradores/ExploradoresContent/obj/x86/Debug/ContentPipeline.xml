@@ -8,7 +8,7 @@
       <Processor>FontDescriptionProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\fonts\generic.xnb</Output>
-      <Time>2015-01-01T18:36:15.9761017+01:00</Time>
+      <Time>2014-12-21T11:09:10.226785+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\borders\room1\0\0.png</Source>
@@ -17,7 +17,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\room1\0\0.xnb</Output>
-      <Time>2015-01-01T18:36:15.9851023+01:00</Time>
+      <Time>2015-01-03T16:13:52+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\borders\room1\0\1.png</Source>
@@ -26,7 +26,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\room1\0\1.xnb</Output>
-      <Time>2015-01-01T18:36:15.9891025+01:00</Time>
+      <Time>2015-01-03T16:03:44+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\borders\room1\0\2.png</Source>
@@ -35,7 +35,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\room1\0\2.xnb</Output>
-      <Time>2015-01-01T18:36:15.9901025+01:00</Time>
+      <Time>2015-01-03T16:13:32+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\borders\room1\0\3.png</Source>
@@ -44,7 +44,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\room1\0\3.xnb</Output>
-      <Time>2015-01-01T18:36:15.9911026+01:00</Time>
+      <Time>2015-01-03T16:04:20+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\borders\room1\0\4.png</Source>
@@ -53,7 +53,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\room1\0\4.xnb</Output>
-      <Time>2015-01-01T18:36:15.9921027+01:00</Time>
+      <Time>2014-12-01T12:33:04+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\borders\room1\0\5.png</Source>
@@ -62,7 +62,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\room1\0\5.xnb</Output>
-      <Time>2015-01-01T18:36:15.9931027+01:00</Time>
+      <Time>2015-01-03T16:04:03+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\borders\room1\0\6.png</Source>
@@ -71,7 +71,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\room1\0\6.xnb</Output>
-      <Time>2015-01-01T18:36:15.9941028+01:00</Time>
+      <Time>2015-01-03T16:13:43+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\borders\room1\0\7.png</Source>
@@ -80,7 +80,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\room1\0\7.xnb</Output>
-      <Time>2015-01-01T18:36:16.0111037+01:00</Time>
+      <Time>2015-01-03T16:03:39+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\borders\room1\0\8.png</Source>
@@ -89,7 +89,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\room1\0\8.xnb</Output>
-      <Time>2015-01-01T18:36:16.0121038+01:00</Time>
+      <Time>2015-01-03T16:13:16+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\borders\style1\0\0.png</Source>
@@ -98,7 +98,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style1\0\0.xnb</Output>
-      <Time>2015-01-01T18:36:16.016104+01:00</Time>
+      <Time>2014-11-28T17:56:52+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\borders\style1\0\1.png</Source>
@@ -107,7 +107,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style1\0\1.xnb</Output>
-      <Time>2015-01-01T18:36:16.0171041+01:00</Time>
+      <Time>2014-11-28T17:56:49+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\borders\style1\0\2.png</Source>
@@ -116,7 +116,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style1\0\2.xnb</Output>
-      <Time>2015-01-01T18:36:16.0181041+01:00</Time>
+      <Time>2014-11-28T17:56:47+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\borders\style1\0\3.png</Source>
@@ -125,7 +125,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style1\0\3.xnb</Output>
-      <Time>2015-01-01T18:36:16.0191042+01:00</Time>
+      <Time>2014-11-28T17:56:45+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\borders\style1\0\4.png</Source>
@@ -134,7 +134,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style1\0\4.xnb</Output>
-      <Time>2015-01-01T18:36:16.0221044+01:00</Time>
+      <Time>2014-11-28T17:56:43+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\borders\style1\0\5.png</Source>
@@ -143,7 +143,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style1\0\5.xnb</Output>
-      <Time>2015-01-01T18:36:16.0231044+01:00</Time>
+      <Time>2014-11-28T17:56:41+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\borders\style1\0\6.png</Source>
@@ -152,7 +152,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style1\0\6.xnb</Output>
-      <Time>2015-01-01T18:36:16.0241045+01:00</Time>
+      <Time>2014-11-28T17:56:39+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\borders\style1\0\7.png</Source>
@@ -161,7 +161,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style1\0\7.xnb</Output>
-      <Time>2015-01-01T18:36:16.0301048+01:00</Time>
+      <Time>2014-11-28T17:56:37+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\borders\style1\0\8.png</Source>
@@ -170,7 +170,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style1\0\8.xnb</Output>
-      <Time>2015-01-01T18:36:16.0321049+01:00</Time>
+      <Time>2014-11-28T17:56:35+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\borders\style2\0\0.png</Source>
@@ -179,7 +179,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style2\0\0.xnb</Output>
-      <Time>2015-01-01T18:36:16.0361052+01:00</Time>
+      <Time>2014-11-28T17:56:16+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\borders\style2\0\1.png</Source>
@@ -188,7 +188,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style2\0\1.xnb</Output>
-      <Time>2015-01-01T18:36:16.0381053+01:00</Time>
+      <Time>2014-11-28T17:56:14+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\borders\style2\0\2.png</Source>
@@ -197,7 +197,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style2\0\2.xnb</Output>
-      <Time>2015-01-01T18:36:16.0401054+01:00</Time>
+      <Time>2014-11-28T17:56:12+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\borders\style2\0\3.png</Source>
@@ -206,7 +206,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style2\0\3.xnb</Output>
-      <Time>2015-01-01T18:36:16.0411055+01:00</Time>
+      <Time>2014-11-28T17:56:10+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\borders\style2\0\4.png</Source>
@@ -215,7 +215,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style2\0\4.xnb</Output>
-      <Time>2015-01-01T18:36:16.0421055+01:00</Time>
+      <Time>2014-11-28T17:56:08+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\borders\style2\0\5.png</Source>
@@ -224,7 +224,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style2\0\5.xnb</Output>
-      <Time>2015-01-01T18:36:16.0431056+01:00</Time>
+      <Time>2014-11-28T17:56:06+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\borders\style2\0\6.png</Source>
@@ -233,7 +233,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style2\0\6.xnb</Output>
-      <Time>2015-01-01T18:36:16.0441056+01:00</Time>
+      <Time>2014-11-28T17:56:04+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\borders\style2\0\7.png</Source>
@@ -242,7 +242,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style2\0\7.xnb</Output>
-      <Time>2015-01-01T18:36:16.0471058+01:00</Time>
+      <Time>2014-11-28T17:56:02+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\borders\style2\0\8.png</Source>
@@ -251,7 +251,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style2\0\8.xnb</Output>
-      <Time>2015-01-01T18:36:16.050106+01:00</Time>
+      <Time>2014-11-28T17:56:00+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\borders\style2\1\0.png</Source>
@@ -260,7 +260,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style2\1\0.xnb</Output>
-      <Time>2015-01-01T18:36:16.0521061+01:00</Time>
+      <Time>2014-11-28T17:56:33+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\borders\style2\1\1.png</Source>
@@ -269,7 +269,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style2\1\1.xnb</Output>
-      <Time>2015-01-01T18:36:16.0531061+01:00</Time>
+      <Time>2014-11-28T17:56:32+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\borders\style2\1\2.png</Source>
@@ -278,7 +278,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style2\1\2.xnb</Output>
-      <Time>2015-01-01T18:36:16.0551063+01:00</Time>
+      <Time>2014-11-28T17:56:30+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\borders\style2\1\3.png</Source>
@@ -287,7 +287,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style2\1\3.xnb</Output>
-      <Time>2015-01-01T18:36:16.0561063+01:00</Time>
+      <Time>2014-11-28T17:56:28+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\borders\style2\1\4.png</Source>
@@ -296,7 +296,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style2\1\4.xnb</Output>
-      <Time>2015-01-01T18:36:16.0601065+01:00</Time>
+      <Time>2014-11-28T17:56:26+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\borders\style2\1\5.png</Source>
@@ -305,7 +305,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style2\1\5.xnb</Output>
-      <Time>2015-01-01T18:36:16.0611066+01:00</Time>
+      <Time>2014-11-28T17:56:24+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\borders\style2\1\6.png</Source>
@@ -314,7 +314,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style2\1\6.xnb</Output>
-      <Time>2015-01-01T18:36:16.0641068+01:00</Time>
+      <Time>2014-11-28T17:56:22+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\borders\style2\1\7.png</Source>
@@ -323,7 +323,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style2\1\7.xnb</Output>
-      <Time>2015-01-01T18:36:16.068107+01:00</Time>
+      <Time>2014-11-28T17:56:21+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\borders\style2\1\8.png</Source>
@@ -332,7 +332,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style2\1\8.xnb</Output>
-      <Time>2015-01-01T18:36:16.0691071+01:00</Time>
+      <Time>2014-11-28T17:56:18+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\icons\arrows\arrowleft_a_32x22.png</Source>
@@ -341,7 +341,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\arrows\arrowleft_a_32x22.xnb</Output>
-      <Time>2015-01-01T18:36:16.6731416+01:00</Time>
+      <Time>2014-11-28T17:55:23+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\icons\arrows\arrowleft_b_32x22.png</Source>
@@ -350,7 +350,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\arrows\arrowleft_b_32x22.xnb</Output>
-      <Time>2015-01-01T18:36:16.679142+01:00</Time>
+      <Time>2014-11-28T17:55:21+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\icons\arrows\arrowleft_e_32x22.png</Source>
@@ -359,7 +359,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\arrows\arrowleft_e_32x22.xnb</Output>
-      <Time>2015-01-01T18:36:16.6891425+01:00</Time>
+      <Time>2014-11-28T17:55:19+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\icons\arrows\arrowright_a_32x22.png</Source>
@@ -368,7 +368,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\arrows\arrowright_a_32x22.xnb</Output>
-      <Time>2015-01-01T18:36:16.7161441+01:00</Time>
+      <Time>2014-11-28T17:55:10+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\icons\arrows\arrowright_b_32x22.png</Source>
@@ -377,7 +377,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\arrows\arrowright_b_32x22.xnb</Output>
-      <Time>2015-01-01T18:36:16.7221444+01:00</Time>
+      <Time>2014-11-28T17:55:08+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\icons\arrows\arrowright_e_32x22.png</Source>
@@ -386,7 +386,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\arrows\arrowright_e_32x22.xnb</Output>
-      <Time>2015-01-01T18:36:16.7261446+01:00</Time>
+      <Time>2014-11-28T17:55:06+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\icons\error\error16.png</Source>
@@ -395,7 +395,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\error\error16.xnb</Output>
-      <Time>2015-01-01T18:36:16.8471516+01:00</Time>
+      <Time>2014-11-28T17:55:35+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\icons\error\error256.png</Source>
@@ -404,7 +404,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\error\error256.xnb</Output>
-      <Time>2015-01-01T18:36:16.854152+01:00</Time>
+      <Time>2014-11-28T17:55:33+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\icons\error\error32.png</Source>
@@ -413,7 +413,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\error\error32.xnb</Output>
-      <Time>2015-01-01T18:36:16.8571521+01:00</Time>
+      <Time>2014-11-28T17:55:31+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\icons\error\error64.png</Source>
@@ -422,7 +422,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\error\error64.xnb</Output>
-      <Time>2015-01-01T18:36:16.8591522+01:00</Time>
+      <Time>2014-11-28T17:55:30+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\icons\error\prohibido256.png</Source>
@@ -431,7 +431,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\error\prohibido256.xnb</Output>
-      <Time>2015-01-01T18:36:16.8641525+01:00</Time>
+      <Time>2014-11-28T17:55:29+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\icons\items\genericitem16.png</Source>
@@ -440,7 +440,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\items\genericitem16.xnb</Output>
-      <Time>2015-01-01T18:36:16.8751532+01:00</Time>
+      <Time>2014-11-28T17:55:39+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\icons\objects\activador\activador_a.png</Source>
@@ -449,7 +449,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\objects\activador\activador_a.xnb</Output>
-      <Time>2015-01-01T18:36:16.8881539+01:00</Time>
+      <Time>2014-11-30T19:18:51+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\icons\objects\activador\activador_b.png</Source>
@@ -458,7 +458,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\objects\activador\activador_b.xnb</Output>
-      <Time>2015-01-01T18:36:16.8921541+01:00</Time>
+      <Time>2014-11-30T19:19:16+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\icons\objects\activador\activador_c.png</Source>
@@ -467,7 +467,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\objects\activador\activador_c.xnb</Output>
-      <Time>2015-01-01T18:36:16.8961544+01:00</Time>
+      <Time>2014-11-30T19:16:18+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\icons\objects\activador\activador_d.png</Source>
@@ -476,88 +476,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\objects\activador\activador_d.xnb</Output>
-      <Time>2015-01-01T18:36:16.8991545+01:00</Time>
-    </Item>
-    <Item>
-      <Source>resources\images\icons\objects\puerta1\puerta1_a.png</Source>
-      <Name>resources\images\icons\objects\puerta1\puerta1_a</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\objects\puerta1\puerta1_a.xnb</Output>
-      <Time>2015-01-01T18:36:16.9061549+01:00</Time>
-    </Item>
-    <Item>
-      <Source>resources\images\icons\objects\puerta1\puerta1_b.png</Source>
-      <Name>resources\images\icons\objects\puerta1\puerta1_b</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\objects\puerta1\puerta1_b.xnb</Output>
-      <Time>2015-01-01T18:36:16.9121553+01:00</Time>
-    </Item>
-    <Item>
-      <Source>resources\images\icons\objects\puerta1\puerta1_c.png</Source>
-      <Name>resources\images\icons\objects\puerta1\puerta1_c</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\objects\puerta1\puerta1_c.xnb</Output>
-      <Time>2015-01-01T18:36:16.9151555+01:00</Time>
-    </Item>
-    <Item>
-      <Source>resources\images\icons\objects\puerta1\puerta1_d.png</Source>
-      <Name>resources\images\icons\objects\puerta1\puerta1_d</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\objects\puerta1\puerta1_d.xnb</Output>
-      <Time>2015-01-01T18:36:16.977159+01:00</Time>
-    </Item>
-    <Item>
-      <Source>resources\images\icons\objects\puerta2\puerta2_a.png</Source>
-      <Name>resources\images\icons\objects\puerta2\puerta2_a</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\objects\puerta2\puerta2_a.xnb</Output>
-      <Time>2015-01-01T18:36:16.9811592+01:00</Time>
-    </Item>
-    <Item>
-      <Source>resources\images\icons\objects\puerta2\puerta2_b.png</Source>
-      <Name>resources\images\icons\objects\puerta2\puerta2_b</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\objects\puerta2\puerta2_b.xnb</Output>
-      <Time>2015-01-01T18:36:16.9901597+01:00</Time>
-    </Item>
-    <Item>
-      <Source>resources\images\icons\objects\puerta2\puerta2_c.png</Source>
-      <Name>resources\images\icons\objects\puerta2\puerta2_c</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\objects\puerta2\puerta2_c.xnb</Output>
-      <Time>2015-01-01T18:36:16.9911598+01:00</Time>
-    </Item>
-    <Item>
-      <Source>resources\images\icons\objects\puerta2\puerta2_d.png</Source>
-      <Name>resources\images\icons\objects\puerta2\puerta2_d</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\objects\puerta2\puerta2_d.xnb</Output>
-      <Time>2015-01-01T18:36:16.99516+01:00</Time>
-    </Item>
-    <Item>
-      <Source>resources\images\icons\objects\trampa.png</Source>
-      <Name>resources\images\icons\objects\trampa</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\objects\trampa.xnb</Output>
-      <Time>2015-01-01T18:36:17.1121667+01:00</Time>
+      <Time>2014-11-30T19:16:24+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\icons\objects\reloj1\0.png</Source>
@@ -566,7 +485,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\objects\reloj1\0.xnb</Output>
-      <Time>2015-01-01T18:36:17.0091608+01:00</Time>
+      <Time>2014-12-02T11:33:11+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\icons\objects\reloj1\1.png</Source>
@@ -575,7 +494,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\objects\reloj1\1.xnb</Output>
-      <Time>2015-01-01T18:36:17.0111609+01:00</Time>
+      <Time>2014-12-02T11:11:09+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\icons\objects\reloj1\10.png</Source>
@@ -584,7 +503,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\objects\reloj1\10.xnb</Output>
-      <Time>2015-01-01T18:36:17.012161+01:00</Time>
+      <Time>2014-12-02T11:22:28+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\icons\objects\reloj1\11.png</Source>
@@ -593,7 +512,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\objects\reloj1\11.xnb</Output>
-      <Time>2015-01-01T18:36:17.0141611+01:00</Time>
+      <Time>2014-12-02T11:22:16+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\icons\objects\reloj1\12.png</Source>
@@ -602,7 +521,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\objects\reloj1\12.xnb</Output>
-      <Time>2015-01-01T18:36:17.0161612+01:00</Time>
+      <Time>2014-12-02T11:25:22+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\icons\objects\reloj1\13.png</Source>
@@ -611,7 +530,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\objects\reloj1\13.xnb</Output>
-      <Time>2015-01-01T18:36:17.0221616+01:00</Time>
+      <Time>2014-12-02T11:24:14+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\icons\objects\reloj1\14.png</Source>
@@ -620,7 +539,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\objects\reloj1\14.xnb</Output>
-      <Time>2015-01-01T18:36:17.0231616+01:00</Time>
+      <Time>2014-12-02T11:26:02+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\icons\objects\reloj1\15.png</Source>
@@ -629,7 +548,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\objects\reloj1\15.xnb</Output>
-      <Time>2015-01-01T18:36:17.0261618+01:00</Time>
+      <Time>2014-12-02T11:27:06+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\icons\objects\reloj1\16.png</Source>
@@ -638,7 +557,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\objects\reloj1\16.xnb</Output>
-      <Time>2015-01-01T18:36:17.0311621+01:00</Time>
+      <Time>2014-12-02T11:27:26+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\icons\objects\reloj1\2.png</Source>
@@ -647,7 +566,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\objects\reloj1\2.xnb</Output>
-      <Time>2015-01-01T18:36:17.0331622+01:00</Time>
+      <Time>2014-12-02T11:05:52+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\icons\objects\reloj1\3.png</Source>
@@ -656,7 +575,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\objects\reloj1\3.xnb</Output>
-      <Time>2015-01-01T18:36:17.0351623+01:00</Time>
+      <Time>2014-12-02T11:04:57+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\icons\objects\reloj1\4.png</Source>
@@ -665,7 +584,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\objects\reloj1\4.xnb</Output>
-      <Time>2015-01-01T18:36:17.0401626+01:00</Time>
+      <Time>2014-12-02T11:08:12+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\icons\objects\reloj1\5.png</Source>
@@ -674,7 +593,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\objects\reloj1\5.xnb</Output>
-      <Time>2015-01-01T18:36:17.0451629+01:00</Time>
+      <Time>2014-12-02T11:11:42+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\icons\objects\reloj1\6.png</Source>
@@ -683,7 +602,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\objects\reloj1\6.xnb</Output>
-      <Time>2015-01-01T18:36:17.047163+01:00</Time>
+      <Time>2014-12-02T11:13:47+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\icons\objects\reloj1\7.png</Source>
@@ -692,7 +611,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\objects\reloj1\7.xnb</Output>
-      <Time>2015-01-01T18:36:17.0571636+01:00</Time>
+      <Time>2014-12-02T11:16:44+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\icons\objects\reloj1\8.png</Source>
@@ -701,7 +620,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\objects\reloj1\8.xnb</Output>
-      <Time>2015-01-01T18:36:17.0591637+01:00</Time>
+      <Time>2014-12-02T11:27:57+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\icons\objects\reloj1\9.png</Source>
@@ -710,7 +629,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\objects\reloj1\9.xnb</Output>
-      <Time>2015-01-01T18:36:17.0621639+01:00</Time>
+      <Time>2014-12-02T11:18:58+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\icons\objects\reloj2\0.png</Source>
@@ -719,7 +638,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\objects\reloj2\0.xnb</Output>
-      <Time>2015-01-01T18:36:17.0691643+01:00</Time>
+      <Time>2014-12-02T11:33:11+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\icons\objects\reloj2\1.png</Source>
@@ -728,7 +647,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\objects\reloj2\1.xnb</Output>
-      <Time>2015-01-01T18:36:17.0751646+01:00</Time>
+      <Time>2014-12-02T11:11:09+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\icons\objects\reloj2\2.png</Source>
@@ -737,7 +656,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\objects\reloj2\2.xnb</Output>
-      <Time>2015-01-01T18:36:17.0771647+01:00</Time>
+      <Time>2014-12-02T11:04:57+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\icons\objects\reloj2\3.png</Source>
@@ -746,7 +665,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\objects\reloj2\3.xnb</Output>
-      <Time>2015-01-01T18:36:17.0791648+01:00</Time>
+      <Time>2014-12-02T11:11:42+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\icons\objects\reloj2\4.png</Source>
@@ -755,7 +674,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\objects\reloj2\4.xnb</Output>
-      <Time>2015-01-01T18:36:17.0811649+01:00</Time>
+      <Time>2014-12-02T11:16:44+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\icons\objects\reloj2\5.png</Source>
@@ -764,7 +683,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\objects\reloj2\5.xnb</Output>
-      <Time>2015-01-01T18:36:17.0831651+01:00</Time>
+      <Time>2014-12-02T11:18:58+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\icons\objects\reloj2\6.png</Source>
@@ -773,7 +692,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\objects\reloj2\6.xnb</Output>
-      <Time>2015-01-01T18:36:17.0921656+01:00</Time>
+      <Time>2014-12-02T11:22:16+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\icons\objects\reloj2\7.png</Source>
@@ -782,7 +701,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\objects\reloj2\7.xnb</Output>
-      <Time>2015-01-01T18:36:17.1061664+01:00</Time>
+      <Time>2014-12-02T11:24:14+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\icons\objects\reloj2\8.png</Source>
@@ -791,7 +710,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\objects\reloj2\8.xnb</Output>
-      <Time>2015-01-01T18:36:17.1081665+01:00</Time>
+      <Time>2014-12-02T11:27:06+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\icons\objects\reloj2\9.png</Source>
@@ -800,7 +719,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\objects\reloj2\9.xnb</Output>
-      <Time>2015-01-01T18:36:17.1101666+01:00</Time>
+      <Time>2014-12-02T11:27:26+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\icons\buildings\beer16.png</Source>
@@ -809,7 +728,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\buildings\beer16.xnb</Output>
-      <Time>2015-01-01T18:36:16.7401454+01:00</Time>
+      <Time>2014-12-21T16:00:14+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\icons\buildings\coins16.png</Source>
@@ -818,7 +737,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\buildings\coins16.xnb</Output>
-      <Time>2015-01-01T18:36:16.7571464+01:00</Time>
+      <Time>2014-12-21T16:00:33+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\icons\buildings\hat16.png</Source>
@@ -827,7 +746,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\buildings\hat16.xnb</Output>
-      <Time>2015-01-01T18:36:16.7601466+01:00</Time>
+      <Time>2014-12-21T16:00:49+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\icons\buildings\head16.png</Source>
@@ -836,7 +755,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\buildings\head16.xnb</Output>
-      <Time>2015-01-01T18:36:16.7621467+01:00</Time>
+      <Time>2014-12-21T16:01:04+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\sprites\map\flag.png</Source>
@@ -845,16 +764,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\sprites\map\flag.xnb</Output>
-      <Time>2015-01-01T18:36:17.2071722+01:00</Time>
-    </Item>
-    <Item>
-      <Source>resources\images\sprites\map\mapa640x512.png</Source>
-      <Name>resources\images\sprites\map\mapa640x512</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\sprites\map\mapa640x512.xnb</Output>
-      <Time>2015-01-01T18:36:17.2231731+01:00</Time>
+      <Time>2014-12-21T17:17:16+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\sprites\map\ruina_a.png</Source>
@@ -863,7 +773,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\sprites\map\ruina_a.xnb</Output>
-      <Time>2015-01-01T18:36:17.2251732+01:00</Time>
+      <Time>2014-12-30T21:03:01+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\sprites\map\ruina_b.png</Source>
@@ -872,7 +782,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\sprites\map\ruina_b.xnb</Output>
-      <Time>2015-01-01T18:36:17.2301735+01:00</Time>
+      <Time>2014-12-30T21:04:15+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\sprites\map\ruina_c.png</Source>
@@ -881,7 +791,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\sprites\map\ruina_c.xnb</Output>
-      <Time>2015-01-01T18:36:17.2381739+01:00</Time>
+      <Time>2014-12-30T21:07:10+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\sprites\map\ruina_d.png</Source>
@@ -890,7 +800,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\sprites\map\ruina_d.xnb</Output>
-      <Time>2015-01-01T18:36:17.240174+01:00</Time>
+      <Time>2014-12-30T21:08:42+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\sprites\map\ruta1.png</Source>
@@ -899,7 +809,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\sprites\map\ruta1.xnb</Output>
-      <Time>2015-01-01T18:36:17.2471744+01:00</Time>
+      <Time>2014-11-28T17:54:34+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\sprites\city\ciudad640x480.png</Source>
@@ -908,7 +818,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\sprites\city\ciudad640x480.xnb</Output>
-      <Time>2015-01-01T18:36:17.1851709+01:00</Time>
+      <Time>2014-12-27T21:29:10+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\icons\other\cerrar.png</Source>
@@ -917,7 +827,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\other\cerrar.xnb</Output>
-      <Time>2015-01-01T18:36:17.1151669+01:00</Time>
+      <Time>2014-12-23T14:09:07+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\icons\other\ok.png</Source>
@@ -926,7 +836,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\other\ok.xnb</Output>
-      <Time>2015-01-01T18:36:17.1181671+01:00</Time>
+      <Time>2014-12-23T14:09:23+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\icons\buttons\inventario.png</Source>
@@ -935,7 +845,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\buttons\inventario.xnb</Output>
-      <Time>2015-01-01T18:36:16.7931485+01:00</Time>
+      <Time>2014-12-21T13:47:09+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\icons\buttons\info.png</Source>
@@ -944,7 +854,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\buttons\info.xnb</Output>
-      <Time>2015-01-01T18:36:16.7901483+01:00</Time>
+      <Time>2014-12-21T13:45:53+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\icons\buttons\misiones.png</Source>
@@ -953,7 +863,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\buttons\misiones.xnb</Output>
-      <Time>2015-01-01T18:36:16.8251503+01:00</Time>
+      <Time>2014-12-21T13:47:43+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\icons\buttons\mapa.png</Source>
@@ -962,7 +872,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\buttons\mapa.xnb</Output>
-      <Time>2015-01-01T18:36:16.8111495+01:00</Time>
+      <Time>2014-12-21T13:47:30+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\icons\buttons\personajes.png</Source>
@@ -971,7 +881,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\buttons\personajes.xnb</Output>
-      <Time>2015-01-01T18:36:16.8281505+01:00</Time>
+      <Time>2014-12-21T13:47:56+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\borders\style3\0\0.png</Source>
@@ -980,7 +890,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style3\0\0.xnb</Output>
-      <Time>2015-01-01T18:36:16.0901083+01:00</Time>
+      <Time>2014-12-21T14:31:06+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\borders\style3\0\1.png</Source>
@@ -989,7 +899,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style3\0\1.xnb</Output>
-      <Time>2015-01-01T18:36:16.0911083+01:00</Time>
+      <Time>2014-12-21T14:32:02+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\borders\style3\0\2.png</Source>
@@ -998,7 +908,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style3\0\2.xnb</Output>
-      <Time>2015-01-01T18:36:16.0921084+01:00</Time>
+      <Time>2014-12-21T14:31:16+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\borders\style3\0\3.png</Source>
@@ -1007,7 +917,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style3\0\3.xnb</Output>
-      <Time>2015-01-01T18:36:16.0931084+01:00</Time>
+      <Time>2014-12-21T14:32:09+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\borders\style3\0\4.png</Source>
@@ -1016,7 +926,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style3\0\4.xnb</Output>
-      <Time>2015-01-01T18:36:16.0941085+01:00</Time>
+      <Time>2014-12-21T14:30:47+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\borders\style3\0\5.png</Source>
@@ -1025,7 +935,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style3\0\5.xnb</Output>
-      <Time>2015-01-01T18:36:16.0971087+01:00</Time>
+      <Time>2014-12-21T14:32:13+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\borders\style3\0\6.png</Source>
@@ -1034,7 +944,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style3\0\6.xnb</Output>
-      <Time>2015-01-01T18:36:16.1021089+01:00</Time>
+      <Time>2014-12-21T14:31:45+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\borders\style3\0\7.png</Source>
@@ -1043,7 +953,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style3\0\7.xnb</Output>
-      <Time>2015-01-01T18:36:16.1041091+01:00</Time>
+      <Time>2014-12-21T14:32:18+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\borders\style3\0\8.png</Source>
@@ -1052,7 +962,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style3\0\8.xnb</Output>
-      <Time>2015-01-01T18:36:16.1051091+01:00</Time>
+      <Time>2014-12-21T14:31:50+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\borders\style3\1\0.png</Source>
@@ -1061,7 +971,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style3\1\0.xnb</Output>
-      <Time>2015-01-01T18:36:16.1071092+01:00</Time>
+      <Time>2014-11-28T17:56:16+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\borders\style3\1\1.png</Source>
@@ -1070,7 +980,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style3\1\1.xnb</Output>
-      <Time>2015-01-01T18:36:16.1081093+01:00</Time>
+      <Time>2014-11-28T17:56:14+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\borders\style3\1\2.png</Source>
@@ -1079,7 +989,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style3\1\2.xnb</Output>
-      <Time>2015-01-01T18:36:16.1111095+01:00</Time>
+      <Time>2014-11-28T17:56:12+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\borders\style3\1\3.png</Source>
@@ -1088,7 +998,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style3\1\3.xnb</Output>
-      <Time>2015-01-01T18:36:16.1121095+01:00</Time>
+      <Time>2014-11-28T17:56:10+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\borders\style3\1\4.png</Source>
@@ -1097,7 +1007,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style3\1\4.xnb</Output>
-      <Time>2015-01-01T18:36:16.1141096+01:00</Time>
+      <Time>2014-12-21T14:30:47+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\borders\style3\1\5.png</Source>
@@ -1106,7 +1016,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style3\1\5.xnb</Output>
-      <Time>2015-01-01T18:36:16.1171098+01:00</Time>
+      <Time>2014-11-28T17:56:06+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\borders\style3\1\6.png</Source>
@@ -1115,7 +1025,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style3\1\6.xnb</Output>
-      <Time>2015-01-01T18:36:16.1181099+01:00</Time>
+      <Time>2014-11-28T17:56:04+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\borders\style3\1\7.png</Source>
@@ -1124,7 +1034,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style3\1\7.xnb</Output>
-      <Time>2015-01-01T18:36:16.3101208+01:00</Time>
+      <Time>2014-11-28T17:56:02+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\borders\style3\1\8.png</Source>
@@ -1133,7 +1043,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style3\1\8.xnb</Output>
-      <Time>2015-01-01T18:36:16.313121+01:00</Time>
+      <Time>2014-11-28T17:56:00+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\borders\style3\2\0.png</Source>
@@ -1142,7 +1052,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style3\2\0.xnb</Output>
-      <Time>2015-01-01T18:36:16.3251217+01:00</Time>
+      <Time>2014-11-28T17:56:16+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\borders\style3\2\1.png</Source>
@@ -1151,7 +1061,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style3\2\1.xnb</Output>
-      <Time>2015-01-01T18:36:16.3281219+01:00</Time>
+      <Time>2014-11-28T17:56:14+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\borders\style3\2\2.png</Source>
@@ -1160,7 +1070,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style3\2\2.xnb</Output>
-      <Time>2015-01-01T18:36:16.331122+01:00</Time>
+      <Time>2014-11-28T17:56:12+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\borders\style3\2\3.png</Source>
@@ -1169,7 +1079,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style3\2\3.xnb</Output>
-      <Time>2015-01-01T18:36:16.3371224+01:00</Time>
+      <Time>2014-11-28T17:56:10+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\borders\style3\2\4.png</Source>
@@ -1178,7 +1088,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style3\2\4.xnb</Output>
-      <Time>2015-01-01T18:36:16.3401226+01:00</Time>
+      <Time>2014-12-21T15:06:13+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\borders\style3\2\5.png</Source>
@@ -1187,7 +1097,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style3\2\5.xnb</Output>
-      <Time>2015-01-01T18:36:16.3441228+01:00</Time>
+      <Time>2014-11-28T17:56:06+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\borders\style3\2\6.png</Source>
@@ -1196,7 +1106,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style3\2\6.xnb</Output>
-      <Time>2015-01-01T18:36:16.3551234+01:00</Time>
+      <Time>2014-11-28T17:56:04+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\borders\style3\2\7.png</Source>
@@ -1205,7 +1115,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style3\2\7.xnb</Output>
-      <Time>2015-01-01T18:36:16.3621238+01:00</Time>
+      <Time>2014-11-28T17:56:02+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\borders\style3\2\8.png</Source>
@@ -1214,7 +1124,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style3\2\8.xnb</Output>
-      <Time>2015-01-01T18:36:16.365124+01:00</Time>
+      <Time>2014-11-28T17:56:00+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\borders\style3\3\0.png</Source>
@@ -1223,7 +1133,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style3\3\0.xnb</Output>
-      <Time>2015-01-01T18:36:16.3741245+01:00</Time>
+      <Time>2014-11-28T17:56:33+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\borders\style3\3\1.png</Source>
@@ -1232,7 +1142,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style3\3\1.xnb</Output>
-      <Time>2015-01-01T18:36:16.3761246+01:00</Time>
+      <Time>2014-11-28T17:56:32+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\borders\style3\3\2.png</Source>
@@ -1241,7 +1151,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style3\3\2.xnb</Output>
-      <Time>2015-01-01T18:36:16.3791248+01:00</Time>
+      <Time>2014-11-28T17:56:30+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\borders\style3\3\3.png</Source>
@@ -1250,7 +1160,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style3\3\3.xnb</Output>
-      <Time>2015-01-01T18:36:16.3891254+01:00</Time>
+      <Time>2014-11-28T17:56:28+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\borders\style3\3\4.png</Source>
@@ -1259,7 +1169,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style3\3\4.xnb</Output>
-      <Time>2015-01-01T18:36:16.3921255+01:00</Time>
+      <Time>2014-12-21T15:06:32+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\borders\style3\3\5.png</Source>
@@ -1268,7 +1178,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style3\3\5.xnb</Output>
-      <Time>2015-01-01T18:36:16.3951257+01:00</Time>
+      <Time>2014-11-28T17:56:24+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\borders\style3\3\6.png</Source>
@@ -1277,7 +1187,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style3\3\6.xnb</Output>
-      <Time>2015-01-01T18:36:16.3971258+01:00</Time>
+      <Time>2014-11-28T17:56:22+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\borders\style3\3\7.png</Source>
@@ -1286,7 +1196,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style3\3\7.xnb</Output>
-      <Time>2015-01-01T18:36:16.5491345+01:00</Time>
+      <Time>2014-11-28T17:56:21+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\borders\style3\3\8.png</Source>
@@ -1295,7 +1205,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style3\3\8.xnb</Output>
-      <Time>2015-01-01T18:36:16.557135+01:00</Time>
+      <Time>2014-11-28T17:56:18+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\icons\buttons\ciudad.png</Source>
@@ -1304,7 +1214,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\buttons\ciudad.xnb</Output>
-      <Time>2015-01-01T18:36:16.7791477+01:00</Time>
+      <Time>2014-12-21T16:32:25+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\icons\buttons\ruina.png</Source>
@@ -1313,7 +1223,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\buttons\ruina.xnb</Output>
-      <Time>2015-01-01T18:36:16.8301506+01:00</Time>
+      <Time>2014-12-21T16:34:06+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\icons\buttons\viajar.png</Source>
@@ -1322,7 +1232,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\buttons\viajar.xnb</Output>
-      <Time>2015-01-01T18:36:16.8421513+01:00</Time>
+      <Time>2014-12-21T16:39:23+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\sprites\map\ciudad_a.png</Source>
@@ -1331,7 +1241,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\sprites\map\ciudad_a.xnb</Output>
-      <Time>2015-01-01T18:36:17.1921713+01:00</Time>
+      <Time>2014-12-30T21:13:11+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\sprites\map\ciudad_b.png</Source>
@@ -1340,7 +1250,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\sprites\map\ciudad_b.xnb</Output>
-      <Time>2015-01-01T18:36:17.1981716+01:00</Time>
+      <Time>2014-12-21T17:08:09+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\sprites\map\ciudad_c.png</Source>
@@ -1349,7 +1259,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\sprites\map\ciudad_c.xnb</Output>
-      <Time>2015-01-01T18:36:17.2001718+01:00</Time>
+      <Time>2014-12-30T21:13:55+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\sprites\map\ciudad_d.png</Source>
@@ -1358,7 +1268,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\sprites\map\ciudad_d.xnb</Output>
-      <Time>2015-01-01T18:36:17.205172+01:00</Time>
+      <Time>2014-12-21T17:41:35+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\icons\buttons\banco.png</Source>
@@ -1367,7 +1277,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\buttons\banco.xnb</Output>
-      <Time>2015-01-01T18:36:16.7761475+01:00</Time>
+      <Time>2014-12-21T17:27:20+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\icons\buttons\iglesia.png</Source>
@@ -1376,7 +1286,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\buttons\iglesia.xnb</Output>
-      <Time>2015-01-01T18:36:16.7831479+01:00</Time>
+      <Time>2014-12-21T17:25:46+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\borders\style2\2\0.png</Source>
@@ -1385,7 +1295,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style2\2\0.xnb</Output>
-      <Time>2015-01-01T18:36:16.0711072+01:00</Time>
+      <Time>2014-11-28T17:56:33+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\borders\style2\2\1.png</Source>
@@ -1394,7 +1304,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style2\2\1.xnb</Output>
-      <Time>2015-01-01T18:36:16.0721072+01:00</Time>
+      <Time>2014-11-28T17:56:32+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\borders\style2\2\2.png</Source>
@@ -1403,7 +1313,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style2\2\2.xnb</Output>
-      <Time>2015-01-01T18:36:16.0741073+01:00</Time>
+      <Time>2014-11-28T17:56:30+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\borders\style2\2\3.png</Source>
@@ -1412,7 +1322,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style2\2\3.xnb</Output>
-      <Time>2015-01-01T18:36:16.0761075+01:00</Time>
+      <Time>2014-11-28T17:56:28+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\borders\style2\2\4.png</Source>
@@ -1421,7 +1331,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style2\2\4.xnb</Output>
-      <Time>2015-01-01T18:36:16.0781076+01:00</Time>
+      <Time>2014-12-23T19:29:07+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\borders\style2\2\5.png</Source>
@@ -1430,7 +1340,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style2\2\5.xnb</Output>
-      <Time>2015-01-01T18:36:16.0791076+01:00</Time>
+      <Time>2014-11-28T17:56:24+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\borders\style2\2\6.png</Source>
@@ -1439,7 +1349,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style2\2\6.xnb</Output>
-      <Time>2015-01-01T18:36:16.0801077+01:00</Time>
+      <Time>2014-11-28T17:56:22+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\borders\style2\2\7.png</Source>
@@ -1448,7 +1358,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style2\2\7.xnb</Output>
-      <Time>2015-01-01T18:36:16.0841079+01:00</Time>
+      <Time>2014-11-28T17:56:21+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\borders\style2\2\8.png</Source>
@@ -1457,7 +1367,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style2\2\8.xnb</Output>
-      <Time>2015-01-01T18:36:16.086108+01:00</Time>
+      <Time>2014-11-28T17:56:18+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\icons\other\okdeshabilitado.png</Source>
@@ -1466,7 +1376,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\other\okdeshabilitado.xnb</Output>
-      <Time>2015-01-01T18:36:17.1271676+01:00</Time>
+      <Time>2014-12-23T19:47:13+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\sprites\ruin\personajes\0\movimiento0.png</Source>
@@ -1475,7 +1385,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\sprites\ruin\personajes\0\movimiento0.xnb</Output>
-      <Time>2015-01-01T18:36:17.256175+01:00</Time>
+      <Time>2014-12-26T17:37:16+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\sprites\ruin\personajes\0\movimiento1.png</Source>
@@ -1484,7 +1394,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\sprites\ruin\personajes\0\movimiento1.xnb</Output>
-      <Time>2015-01-01T18:36:17.2581751+01:00</Time>
+      <Time>2014-12-26T17:37:16+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\sprites\ruin\personajes\0\movimiento2.png</Source>
@@ -1493,7 +1403,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\sprites\ruin\personajes\0\movimiento2.xnb</Output>
-      <Time>2015-01-01T18:36:17.2641754+01:00</Time>
+      <Time>2014-12-26T17:37:16+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\sprites\ruin\personajes\0\movimiento3.png</Source>
@@ -1502,7 +1412,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\sprites\ruin\personajes\0\movimiento3.xnb</Output>
-      <Time>2015-01-01T18:36:17.2731759+01:00</Time>
+      <Time>2014-12-26T17:37:16+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\sprites\ruin\personajes\0\parado.png</Source>
@@ -1511,7 +1421,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\sprites\ruin\personajes\0\parado.xnb</Output>
-      <Time>2015-01-01T18:36:17.2761761+01:00</Time>
+      <Time>2014-12-26T17:37:16+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\sprites\ruin\personajes\1\movimiento0.png</Source>
@@ -1520,7 +1430,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\sprites\ruin\personajes\1\movimiento0.xnb</Output>
-      <Time>2015-01-01T18:36:17.2811764+01:00</Time>
+      <Time>2014-12-26T17:38:01+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\sprites\ruin\personajes\1\movimiento1.png</Source>
@@ -1529,7 +1439,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\sprites\ruin\personajes\1\movimiento1.xnb</Output>
-      <Time>2015-01-01T18:36:17.2891768+01:00</Time>
+      <Time>2014-12-26T17:38:30+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\sprites\ruin\personajes\1\movimiento2.png</Source>
@@ -1538,7 +1448,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\sprites\ruin\personajes\1\movimiento2.xnb</Output>
-      <Time>2015-01-01T18:36:17.2931771+01:00</Time>
+      <Time>2014-12-26T17:38:52+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\sprites\ruin\personajes\1\movimiento3.png</Source>
@@ -1547,7 +1457,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\sprites\ruin\personajes\1\movimiento3.xnb</Output>
-      <Time>2015-01-01T18:36:17.3001775+01:00</Time>
+      <Time>2014-12-26T17:39:09+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\sprites\ruin\personajes\1\parado.png</Source>
@@ -1556,7 +1466,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\sprites\ruin\personajes\1\parado.xnb</Output>
-      <Time>2015-01-01T18:36:17.3021776+01:00</Time>
+      <Time>2014-12-26T17:35:49+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\borders\style4\0\0.png</Source>
@@ -1565,7 +1475,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style4\0\0.xnb</Output>
-      <Time>2015-01-01T18:36:16.5741359+01:00</Time>
+      <Time>2014-12-27T14:25:24+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\borders\style4\0\1.png</Source>
@@ -1574,7 +1484,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style4\0\1.xnb</Output>
-      <Time>2015-01-01T18:36:16.5781362+01:00</Time>
+      <Time>2014-12-27T14:25:24+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\borders\style4\0\2.png</Source>
@@ -1583,7 +1493,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style4\0\2.xnb</Output>
-      <Time>2015-01-01T18:36:16.5801363+01:00</Time>
+      <Time>2014-12-27T14:25:24+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\borders\style4\0\3.png</Source>
@@ -1592,7 +1502,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style4\0\3.xnb</Output>
-      <Time>2015-01-01T18:36:16.5831365+01:00</Time>
+      <Time>2014-12-27T14:25:24+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\borders\style4\0\4.png</Source>
@@ -1601,7 +1511,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style4\0\4.xnb</Output>
-      <Time>2015-01-01T18:36:16.592137+01:00</Time>
+      <Time>2014-12-27T14:25:24+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\borders\style4\0\5.png</Source>
@@ -1610,7 +1520,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style4\0\5.xnb</Output>
-      <Time>2015-01-01T18:36:16.5941371+01:00</Time>
+      <Time>2014-12-27T14:25:24+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\borders\style4\0\6.png</Source>
@@ -1619,7 +1529,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style4\0\6.xnb</Output>
-      <Time>2015-01-01T18:36:16.6071378+01:00</Time>
+      <Time>2014-12-27T14:25:24+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\borders\style4\0\7.png</Source>
@@ -1628,7 +1538,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style4\0\7.xnb</Output>
-      <Time>2015-01-01T18:36:16.6151383+01:00</Time>
+      <Time>2014-12-27T14:25:24+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\borders\style4\0\8.png</Source>
@@ -1637,7 +1547,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style4\0\8.xnb</Output>
-      <Time>2015-01-01T18:36:16.6231388+01:00</Time>
+      <Time>2014-12-27T14:25:24+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\borders\style4\1\0.png</Source>
@@ -1646,7 +1556,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style4\1\0.xnb</Output>
-      <Time>2015-01-01T18:36:16.628139+01:00</Time>
+      <Time>2014-12-27T14:25:24+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\borders\style4\1\1.png</Source>
@@ -1655,7 +1565,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style4\1\1.xnb</Output>
-      <Time>2015-01-01T18:36:16.6301392+01:00</Time>
+      <Time>2014-12-27T14:25:24+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\borders\style4\1\2.png</Source>
@@ -1664,7 +1574,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style4\1\2.xnb</Output>
-      <Time>2015-01-01T18:36:16.6361395+01:00</Time>
+      <Time>2014-12-27T14:25:24+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\borders\style4\1\3.png</Source>
@@ -1673,7 +1583,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style4\1\3.xnb</Output>
-      <Time>2015-01-01T18:36:16.6401397+01:00</Time>
+      <Time>2014-12-27T14:25:24+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\borders\style4\1\4.png</Source>
@@ -1682,7 +1592,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style4\1\4.xnb</Output>
-      <Time>2015-01-01T18:36:16.64414+01:00</Time>
+      <Time>2014-12-27T14:27:19+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\borders\style4\1\5.png</Source>
@@ -1691,7 +1601,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style4\1\5.xnb</Output>
-      <Time>2015-01-01T18:36:16.6471401+01:00</Time>
+      <Time>2014-12-27T14:25:24+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\borders\style4\1\6.png</Source>
@@ -1700,7 +1610,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style4\1\6.xnb</Output>
-      <Time>2015-01-01T18:36:16.6561406+01:00</Time>
+      <Time>2014-12-27T14:25:24+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\borders\style4\1\7.png</Source>
@@ -1709,7 +1619,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style4\1\7.xnb</Output>
-      <Time>2015-01-01T18:36:16.6601409+01:00</Time>
+      <Time>2014-12-27T14:25:24+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\borders\style4\1\8.png</Source>
@@ -1718,7 +1628,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\style4\1\8.xnb</Output>
-      <Time>2015-01-01T18:36:16.662141+01:00</Time>
+      <Time>2014-12-27T14:25:24+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\icons\personajes\comerciante.png</Source>
@@ -1727,7 +1637,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\personajes\comerciante.xnb</Output>
-      <Time>2015-01-01T18:36:17.1421684+01:00</Time>
+      <Time>2014-12-27T16:34:54+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\icons\personajes\mercenario.png</Source>
@@ -1736,7 +1646,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\personajes\mercenario.xnb</Output>
-      <Time>2015-01-01T18:36:17.1591694+01:00</Time>
+      <Time>2014-12-27T16:34:18+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\icons\personajes\vida.png</Source>
@@ -1745,7 +1655,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\personajes\vida.xnb</Output>
-      <Time>2015-01-01T18:36:17.1621696+01:00</Time>
+      <Time>2014-12-27T16:34:32+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\icons\personajes\cazador.png</Source>
@@ -1754,7 +1664,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\personajes\cazador.xnb</Output>
-      <Time>2015-01-01T18:36:17.1321679+01:00</Time>
+      <Time>2014-12-27T18:12:30+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\icons\personajes\enfermedad.png</Source>
@@ -1763,7 +1673,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\personajes\enfermedad.xnb</Output>
-      <Time>2015-01-01T18:36:17.1451686+01:00</Time>
+      <Time>2014-12-27T18:15:41+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\icons\personajes\fuerza.png</Source>
@@ -1772,7 +1682,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\personajes\fuerza.xnb</Output>
-      <Time>2015-01-01T18:36:17.1461687+01:00</Time>
+      <Time>2014-12-27T18:22:57+01:00</Time>
     </Item>
     <Item>
       <Source>resources\images\icons\personajes\medico.png</Source>
@@ -1781,7 +1691,781 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\personajes\medico.xnb</Output>
-      <Time>2015-01-01T18:36:17.1571693+01:00</Time>
+      <Time>2014-12-27T18:18:05+01:00</Time>
+    </Item>
+    <Item>
+      <Source>resources\images\sprites\map\desconocido_a.png</Source>
+      <Name>resources\images\sprites\map\desconocido_a</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\sprites\map\desconocido_a.xnb</Output>
+      <Time>2014-12-30T21:17:39+01:00</Time>
+    </Item>
+    <Item>
+      <Source>resources\images\sprites\map\desconocido_b.png</Source>
+      <Name>resources\images\sprites\map\desconocido_b</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\sprites\map\desconocido_b.xnb</Output>
+      <Time>2014-12-30T20:38:34+01:00</Time>
+    </Item>
+    <Item>
+      <Source>resources\images\sprites\map\desconocido_c.png</Source>
+      <Name>resources\images\sprites\map\desconocido_c</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\sprites\map\desconocido_c.xnb</Output>
+      <Time>2014-12-30T21:18:17+01:00</Time>
+    </Item>
+    <Item>
+      <Source>resources\images\sprites\map\desconocido_d.png</Source>
+      <Name>resources\images\sprites\map\desconocido_d</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\sprites\map\desconocido_d.xnb</Output>
+      <Time>2014-12-30T20:49:20+01:00</Time>
+    </Item>
+    <Item>
+      <Source>resources\images\icons\other\reloj.png</Source>
+      <Name>resources\images\icons\other\reloj</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\other\reloj.xnb</Output>
+      <Time>2014-12-30T22:48:38+01:00</Time>
+    </Item>
+    <Item>
+      <Source>resources\images\icons\other\vacio.png</Source>
+      <Name>resources\images\icons\other\vacio</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\other\vacio.xnb</Output>
+      <Time>2014-12-31T01:03:36+01:00</Time>
+    </Item>
+    <Item>
+      <Source>resources\images\sprites\other\fracaso.png</Source>
+      <Name>resources\images\sprites\other\fracaso</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\sprites\other\fracaso.xnb</Output>
+      <Time>2014-12-31T02:11:57+01:00</Time>
+    </Item>
+    <Item>
+      <Source>resources\images\icons\personajes\hambre.png</Source>
+      <Name>resources\images\icons\personajes\hambre</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\personajes\hambre.xnb</Output>
+      <Time>2014-12-31T12:24:18+01:00</Time>
+    </Item>
+    <Item>
+      <Source>resources\images\icons\personajes\avatares\cazador1.png</Source>
+      <Name>resources\images\icons\personajes\avatares\cazador1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\personajes\avatares\cazador1.xnb</Output>
+      <Time>2014-12-31T14:45:20+01:00</Time>
+    </Item>
+    <Item>
+      <Source>resources\images\icons\personajes\avatares\cazador2.png</Source>
+      <Name>resources\images\icons\personajes\avatares\cazador2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\personajes\avatares\cazador2.xnb</Output>
+      <Time>2014-12-31T14:47:08+01:00</Time>
+    </Item>
+    <Item>
+      <Source>resources\images\icons\personajes\avatares\cazador3.png</Source>
+      <Name>resources\images\icons\personajes\avatares\cazador3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\personajes\avatares\cazador3.xnb</Output>
+      <Time>2014-12-31T14:47:01+01:00</Time>
+    </Item>
+    <Item>
+      <Source>resources\images\icons\personajes\avatares\comerciante1.png</Source>
+      <Name>resources\images\icons\personajes\avatares\comerciante1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\personajes\avatares\comerciante1.xnb</Output>
+      <Time>2014-12-31T14:46:48+01:00</Time>
+    </Item>
+    <Item>
+      <Source>resources\images\icons\personajes\avatares\comerciante2.png</Source>
+      <Name>resources\images\icons\personajes\avatares\comerciante2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\personajes\avatares\comerciante2.xnb</Output>
+      <Time>2014-12-31T14:46:54+01:00</Time>
+    </Item>
+    <Item>
+      <Source>resources\images\icons\personajes\avatares\comerciante3.png</Source>
+      <Name>resources\images\icons\personajes\avatares\comerciante3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\personajes\avatares\comerciante3.xnb</Output>
+      <Time>2014-12-31T14:45:58+01:00</Time>
+    </Item>
+    <Item>
+      <Source>resources\images\icons\personajes\avatares\medico1.png</Source>
+      <Name>resources\images\icons\personajes\avatares\medico1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\personajes\avatares\medico1.xnb</Output>
+      <Time>2014-12-31T14:46:42+01:00</Time>
+    </Item>
+    <Item>
+      <Source>resources\images\icons\personajes\avatares\medico2.png</Source>
+      <Name>resources\images\icons\personajes\avatares\medico2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\personajes\avatares\medico2.xnb</Output>
+      <Time>2014-12-31T14:46:20+01:00</Time>
+    </Item>
+    <Item>
+      <Source>resources\images\icons\personajes\avatares\mercenario1.png</Source>
+      <Name>resources\images\icons\personajes\avatares\mercenario1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\personajes\avatares\mercenario1.xnb</Output>
+      <Time>2014-12-31T14:46:29+01:00</Time>
+    </Item>
+    <Item>
+      <Source>resources\images\icons\personajes\avatares\mercenario2.png</Source>
+      <Name>resources\images\icons\personajes\avatares\mercenario2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\personajes\avatares\mercenario2.xnb</Output>
+      <Time>2014-12-31T14:46:36+01:00</Time>
+    </Item>
+    <Item>
+      <Source>resources\images\icons\personajes\avatares\mercenario3.png</Source>
+      <Name>resources\images\icons\personajes\avatares\mercenario3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\personajes\avatares\mercenario3.xnb</Output>
+      <Time>2014-12-31T14:46:13+01:00</Time>
+    </Item>
+    <Item>
+      <Source>resources\images\icons\personajes\avatares\protagonista.png</Source>
+      <Name>resources\images\icons\personajes\avatares\protagonista</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\personajes\avatares\protagonista.xnb</Output>
+      <Time>2014-12-31T14:46:05+01:00</Time>
+    </Item>
+    <Item>
+      <Source>resources\images\icons\personajes\avatares\cazador1b.png</Source>
+      <Name>resources\images\icons\personajes\avatares\cazador1b</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\personajes\avatares\cazador1b.xnb</Output>
+      <Time>2014-12-31T16:13:28+01:00</Time>
+    </Item>
+    <Item>
+      <Source>resources\images\icons\personajes\avatares\cazador2b.png</Source>
+      <Name>resources\images\icons\personajes\avatares\cazador2b</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\personajes\avatares\cazador2b.xnb</Output>
+      <Time>2014-12-31T16:13:46+01:00</Time>
+    </Item>
+    <Item>
+      <Source>resources\images\icons\personajes\avatares\cazador3b.png</Source>
+      <Name>resources\images\icons\personajes\avatares\cazador3b</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\personajes\avatares\cazador3b.xnb</Output>
+      <Time>2014-12-31T16:14:13+01:00</Time>
+    </Item>
+    <Item>
+      <Source>resources\images\icons\personajes\avatares\comerciante1b.png</Source>
+      <Name>resources\images\icons\personajes\avatares\comerciante1b</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\personajes\avatares\comerciante1b.xnb</Output>
+      <Time>2014-12-31T16:13:52+01:00</Time>
+    </Item>
+    <Item>
+      <Source>resources\images\icons\personajes\avatares\comerciante2b.png</Source>
+      <Name>resources\images\icons\personajes\avatares\comerciante2b</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\personajes\avatares\comerciante2b.xnb</Output>
+      <Time>2014-12-31T16:13:41+01:00</Time>
+    </Item>
+    <Item>
+      <Source>resources\images\icons\personajes\avatares\comerciante3b.png</Source>
+      <Name>resources\images\icons\personajes\avatares\comerciante3b</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\personajes\avatares\comerciante3b.xnb</Output>
+      <Time>2014-12-31T16:13:57+01:00</Time>
+    </Item>
+    <Item>
+      <Source>resources\images\icons\personajes\avatares\medico1b.png</Source>
+      <Name>resources\images\icons\personajes\avatares\medico1b</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\personajes\avatares\medico1b.xnb</Output>
+      <Time>2014-12-31T16:14:08+01:00</Time>
+    </Item>
+    <Item>
+      <Source>resources\images\icons\personajes\avatares\medico2b.png</Source>
+      <Name>resources\images\icons\personajes\avatares\medico2b</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\personajes\avatares\medico2b.xnb</Output>
+      <Time>2014-12-31T16:14:18+01:00</Time>
+    </Item>
+    <Item>
+      <Source>resources\images\icons\personajes\avatares\mercenario1b.png</Source>
+      <Name>resources\images\icons\personajes\avatares\mercenario1b</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\personajes\avatares\mercenario1b.xnb</Output>
+      <Time>2014-12-31T16:14:26+01:00</Time>
+    </Item>
+    <Item>
+      <Source>resources\images\icons\personajes\avatares\mercenario2b.png</Source>
+      <Name>resources\images\icons\personajes\avatares\mercenario2b</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\personajes\avatares\mercenario2b.xnb</Output>
+      <Time>2014-12-31T16:14:22+01:00</Time>
+    </Item>
+    <Item>
+      <Source>resources\images\icons\personajes\avatares\mercenario3b.png</Source>
+      <Name>resources\images\icons\personajes\avatares\mercenario3b</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\personajes\avatares\mercenario3b.xnb</Output>
+      <Time>2014-12-31T16:14:31+01:00</Time>
+    </Item>
+    <Item>
+      <Source>resources\images\icons\personajes\avatares\protagonistab.png</Source>
+      <Name>resources\images\icons\personajes\avatares\protagonistab</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\personajes\avatares\protagonistab.xnb</Output>
+      <Time>2014-12-31T16:14:02+01:00</Time>
+    </Item>
+    <Item>
+      <Source>resources\images\icons\objects\trampa1\trampa_a.png</Source>
+      <Name>resources\images\icons\objects\trampa1\trampa_a</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\objects\trampa1\trampa_a.xnb</Output>
+      <Time>2014-12-31T18:35:05+01:00</Time>
+    </Item>
+    <Item>
+      <Source>resources\images\icons\objects\trampa1\trampa_b.png</Source>
+      <Name>resources\images\icons\objects\trampa1\trampa_b</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\objects\trampa1\trampa_b.xnb</Output>
+      <Time>2014-12-31T20:50:41+01:00</Time>
+    </Item>
+    <Item>
+      <Source>resources\images\icons\objects\trampa1\trampa_c.png</Source>
+      <Name>resources\images\icons\objects\trampa1\trampa_c</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\objects\trampa1\trampa_c.xnb</Output>
+      <Time>2014-12-31T20:55:22+01:00</Time>
+    </Item>
+    <Item>
+      <Source>resources\images\icons\objects\tesoro\tesoro_a.png</Source>
+      <Name>resources\images\icons\objects\tesoro\tesoro_a</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\objects\tesoro\tesoro_a.xnb</Output>
+      <Time>2015-01-03T12:10:07+01:00</Time>
+    </Item>
+    <Item>
+      <Source>resources\images\icons\objects\tesoro\tesoro_b.png</Source>
+      <Name>resources\images\icons\objects\tesoro\tesoro_b</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\objects\tesoro\tesoro_b.xnb</Output>
+      <Time>2015-01-04T13:49:41+01:00</Time>
+    </Item>
+    <Item>
+      <Source>resources\images\icons\objects\puerta1\puerta_a.png</Source>
+      <Name>resources\images\icons\objects\puerta1\puerta_a</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\objects\puerta1\puerta_a.xnb</Output>
+      <Time>2015-01-03T16:30:33+01:00</Time>
+    </Item>
+    <Item>
+      <Source>resources\images\icons\objects\puerta1\puerta_b.png</Source>
+      <Name>resources\images\icons\objects\puerta1\puerta_b</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\objects\puerta1\puerta_b.xnb</Output>
+      <Time>2015-01-03T16:30:22+01:00</Time>
+    </Item>
+    <Item>
+      <Source>resources\images\icons\objects\puerta1\puerta_c.png</Source>
+      <Name>resources\images\icons\objects\puerta1\puerta_c</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\objects\puerta1\puerta_c.xnb</Output>
+      <Time>2015-01-03T16:22:28+01:00</Time>
+    </Item>
+    <Item>
+      <Source>resources\images\icons\objects\puerta1\puerta_d.png</Source>
+      <Name>resources\images\icons\objects\puerta1\puerta_d</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\objects\puerta1\puerta_d.xnb</Output>
+      <Time>2015-01-03T16:25:05+01:00</Time>
+    </Item>
+    <Item>
+      <Source>resources\images\icons\objects\puerta2\puerta_a.png</Source>
+      <Name>resources\images\icons\objects\puerta2\puerta_a</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\objects\puerta2\puerta_a.xnb</Output>
+      <Time>2015-01-03T16:28:22+01:00</Time>
+    </Item>
+    <Item>
+      <Source>resources\images\icons\objects\puerta2\puerta_b.png</Source>
+      <Name>resources\images\icons\objects\puerta2\puerta_b</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\objects\puerta2\puerta_b.xnb</Output>
+      <Time>2015-01-03T16:28:22+01:00</Time>
+    </Item>
+    <Item>
+      <Source>resources\images\icons\objects\puerta2\puerta_c.png</Source>
+      <Name>resources\images\icons\objects\puerta2\puerta_c</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\objects\puerta2\puerta_c.xnb</Output>
+      <Time>2015-01-03T16:28:22+01:00</Time>
+    </Item>
+    <Item>
+      <Source>resources\images\icons\objects\puerta2\puerta_d.png</Source>
+      <Name>resources\images\icons\objects\puerta2\puerta_d</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\objects\puerta2\puerta_d.xnb</Output>
+      <Time>2015-01-03T16:28:22+01:00</Time>
+    </Item>
+    <Item>
+      <Source>resources\images\borders\ruin1\0\0.png</Source>
+      <Name>resources\images\borders\ruin1\0\0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\ruin1\0\0.xnb</Output>
+      <Time>2015-01-03T17:01:18+01:00</Time>
+    </Item>
+    <Item>
+      <Source>resources\images\borders\ruin1\0\1.png</Source>
+      <Name>resources\images\borders\ruin1\0\1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\ruin1\0\1.xnb</Output>
+      <Time>2015-01-03T17:04:20+01:00</Time>
+    </Item>
+    <Item>
+      <Source>resources\images\borders\ruin1\0\2.png</Source>
+      <Name>resources\images\borders\ruin1\0\2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\ruin1\0\2.xnb</Output>
+      <Time>2015-01-03T17:02:00+01:00</Time>
+    </Item>
+    <Item>
+      <Source>resources\images\borders\ruin1\0\3.png</Source>
+      <Name>resources\images\borders\ruin1\0\3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\ruin1\0\3.xnb</Output>
+      <Time>2015-01-03T17:03:32+01:00</Time>
+    </Item>
+    <Item>
+      <Source>resources\images\borders\ruin1\0\4.png</Source>
+      <Name>resources\images\borders\ruin1\0\4</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\ruin1\0\4.xnb</Output>
+      <Time>2015-01-04T14:01:22+01:00</Time>
+    </Item>
+    <Item>
+      <Source>resources\images\borders\ruin1\0\5.png</Source>
+      <Name>resources\images\borders\ruin1\0\5</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\ruin1\0\5.xnb</Output>
+      <Time>2015-01-03T17:23:14+01:00</Time>
+    </Item>
+    <Item>
+      <Source>resources\images\borders\ruin1\0\6.png</Source>
+      <Name>resources\images\borders\ruin1\0\6</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\ruin1\0\6.xnb</Output>
+      <Time>2015-01-03T17:02:20+01:00</Time>
+    </Item>
+    <Item>
+      <Source>resources\images\borders\ruin1\0\7.png</Source>
+      <Name>resources\images\borders\ruin1\0\7</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\ruin1\0\7.xnb</Output>
+      <Time>2015-01-03T17:04:39+01:00</Time>
+    </Item>
+    <Item>
+      <Source>resources\images\borders\ruin1\0\8.png</Source>
+      <Name>resources\images\borders\ruin1\0\8</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\ruin1\0\8.xnb</Output>
+      <Time>2015-01-03T17:02:39+01:00</Time>
+    </Item>
+    <Item>
+      <Source>resources\images\icons\objects\lanzador1\lanzador_a.png</Source>
+      <Name>resources\images\icons\objects\lanzador1\lanzador_a</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\objects\lanzador1\lanzador_a.xnb</Output>
+      <Time>2015-01-04T00:40:08+01:00</Time>
+    </Item>
+    <Item>
+      <Source>resources\images\icons\objects\proyectil1\fire1_01.png</Source>
+      <Name>resources\images\icons\objects\proyectil1\fire1_01</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\objects\proyectil1\fire1_01.xnb</Output>
+      <Time>2015-01-04T13:16:15+01:00</Time>
+    </Item>
+    <Item>
+      <Source>resources\images\icons\objects\proyectil1\fire1_02.png</Source>
+      <Name>resources\images\icons\objects\proyectil1\fire1_02</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\objects\proyectil1\fire1_02.xnb</Output>
+      <Time>2015-01-04T13:15:59+01:00</Time>
+    </Item>
+    <Item>
+      <Source>resources\images\icons\objects\proyectil1\fire1_03.png</Source>
+      <Name>resources\images\icons\objects\proyectil1\fire1_03</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\objects\proyectil1\fire1_03.xnb</Output>
+      <Time>2015-01-04T13:16:43+01:00</Time>
+    </Item>
+    <Item>
+      <Source>resources\images\icons\objects\proyectil1\fire1_04.png</Source>
+      <Name>resources\images\icons\objects\proyectil1\fire1_04</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\objects\proyectil1\fire1_04.xnb</Output>
+      <Time>2015-01-04T13:16:49+01:00</Time>
+    </Item>
+    <Item>
+      <Source>resources\images\icons\objects\proyectil1\fire1_05.png</Source>
+      <Name>resources\images\icons\objects\proyectil1\fire1_05</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\objects\proyectil1\fire1_05.xnb</Output>
+      <Time>2015-01-04T13:15:43+01:00</Time>
+    </Item>
+    <Item>
+      <Source>resources\images\icons\objects\proyectil1\fire1_06.png</Source>
+      <Name>resources\images\icons\objects\proyectil1\fire1_06</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\objects\proyectil1\fire1_06.xnb</Output>
+      <Time>2015-01-04T13:15:52+01:00</Time>
+    </Item>
+    <Item>
+      <Source>resources\images\icons\objects\proyectil1\fire1_07.png</Source>
+      <Name>resources\images\icons\objects\proyectil1\fire1_07</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\objects\proyectil1\fire1_07.xnb</Output>
+      <Time>2015-01-04T13:16:36+01:00</Time>
+    </Item>
+    <Item>
+      <Source>resources\images\icons\objects\proyectil1\fire1_08.png</Source>
+      <Name>resources\images\icons\objects\proyectil1\fire1_08</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\objects\proyectil1\fire1_08.xnb</Output>
+      <Time>2015-01-04T13:16:09+01:00</Time>
+    </Item>
+    <Item>
+      <Source>resources\images\icons\objects\proyectil1\fire1_09.png</Source>
+      <Name>resources\images\icons\objects\proyectil1\fire1_09</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\objects\proyectil1\fire1_09.xnb</Output>
+      <Time>2015-01-04T13:16:56+01:00</Time>
+    </Item>
+    <Item>
+      <Source>resources\images\icons\objects\proyectil1\fire1_10.png</Source>
+      <Name>resources\images\icons\objects\proyectil1\fire1_10</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\objects\proyectil1\fire1_10.xnb</Output>
+      <Time>2015-01-04T13:16:30+01:00</Time>
+    </Item>
+    <Item>
+      <Source>resources\images\icons\objects\proyectil1\fire1_11.png</Source>
+      <Name>resources\images\icons\objects\proyectil1\fire1_11</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\objects\proyectil1\fire1_11.xnb</Output>
+      <Time>2015-01-04T13:16:22+01:00</Time>
+    </Item>
+    <Item>
+      <Source>resources\images\icons\objects\proyectil1\fire1_12.png</Source>
+      <Name>resources\images\icons\objects\proyectil1\fire1_12</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\objects\proyectil1\fire1_12.xnb</Output>
+      <Time>2015-01-04T13:15:19+01:00</Time>
+    </Item>
+    <Item>
+      <Source>resources\images\icons\objects\proyectil1\fire1_13.png</Source>
+      <Name>resources\images\icons\objects\proyectil1\fire1_13</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\objects\proyectil1\fire1_13.xnb</Output>
+      <Time>2015-01-04T13:15:31+01:00</Time>
+    </Item>
+    <Item>
+      <Source>resources\images\icons\objects\tesoro\tesoro_c.png</Source>
+      <Name>resources\images\icons\objects\tesoro\tesoro_c</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\objects\tesoro\tesoro_c.xnb</Output>
+      <Time>2015-01-04T13:48:42+01:00</Time>
+    </Item>
+    <Item>
+      <Source>resources\images\icons\objects\tesoro\tesoro_d.png</Source>
+      <Name>resources\images\icons\objects\tesoro\tesoro_d</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\objects\tesoro\tesoro_d.xnb</Output>
+      <Time>2015-01-04T13:49:30+01:00</Time>
+    </Item>
+    <Item>
+      <Source>resources\images\icons\objects\puerta3\puerta_c.png</Source>
+      <Name>resources\images\icons\objects\puerta3\puerta_c</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\objects\puerta3\puerta_c.xnb</Output>
+      <Time>2015-01-04T14:12:53+01:00</Time>
+    </Item>
+    <Item>
+      <Source>resources\images\icons\objects\puerta3\puerta_d.png</Source>
+      <Name>resources\images\icons\objects\puerta3\puerta_d</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\objects\puerta3\puerta_d.xnb</Output>
+      <Time>2015-01-04T14:12:53+01:00</Time>
+    </Item>
+    <Item>
+      <Source>resources\images\icons\objects\puerta3\puerta_a.png</Source>
+      <Name>resources\images\icons\objects\puerta3\puerta_a</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\objects\puerta3\puerta_a.xnb</Output>
+      <Time>2015-01-04T14:14:07+01:00</Time>
+    </Item>
+    <Item>
+      <Source>resources\images\icons\objects\puerta3\puerta_b.png</Source>
+      <Name>resources\images\icons\objects\puerta3\puerta_b</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\icons\objects\puerta3\puerta_b.xnb</Output>
+      <Time>2015-01-04T14:14:19+01:00</Time>
+    </Item>
+    <Item>
+      <Source>resources\images\sprites\map\mapa1.jpg</Source>
+      <Name>resources\images\sprites\map\mapa1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\sprites\map\mapa1.xnb</Output>
+      <Time>2015-01-04T16:35:57.4089558+01:00</Time>
+    </Item>
+    <Item>
+      <Source>resources\images\sprites\map\mapa2.jpg</Source>
+      <Name>resources\images\sprites\map\mapa2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\sprites\map\mapa2.xnb</Output>
+      <Time>2015-01-04T16:36:10.801987+01:00</Time>
+    </Item>
+    <Item>
+      <Source>resources\images\sprites\map\mapa3.jpg</Source>
+      <Name>resources\images\sprites\map\mapa3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\sprites\map\mapa3.xnb</Output>
+      <Time>2015-01-04T14:36:03.2489447+01:00</Time>
+    </Item>
+    <Item>
+      <Source>resources\images\borders\map1\0\0.png</Source>
+      <Name>resources\images\borders\map1\0\0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\map1\0\0.xnb</Output>
+      <Time>2015-01-04T16:42:48.9975135+01:00</Time>
+    </Item>
+    <Item>
+      <Source>resources\images\borders\map1\0\1.png</Source>
+      <Name>resources\images\borders\map1\0\1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\map1\0\1.xnb</Output>
+      <Time>2015-01-04T16:42:48.9975135+01:00</Time>
+    </Item>
+    <Item>
+      <Source>resources\images\borders\map1\0\2.png</Source>
+      <Name>resources\images\borders\map1\0\2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\map1\0\2.xnb</Output>
+      <Time>2015-01-04T16:42:48.9975135+01:00</Time>
+    </Item>
+    <Item>
+      <Source>resources\images\borders\map1\0\3.png</Source>
+      <Name>resources\images\borders\map1\0\3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\map1\0\3.xnb</Output>
+      <Time>2015-01-04T16:42:49.0075135+01:00</Time>
+    </Item>
+    <Item>
+      <Source>resources\images\borders\map1\0\4.png</Source>
+      <Name>resources\images\borders\map1\0\4</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\map1\0\4.xnb</Output>
+      <Time>2015-01-04T16:46:36.9102952+01:00</Time>
+    </Item>
+    <Item>
+      <Source>resources\images\borders\map1\0\5.png</Source>
+      <Name>resources\images\borders\map1\0\5</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\map1\0\5.xnb</Output>
+      <Time>2015-01-04T16:42:49.0075135+01:00</Time>
+    </Item>
+    <Item>
+      <Source>resources\images\borders\map1\0\6.png</Source>
+      <Name>resources\images\borders\map1\0\6</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\map1\0\6.xnb</Output>
+      <Time>2015-01-04T16:42:49.0075135+01:00</Time>
+    </Item>
+    <Item>
+      <Source>resources\images\borders\map1\0\7.png</Source>
+      <Name>resources\images\borders\map1\0\7</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\map1\0\7.xnb</Output>
+      <Time>2015-01-04T16:42:49.0175135+01:00</Time>
+    </Item>
+    <Item>
+      <Source>resources\images\borders\map1\0\8.png</Source>
+      <Name>resources\images\borders\map1\0\8</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\images\borders\map1\0\8.xnb</Output>
+      <Time>2015-01-04T16:42:49.0175135+01:00</Time>
     </Item>
     <Item>
       <Source>resources\music\ciudad.mp3</Source>
@@ -1791,7 +2475,7 @@
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\music\ciudad.xnb</Output>
       <Extra>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\music\ciudad.wma</Extra>
-      <Time>2015-01-01T18:36:17.3911827+01:00</Time>
+      <Time>2014-12-26T22:49:52.9577761+01:00</Time>
     </Item>
     <Item>
       <Source>resources\music\mapa.mp3</Source>
@@ -1801,7 +2485,7 @@
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\music\mapa.xnb</Output>
       <Extra>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\music\mapa.wma</Extra>
-      <Time>2015-01-01T18:36:17.4461858+01:00</Time>
+      <Time>2014-12-26T22:49:45.4436584+01:00</Time>
     </Item>
     <Item>
       <Source>resources\music\ruina.mp3</Source>
@@ -1811,7 +2495,7 @@
       <Options>None</Options>
       <Output>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\music\ruina.xnb</Output>
       <Extra>C:\Users\Carlos Guerrero\Documents\GitHub\Exploradores\Exploradores\Exploradores\bin\x86\Debug\Content\resources\music\ruina.wma</Extra>
-      <Time>2015-01-01T18:36:17.5451915+01:00</Time>
+      <Time>2014-12-26T22:52:36.2938764+01:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>

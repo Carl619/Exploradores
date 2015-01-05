@@ -1,10 +1,9 @@
 
 {
-	id							: puertaSalida
-	flyweight					: puertaHorizontal
+	id							: puertasalida1
+	flyweight					: puerta3
 	ruina						: 4
 	habitacionPrincipal			: 1
-	habitacionSecundaria		: 2
 	paredAsociada				: Arriba
 	porcentajeLugar				: 0.5
 	activado					: false

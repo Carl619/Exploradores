@@ -29,14 +29,14 @@ namespace Mapa
 		}
 
 
-		public void setViaje(List<Dijkstra.IRama> camino)
+		public void setViaje(Viaje viaje)
 		{
 			clearComponents();
 			requestedContentUpdate = false;
 
 			Gestores.Partidas.Instancia.gestorPantallas.estadoHUD = Gestores.Pantallas.EstadoHUD.Vacio;
 
-			if(camino == null)
+			if(viaje.camino == null)
 				return;
 			
 			Gestores.Partidas.Instancia.gestorPantallas.estadoHUD = Gestores.Pantallas.EstadoHUD.Viaje;
@@ -47,39 +47,86 @@ namespace Mapa
 			ventanaViaje.layout.axisPriority = ILS.Layout.AxisPriority.VerticalFirst;
 			addComponent(ventanaViaje);
 
+			viaje.actualizar();
+			actualizarLabels(ventanaViaje, viaje);
+			actualizarBotones(ventanaViaje);
+		}
+
+
+		protected void actualizarLabels(ILSXNA.Container ventanaViaje, Viaje viaje)
+		{
+			SpriteFont spriteFont = Gestores.Mundo.Instancia.fuentes["genericSpriteFont"];
 			ILSXNA.Label label;
-			float distanciaTotal, peligroTotal;
-			distanciaTotal = peligroTotal = 0.0f;
 
-			foreach(Dijkstra.IRama rama in camino)
+			label = new ILSXNA.Label();
+			label.message = "Factor sobrepeso inventario: " + viaje.factorSobrepesoInventario.ToString("F4");
+			label.innerComponent = spriteFont;
+			ventanaViaje.addComponent(label);
+
+			label = new ILSXNA.Label();
+			label.message = "Distancia total: " + viaje.distanciaTotal.ToString("F1");
+			label.innerComponent = spriteFont;
+			ventanaViaje.addComponent(label);
+
+			label = new ILSXNA.Label();
+			if(viaje.destinoSiguiente.oculto == false)
 			{
-				distanciaTotal += ((Ruta)rama).distancia;
-				peligroTotal += ((Ruta)rama).peligro;
+				label.message = "Distancia hasta " +
+								viaje.destinoSiguiente.nombre +  ": " +
+								viaje.distanciaSiguiente.ToString("F1");
 			}
-			Ruta ruta = (Ruta)camino[0];
-			LugarVisitable lugar;
-			lugar = (LugarVisitable)(ruta.verticeAdyacente(Programa.Jugador.Instancia.protagonista.lugarActual));
-
-			label = new ILSXNA.Label();
-			label.message = "Distancia hasta " + lugar.nombre +  ": " + ruta.distancia.ToString();
-			label.innerComponent = Gestores.Mundo.Instancia.fuentes["genericSpriteFont"];
+			else
+			{
+				label.message = "Distancia hasta el lugar desconocido: " +
+								viaje.distanciaSiguiente.ToString("F1");
+			}
+			label.innerComponent = spriteFont;
 			ventanaViaje.addComponent(label);
 
 			label = new ILSXNA.Label();
-			label.message = "Peligro hasta " + lugar.nombre +  ": " + ruta.peligro.ToString();
-			label.innerComponent = Gestores.Mundo.Instancia.fuentes["genericSpriteFont"];
+			label.message = " ";
+			label.innerComponent = spriteFont;
 			ventanaViaje.addComponent(label);
 
 			label = new ILSXNA.Label();
-			label.message = "Distancia total: " + distanciaTotal.ToString();
-			label.innerComponent = Gestores.Mundo.Instancia.fuentes["genericSpriteFont"];
+			label.message = "Defensa: " + viaje.defensa.ToString("F1");
+			label.innerComponent = spriteFont;
 			ventanaViaje.addComponent(label);
 
 			label = new ILSXNA.Label();
-			label.message = "Peligro total: " + peligroTotal.ToString();
-			label.innerComponent = Gestores.Mundo.Instancia.fuentes["genericSpriteFont"];
+			label.message = "Peligro: " + viaje.peligro.ToString("F1");
+			label.innerComponent = spriteFont;
 			ventanaViaje.addComponent(label);
 
+			label = new ILSXNA.Label();
+			label.message = "Probabilidad de ser atacado: " + viaje.probAtaque.ToString("F2") + "%";
+			label.innerComponent = spriteFont;
+			ventanaViaje.addComponent(label);
+
+			label = new ILSXNA.Label();
+			label.message = " ";
+			label.innerComponent = spriteFont;
+			ventanaViaje.addComponent(label);
+
+			label = new ILSXNA.Label();
+			label.message = "Comida disponible: " + viaje.comidaDisponible.ToString();
+			label.innerComponent = spriteFont;
+			ventanaViaje.addComponent(label);
+
+			label = new ILSXNA.Label();
+			label.message = "Caza probable: " + viaje.caza.ToString("F1");
+			label.innerComponent = spriteFont;
+			ventanaViaje.addComponent(label);
+
+			label = new ILSXNA.Label();
+			label.message = "Comida necesaria: " + viaje.comidaNecesaria.ToString("F1");
+			label.innerComponent = spriteFont;
+			ventanaViaje.addComponent(label);
+		}
+
+
+		protected void actualizarBotones(ILSXNA.Container ventanaViaje)
+		{
 			ILSXNA.Container botones = new ILSXNA.Container();
 			botones.layout.equalCellWidth = true;
 			botones.layout.equalCellHeight = true;
@@ -96,7 +143,7 @@ namespace Mapa
 			boton.sizeSettings.outterSpacingX = 4;
 			boton.icons.Add(Gestores.Mundo.Instancia.imagenes["ok"].textura);
 			boton.updateContent();
-			boton.onButtonPress = Controller.viajar;
+			boton.onButtonPress = Controller.intentarViajar;
 			botones.addComponent(boton);
 		}
 	}

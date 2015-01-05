@@ -1,17 +1,16 @@
 {
-	id							: 3
-	flyweight					: puertaVertical
+	id							: puerta1
+	flyweight					: puerta1
 	ruina						: 4
 	habitacionPrincipal			: 1
 	habitacionSecundaria		: 3
 	paredAsociada				: Derecha
-	porcentajeLugar				: 0.25
+	porcentajeLugar				: 0.4
 	activado					: false
 	tiempoActivacion			: 40
-	llave						: idLlave1
 
-	id							: 9
-	flyweight					: puertaHorizontal
+	id							: puerta2
+	flyweight					: puerta2
 	ruina						: 4
 	habitacionPrincipal			: 1
 	habitacionSecundaria		: 2
@@ -21,14 +20,13 @@
 	tiempoActivacion			: 40
 	llave						: idLlave1
 
-	id							: 8
-	flyweight					: puertaVertical
+	id							: puerta3
+	flyweight					: puerta1
 	ruina						: 4
-	habitacionPrincipal			: 4
-	habitacionSecundaria		: 2
-	paredAsociada				: Izquierda
-	porcentajeLugar				: 0.75
+	habitacionPrincipal			: 2
+	habitacionSecundaria		: 4
+	paredAsociada				: Derecha
+	porcentajeLugar				: 0.3
 	activado					: false
 	tiempoActivacion			: 40
-	llave						: idLlave1
 }

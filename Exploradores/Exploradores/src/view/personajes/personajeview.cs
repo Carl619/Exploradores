@@ -44,6 +44,20 @@ namespace Personajes
 			SpriteFont font = Gestores.Mundo.Instancia.fuentes["genericSpriteFont"];
 			Color color = Gestores.Mundo.Instancia.colores["menuColor"];
 			Programa.ListaViewFlyweight flyweight = Gestores.Mundo.Instancia.listaViewFlyweights["list1"];
+
+			
+			ILSXNA.Container contenedorCabecera = new ILSXNA.Container();
+			addComponent(contenedorCabecera);
+
+			
+			ILSXNA.Container contenedorAvatar =
+				new ILSXNA.Container(Gestores.Mundo.Instancia.borders["border2"]);
+			contenedorCabecera.addComponent(contenedorAvatar);
+			ILSXNA.Sprite avatar;
+
+			avatar = new ILSXNA.Sprite();
+			avatar.innerComponent = personaje.avatarSeleccionado.textura;
+			contenedorAvatar.addComponent(avatar);
 			
 			ILSXNA.Label label;
 			String nombre = personaje.nombre;
@@ -56,7 +70,8 @@ namespace Personajes
 			label.message = nombre;
 			label.color = color;
 			label.innerComponent = font;
-			addComponent(label);
+			label.minLateralSpacing = 4;
+			contenedorCabecera.addComponent(label);
 
 			if(personaje.atributos.Count > 0)
 			{

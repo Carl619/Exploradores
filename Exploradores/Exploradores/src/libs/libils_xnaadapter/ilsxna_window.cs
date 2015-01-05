@@ -90,19 +90,18 @@ namespace ILSXNA
 		{
 			if(visible == false)
 				return;
-			if(updated == false)
-			{
-				updateDimensions(currentWidth, currentHeight);
-				ILS.Dimensions.ClipBox clipBox = new ILS.Dimensions.ClipBox();
-				clipBox.width = currentWidth;
-				clipBox.height = currentHeight;
-				calculatePosition(0, 0, clipBox);
+			
+			updateDimensions(currentWidth, currentHeight);
 
-				innerWindow.spriteBatch.Begin();
-					innerWindow.GraphicsDevice.Clear(backgroundColor);
-					base.draw(this);
-				innerWindow.spriteBatch.End();
-			}
+			ILS.Dimensions.ClipBox clipBox = new ILS.Dimensions.ClipBox();
+			clipBox.width = currentWidth;
+			clipBox.height = currentHeight;
+			calculatePosition(0, 0, clipBox);
+
+			innerWindow.spriteBatch.Begin();
+				innerWindow.GraphicsDevice.Clear(backgroundColor);
+				base.draw(this);
+			innerWindow.spriteBatch.End();
 		}
 
 
@@ -120,6 +119,18 @@ namespace ILSXNA
 			currentHeight = height;
 			container.setMaxOutterWidth(currentWidth);
 			container.setMaxOutterHeight(currentHeight);
+		}
+
+
+		public void scrollHorizontal(int x)
+		{
+			container.getCurrentAlternative().getCurrentLayer().offsetX += x;
+		}
+
+
+		public void scrollVertical(int y)
+		{
+			container.getCurrentAlternative().getCurrentLayer().offsetY += y;
 		}
 
 
